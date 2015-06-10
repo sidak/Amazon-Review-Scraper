@@ -12,8 +12,12 @@ var jsdom = require('jsdom');
 var name = process.argv[2],
 	id = process.argv[3],
     ref = process.argv[4],
-    page = process.argv[5],
-    filter="all_stars";
+    page = process.argv[5];
+
+// Store the vote and rating data in lists
+var upvotesList=[];
+var totalVotesList=[];
+var ratingList=[];
 
 var scrape = function() {
     // The url, scripts, done keywords are optional 
@@ -21,7 +25,7 @@ var scrape = function() {
     jsdom.env({
         url: "http://www.amazon.com/"+name+"/product-reviews/" + id +
 				"/ref=" +ref+ "?ie=UTF8&sortBy=helpful&reviewerType=all_reviews&" +
-				"formatType=all_formats&filterByStar="+filter+"&pageNumber=" + page,
+				"formatType=all_formats&filterByStar=all_stars&pageNumber=" + page,
         scripts: ["http://code.jquery.com/jquery.js"],
         done: function (errors, window) {
 					var $ = window.jQuery;
@@ -36,18 +40,23 @@ var scrape = function() {
 							if(helpfulness==""){
 								helpfulness=0;
 							}
+							var upvotes=helpfulness.split(" ")[0];
+							var totalVotes= helpfulness.split(" ")[2];
 							var rating = $(this).find("div.a-row.helpful-votes-count").next()
 										.find("a.a-link-normal").find("i")
 										.find("span.a-icon-alt").text();
-
-							console.log("Helpfulness: " + helpfulness  +"\nRating: " + rating +"\n\n");
+							
+							// store the data for processing of relevance
+							upvotesList.push(upvotes);
+							totalVotesList.push(totalVotes);
+							ratingList.push(rating);
+							
+							console.log("Helpfulness: " + upvotes+"/"+totalVotes  +"\nRating: " + rating +"\n\n");
 						});
 					window.close();
 				}
     });
 };
-
-scrape();
 
 
 // USAGE : node amazonScraper.js FIFA-15-PlayStation-4 B00KPY1GJA cm_cr_pr_btm_link_3 3  >page3.txt 
