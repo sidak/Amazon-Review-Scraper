@@ -26,8 +26,8 @@ var scrape = function() {
         done: function (errors, window) {
 					var $ = window.jQuery;
 					//console.log(errors);
-					console.log("hello");
-					console.log("yhuj");
+					//console.log("hello");
+					//console.log("yhuj");
 					$("div#cm_cr-review_list.a-section.a-spacing-none.reviews.celwidget")
 						.children('div.a-section.review')
 						.each(function() {
