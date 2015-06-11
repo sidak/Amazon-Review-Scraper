@@ -1,6 +1,5 @@
 // use jsdom 3.x with nodejs
 var jsdom = require('jsdom');
-var upvotesList=[], totalVotesList=[], ratingList=[];
 var exports = module.exports = {};
 exports.scrape = function(name, id, ref, page, cb) {
     // The url, scripts, done keywords are optional 
@@ -15,6 +14,8 @@ exports.scrape = function(name, id, ref, page, cb) {
 						cb(errors);
 					}
 					var $ = window.jQuery;
+					var upvotesList=[], totalVotesList=[], ratingList=[];
+
 					//console.log(errors);
 					//console.log("hello");
 					//console.log("yhuj");

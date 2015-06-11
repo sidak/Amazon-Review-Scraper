@@ -36,11 +36,14 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 			cb(err);
 		}
 		else if (result!=null){
-			console.log("hello");
+			console.log("before adding the result\n");
+			console.log(fifaData[game][idx]);
 			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
 			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
 			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
-			console.log("New Data Scraped\n");
+			console.log("after adding the result\n");
+			console.log(fifaData[game][idx]);
+			console.log('Now going to my cb \n\n');
 			cb(null,  result);
 		}
 	});
@@ -54,15 +57,15 @@ function final(cb) {
 }
 
 
-function asyncTraversal(ct, game,idx, traversalStep, cb) {
+function asyncTraversal(ct, game,idx2, traversalStep, cb) {
   if(ct>0) {
-    traversalStep( ct, game, idx, function(err, result) {
+    traversalStep( ct, game, idx2, function(err, result) {
       //results.push(result);
       if(err)cb(err);
       else {
 		  ct--;
 		  console.log(result)
-		  return asyncTraversal(ct, game, idx, traversalStep, cb);
+		  return asyncTraversal(ct, game, idx2, traversalStep, cb);
 	  }
     });
   } else {
@@ -121,6 +124,23 @@ function main(cb){
 }
 
 
+function main1(cb){
+	//var game=;
+	for(var j=0; j<2; j++){
+		(function(){
+			var idx1=j;
+			asyncTraversal(2,KEY_FIFA14, idx1, collectPageRatingStep,function(err, result){
+				if(err)cb(err);
+				else if (result!=null){
+					cb(null,result);
+				}
+			});
+		})();
+	}
+}
+
+
+/*
 asyncTraversal(2,KEY_FIFA14,0,collectPageRatingStep,function(err, result){
 	console.log("hey knwf");
 	
@@ -132,16 +152,19 @@ asyncTraversal(2,KEY_FIFA14,0,collectPageRatingStep,function(err, result){
 	}
 	
 });
+*/
 
-/*main(function(err, result){
+main(function(err, result){
 	if(err)console.log(err);
 	else if (result!=null){
 		console.log(result);
 		console.log('\n\n');
-		console.log(fifaData);
+		console.log(fifaData[KEY_FIFA14]);
+		console.log(fifaData[KEY_FIFA15]);
 	}
 });
-*/
+
+
 // loop over the whole 
 //call a method for fifa14
 // call a method for fifa15
