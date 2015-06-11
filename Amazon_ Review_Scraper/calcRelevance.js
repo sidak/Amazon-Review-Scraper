@@ -1,8 +1,6 @@
 var scraper= require('./reviewScraper');
 var fifaData= require('./Input_files/fifaAmazonData');
 var refBase= "cm_cr_pr_btm_link_";
-
-
  
 var KEY_NAME="name";
 var KEY_ID="id";
@@ -20,27 +18,30 @@ var ratingList=[];
 var sumTotalVotes=0;
 var relevanceScores=[];
 
-var game;
 var games=["fifa14","fifa15"];
-var idx;
+
 
 // Async task (same in all examples in this chapter)
-var collectPageRatingStep= function (ct, cb) {
+var collectPageRatingStep= function (ct,game, idx, cb) {
 	var normCt= (2-ct)+1;
 	var ref=refBase+normCt;
 	var pageNumber=normCt;
 
-	console.log("let's scrap the element num "+pageNumber+'\n');
+	console.log("let's scrap the page num "+pageNumber+"in the game " +game+ "with platform idx "+idx+'\n');
 	console.log(game, " ", idx);
 	console.log(fifaData[game]);
 	scraper.scrape(fifaData[game][idx][KEY_NAME],fifaData[game][idx][KEY_ID], ref , pageNumber, function(err, result){
-		if(err)cb(err);
+		if(err){
+			console.log("there was an error ", err);
+			cb(err);
+		}
 		else if (result!=null){
-			
+			console.log("hello");
 			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
 			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
 			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
-			cb(null, "New Data Scraped\n" + result);
+			console.log("New Data Scraped\n");
+			cb(null,  result);
 		}
 	});
 
@@ -48,20 +49,20 @@ var collectPageRatingStep= function (ct, cb) {
 
 // Final task (same in all the examples)
 function final(cb) { 
-	cb('Done scraping the number of elements you said ');
+	cb(null, 'Done scraping the number of elements you said ');
 	
 }
 
 
-function asyncTraversal(ct, traversalStep, cb) {
+function asyncTraversal(ct, game,idx, traversalStep, cb) {
   if(ct>0) {
-    traversalStep( ct, function(err, result) {
+    traversalStep( ct, game, idx, function(err, result) {
       //results.push(result);
       if(err)cb(err);
       else {
 		  ct--;
 		  console.log(result)
-		  return asyncTraversal(ct,traversalStep, cb);
+		  return asyncTraversal(ct, game, idx, traversalStep, cb);
 	  }
     });
   } else {
@@ -102,19 +103,37 @@ function collectGameRatingStep(){
 function main(cb){
 	console.log(fifaData);
 	for(var i=0; i<2; i++){
-		game=games[i];
-		for(var j=0; j<4; j++){
-			idx=j;
-			asyncTraversal(2,collectPageRatingStep,function(err, result){
-				if(err)cb(err);
-				else if (result!=null){
-					cb(result);
-				}
-			});
-		}
+		(function(){
+			var game=games[i];
+			for(var j=0; j<4; j++){
+				(function(){
+					var idx=j;
+					asyncTraversal(2,game, idx, collectPageRatingStep,function(err, result){
+						if(err)cb(err);
+						else if (result!=null){
+							cb(null,result);
+						}
+					});
+				})();
+			}
+		})();
 	}
 }
-main(function(err, result){
+
+
+asyncTraversal(2,KEY_FIFA14,0,collectPageRatingStep,function(err, result){
+	console.log("hey knwf");
+	
+	if(err)console.log(err);
+	else if (result!=null){
+		console.log("done calling");
+		console.log(result);
+		console.log(fifaData[KEY_FIFA14]);
+	}
+	
+});
+
+/*main(function(err, result){
 	if(err)console.log(err);
 	else if (result!=null){
 		console.log(result);
@@ -122,6 +141,7 @@ main(function(err, result){
 		console.log(fifaData);
 	}
 });
+*/
 // loop over the whole 
 //call a method for fifa14
 // call a method for fifa15
