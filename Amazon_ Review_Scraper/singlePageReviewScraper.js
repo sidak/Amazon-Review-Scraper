@@ -58,5 +58,5 @@ var scrape = function() {
     });
 };
 
-
+scrape();
 // USAGE : node amazonScraper.js FIFA-15-PlayStation-4 B00KPY1GJA cm_cr_pr_btm_link_3 3  >page3.txt 
