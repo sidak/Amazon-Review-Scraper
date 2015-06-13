@@ -15,3 +15,7 @@ node multiPageReviewScraper.js FIFA-15-Xbox-One B00KPY1HP8 24  >Output\ Files/fi
 
 node multiPageReviewScraper.js FIFA-15-Xbox-360 B00KPY1GFY 42  >Output\ Files/fifa15_xbox360_all
 
+node multiPageReviewScraper.js Apple-MH0W2LL-Wi-Fi-NEWEST-VERSION B00OTWOAAQ 150  >Output\ Files/ipad_air_2_all
+
+node multiPageReviewScraper.js Apple-MGYE2LL-Wi-Fi-NEWEST-VERSION B00OTXEKXC 43  >Output\ Files/ipad_mini_all
+
