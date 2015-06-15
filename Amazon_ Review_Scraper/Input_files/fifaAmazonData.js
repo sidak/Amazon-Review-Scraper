@@ -9,7 +9,8 @@ var fifaData=
 						upvotesList:[],
 						totalVotesList:[],
 						ratingList:[],
-						relevanceList:[]
+						relevanceList:[],
+						pages:68
 						
 					},
 					
@@ -19,7 +20,9 @@ var fifaData=
 						upvotesList:[],
 						totalVotesList:[],
 						ratingList:[],
-						relevanceList:[]
+						relevanceList:[],
+						pages:48
+						
 					},
 					
 					{
@@ -28,7 +31,9 @@ var fifaData=
 						upvotesList:[],
 						totalVotesList:[],
 						ratingList:[],
-						relevanceList:[]
+						relevanceList:[],
+						pages:24
+						
 					},
 					
 					{
@@ -37,7 +42,9 @@ var fifaData=
 						upvotesList:[],
 						totalVotesList:[],
 						ratingList:[],
-						relevanceList:[]
+						relevanceList:[],
+						pages:49
+						
 					},
 				],
 		
@@ -49,7 +56,9 @@ var fifaData=
 							upvotesList:[],
 							totalVotesList:[],
 							ratingList:[],
-							relevanceList:[]
+							relevanceList:[],
+							pages:47
+						
 						},
 						
 						{
@@ -58,7 +67,9 @@ var fifaData=
 							upvotesList:[],
 							totalVotesList:[],
 							ratingList:[],
-							relevanceList:[]
+							relevanceList:[],
+							pages:62
+						
 						},
 						
 						{
@@ -67,7 +78,10 @@ var fifaData=
 							upvotesList:[],
 							totalVotesList:[],
 							ratingList:[],
-							relevanceList:[]
+							relevanceList:[],
+							pages:24
+						
+							
 						},
 						
 						{
@@ -76,7 +90,9 @@ var fifaData=
 							upvotesList:[],
 							totalVotesList:[],
 							ratingList:[],
-							relevanceList:[]
+							relevanceList:[],
+							pages:42
+						
 						}
 			
 			]

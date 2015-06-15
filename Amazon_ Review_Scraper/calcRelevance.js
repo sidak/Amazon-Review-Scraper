@@ -11,6 +11,7 @@ var KEY_UVLIST="upvotesList";
 var KEY_TVLIST="totalVotesList";
 var KEY_RLIST="ratingList";
 var KEY_ReLIST="relevanceList";
+var KEY_PAGES="pages";
 var NUM_VERSIONS=2;
 var NUM_PLATFORMS=4;
 var NUM_PAGES_TO_SCRAPE=2;
@@ -30,7 +31,7 @@ var games=["fifa14","fifa15"];
 // numbered as (2-ct)+1 for game and idx as the platform
 
 var collectPageRatingStep= function (ct,game, idx, cb) {
-	var normCt= (NUM_PAGES_TO_SCRAPE-ct)+1;
+	var normCt= (fifaData[game][idx][KEY_PAGES]-ct)+1;
 	var ref=refBase+normCt;
 	var pageNumber=normCt;
 
@@ -115,7 +116,7 @@ function collectPlatformRatings(game, cb){
 			var idx=j;
 			// Collect reviews on only 2 pages for 
 			// given game and platform as idx 
-			asyncTraversal(NUM_PAGES_TO_SCRAPE,game, idx, collectPageRatingStep,function(err, result){
+			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep,function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
 					cb(null,result);
@@ -147,30 +148,54 @@ function calculateRelevance(game, idx,cb){
 	var sumUpvotes=0;
 	var sumDownvotes=0;
 	var sumTotalVotes=0;
-	
+	var maxTotalVotes=0;
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0)zeroHelpfulReviews++;
 		sumUpvotes+=(platform[KEY_UVLIST][i]-'0');
-		sumDownvotes+= (platform[KEY_TVLIST][i]-platform[KEY_UVLIST][i]);
+		sumDownvotes+= (platform[KEY_TVLIST][i]-'0')-(platform[KEY_UVLIST][i]-'0');
 		sumTotalVotes+= (platform[KEY_TVLIST][i]-'0');
+		if(maxTotalVotes<(platform[KEY_TVLIST][i]-'0')){
+			maxTotalVotes=(platform[KEY_TVLIST][i]-'0');
+		}
+		
 	}
-	var avgUpvotes= sumUpvotes/numReviews;
-	var avgDownvotes= sumDownvotes/numReviews;
+	var avgUpvotes= sumUpvotes/(numReviews-zeroHelpfulReviews);
+	var avgDownvotes= sumDownvotes/(numReviews-zeroHelpfulReviews);
+	var avgTotalVotes= (sumTotalVotes/(numReviews-zeroHelpfulReviews));
+	
 	var fracZHR= zeroHelpfulReviews/numReviews;
 	var importanceZHR= 1-fracZHR;
-	var avgZHRRelevance=BASE_SCORE* ( 1 + importanceZHR*((avgUpvotes-avgDownvotes)/sumTotalVotes));
+	
+	var avgZHRRelevance=BASE_SCORE* ( 1 + importanceZHR*((avgUpvotes-avgDownvotes)/avgTotalVotes));
 	console.log('\n numReviews',numReviews,'\n sumUpvotes',sumUpvotes,
 				'\n sumDownvotes',sumDownvotes,'\n sumTotalVotes',sumTotalVotes,
 				'\n zeroHelpfulReviews',zeroHelpfulReviews,'\n avgZHRRelevance', avgZHRRelevance);
-
+	var avgConstZHRRelevance=2.5;
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0){
-			platform[KEY_ReLIST].push(avgZHRRelevance);
+			platform[KEY_ReLIST].push(avgConstZHRRelevance);
 		}
 		else {
-			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + (2*platform[KEY_UVLIST][i]-platform[KEY_TVLIST][i])/sumTotalVotes));
+			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + (2*platform[KEY_UVLIST][i]-platform[KEY_TVLIST][i])/platform[KEY_TVLIST][i]));
 		}
 	}
+	// calculate mean universe relevance
+	var universeRelevanceSum=0;
+	for(var i=0; i<numReviews; i++){
+		universeRelevanceSum+=platform[KEY_ReLIST][i];
+	}
+	var avgUniverseRelevance=universeRelevanceSum/numReviews;
+	
+	// calculate the adjusted relevance scores for each of them
+	for(var i=0; i<numReviews; i++){
+		if(platform[KEY_UVLIST][i]!=0 || platform[KEY_TVLIST][i]!=0){
+			var initRelevance=platform[KEY_ReLIST][i];
+			var adjRelevance= ((maxTotalVotes-platform[KEY_TVLIST][i])/maxTotalVotes)*avgUniverseRelevance;
+			adjRelevance+= (platform[KEY_TVLIST][i]/(maxTotalVotes))*initRelevance;
+			platform[KEY_ReLIST][i]=adjRelevance;
+		}
+	}
+	
 	cb(null, platform[KEY_ReLIST]);
 }
 		
