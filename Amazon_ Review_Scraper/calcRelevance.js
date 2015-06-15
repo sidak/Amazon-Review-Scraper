@@ -164,6 +164,7 @@ function calculateRelevance(game, idx,cb){
 	var avgTotalVotes= (sumTotalVotes/(numReviews-zeroHelpfulReviews));
 	
 	var fracZHR= zeroHelpfulReviews/numReviews;
+	
 	var importanceZHR= 1-fracZHR;
 	
 	var avgZHRRelevance=BASE_SCORE* ( 1 + importanceZHR*((avgUpvotes-avgDownvotes)/avgTotalVotes));
@@ -176,7 +177,7 @@ function calculateRelevance(game, idx,cb){
 			platform[KEY_ReLIST].push(avgConstZHRRelevance);
 		}
 		else {
-			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + (2*platform[KEY_UVLIST][i]-platform[KEY_TVLIST][i])/platform[KEY_TVLIST][i]));
+			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + (2*(platform[KEY_UVLIST][i]-'0')-(platform[KEY_TVLIST][i]-'0'))/platform[KEY_TVLIST][i]));
 		}
 	}
 	// calculate mean universe relevance
@@ -186,16 +187,93 @@ function calculateRelevance(game, idx,cb){
 	}
 	var avgUniverseRelevance=universeRelevanceSum/numReviews;
 	
+	console.log("avgTotalVotes ", avgTotalVotes);
+	console.log("avgUniverseRelevance ", avgUniverseRelevance);
+					
 	// calculate the adjusted relevance scores for each of them
+	
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]!=0 || platform[KEY_TVLIST][i]!=0){
 			var initRelevance=platform[KEY_ReLIST][i];
-			var adjRelevance= ((maxTotalVotes-platform[KEY_TVLIST][i])/maxTotalVotes)*avgUniverseRelevance;
-			adjRelevance+= (platform[KEY_TVLIST][i]/(maxTotalVotes))*initRelevance;
+			var adjRelevance= ((maxTotalVotes-(platform[KEY_TVLIST][i]-'0'))/maxTotalVotes)*avgUniverseRelevance;
+			adjRelevance+= ((platform[KEY_TVLIST][i]-'0')/(maxTotalVotes))*initRelevance;
 			platform[KEY_ReLIST][i]=adjRelevance;
+		}
+		else {
+			platform[KEY_ReLIST][i]=avgUniverseRelevance;
+		}
+	}
+	var maxRelevance=0;
+	for(var i=0; i<numReviews; i++){
+		if(platform[KEY_ReLIST][i]>maxRelevance){
+			maxRelevance=platform[KEY_ReLIST][i];
 		}
 	}
 	
+	for(var i=0; i<numReviews; i++){
+		var scaledRelevance= (platform[KEY_ReLIST][i]/maxRelevance)*5;
+		platform[KEY_ReLIST][i]=scaledRelevance;
+	}
+	
+	
+	/*
+	// this the second way 
+	for(var i=0; i<numReviews; i++){
+		if(platform[KEY_UVLIST][i]!=0 || platform[KEY_TVLIST][i]!=0){
+			var initRelevance=platform[KEY_ReLIST][i];
+			console.log("initRelevance  ", initRelevance);
+			var adjRelevance= (avgTotalVotes/((platform[KEY_TVLIST][i]-'0') +avgTotalVotes))*avgUniverseRelevance;
+			console.log("adjRelevance 1 ", adjRelevance);
+			
+			adjRelevance+= (platform[KEY_TVLIST][i]/((platform[KEY_TVLIST][i]-'0') +avgTotalVotes))*initRelevance;
+			console.log("adjRelevance 2 ", adjRelevance);
+			
+			platform[KEY_ReLIST][i]=adjRelevance;
+		}
+		else {
+			platform[KEY_ReLIST][i]=avgUniverseRelevance;
+		}
+	}
+	*/
+	
+	// the third way using lower bound of wilson confidence interval
+	/*
+	var n=0, r=0, p=0, q=0, l95a=0, u95a=0, num=0, denom=0;
+
+	var z = 1.95996;
+	var zsq = z*z;
+
+	for(var i=0; i<numReviews; i++){
+		if(platform[KEY_UVLIST][i]!=0 || platform[KEY_TVLIST][i]!=0){
+			r = platform[KEY_UVLIST][i]-'0';
+			n = platform[KEY_TVLIST][i]-'0';
+			if(n<r) {
+				console.log("r cannot be greater than n.")
+			}
+			if(Math.floor(r)<r) {console.log("r must be an integer value.")};
+			if(Math.floor(n)<n) {console.log("n must be an integer value.")};
+
+			p = Math.round((r/n)*10000)/10000;
+			q = 1-p;
+
+			// begin l95a
+			num = (2*n*p)+zsq-(z*Math.sqrt(zsq+(4*n*p*q)));
+			denom = 2*(n+zsq);
+			l95a = num/denom;
+			if(p==0) {l95a = 0};
+
+			// begin u95a
+			num = (2*n*p)+zsq+(z*Math.sqrt(zsq+(4*n*p*q)));
+			denom = 2*(n+zsq);
+			u95a = num/denom;
+			if(p==1) {u95a = 1};
+			platform[KEY_ReLIST][i]=l95a*5;
+		}
+		else {
+			platform[KEY_ReLIST][i]=avgUniverseRelevance;
+		}
+	}
+	*/
 	cb(null, platform[KEY_ReLIST]);
 }
 		
