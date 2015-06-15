@@ -1,7 +1,9 @@
 var scraper= require('./reviewScraper');
 var fifaData= require('./Input_files/fifaAmazonData');
+var fs = require('fs');
+
 var refBase= "cm_cr_pr_btm_link_";
- 
+		
 var KEY_NAME="name";
 var KEY_ID="id";
 
@@ -11,6 +13,7 @@ var KEY_UVLIST="upvotesList";
 var KEY_TVLIST="totalVotesList";
 var KEY_RLIST="ratingList";
 var KEY_ReLIST="relevanceList";
+var KEY_GAME_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
 var NUM_VERSIONS=2;
 var NUM_PLATFORMS=4;
@@ -26,6 +29,8 @@ var relevanceScores=[];
 
 var games=["fifa14","fifa15"];
 
+// Final data to be written in a file
+var data=[];
 
 // Async task for collecting the reviews on a page 
 // numbered as (2-ct)+1 for game and idx as the platform
@@ -64,7 +69,14 @@ function final(cb, game, idx) {
 	calculateRelevance(game, idx, function(err, result){
 		if(err)cb(err);
 		else if (result!=null){
-			cb(null, 'Done scraping the number of elements you said and also calculated the relevance scores for them ');
+			console.log('Done scraping the number of elements you said and also calculated the relevance scores for them ');
+			// write the data to file
+			writeDataForGamePlatform(game, idx, function(err, result){
+				if(err)cb(err);
+				else if(result!=null){
+					cb(null, result);
+				}
+			});
 		}
 		
 	});
@@ -91,6 +103,13 @@ function asyncTraversal(ct, game,idx, traversalStep, cb) {
 // Collect ratings for all versions
 // of the game and for the different platforms it runs on
 function collectGameRatings(cb){
+	// write the metadata in the file
+	data.push(
+				{ 
+					name:"meta",						
+					root:"fifa",
+				}
+			);
 	
 	// There are 2 versions that we are considering
 	// Fifa14 and Fifa15
@@ -125,15 +144,60 @@ function collectPlatformRatings(game, cb){
 		})();
 	}
 }
-
+function writeDataForGamePlatform(game, idx, cb){
+	var gamePlatform= fifaData[game][idx];
+	var parent;
+	var children=[];
+	var ratings;
+	var relevance;
+	var name;
+	if(game==KEY_FIFA14){
+		parent=KEY_FIFA14;
+	}
+	else {
+		parent=KEY_FIFA15;
+	}
+	
+	name =gamePlatform[KEY_GAME_PLATFORM_NAME];
+	ratings = gamePlatform[KEY_RLIST];
+	relevance= gamePlatform[KEY_ReLIST];
+	var obj = createNewServiceObject(parent, name, ratings, relevance, children);
+	data.push(obj);
+	cb(null, 'data obj written to file');
+	
+}
+function createNewServiceObject(parent, name, ratings, relevance, children){
+	var obj = {
+					"name":name,
+					"agg_rating_score":0,
+					"own_rating_cont":0,
+					"children_rating_cont":0,
+					"own_wmean_rating":0,						
+					"universe_wmean_rating":0,
+					"consumer_ratings":ratings,
+					"consumer_relevance":relevance,
+					"consumer_feedback_count":0,
+					"rating_trust_value":0,
+					"trust_votes":0,
+					"children":children,
+					"parent":[parent]
+			}
+	return obj;
+}
 collectGameRatings(function(err, result){
 	if(err)console.log(err);
 	else if (result!=null){
-		console.log(result);
+		//console.log(result);
 		console.log('\n\n');
-		console.log(fifaData[KEY_FIFA14]);
-		console.log(fifaData[KEY_FIFA15]);
+		//console.log(fifaData[KEY_FIFA14]);
+		//console.log(fifaData[KEY_FIFA15]);
 		
+		console.log('abt to write');
+		console.log(data);
+		fs.writeFile('fifaReviewData.txt',data[1] , function (err) {
+		  if (err) console.log(err);
+		  else console.log('Written to file');
+		});
 	}
 });
 
