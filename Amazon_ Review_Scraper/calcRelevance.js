@@ -106,8 +106,8 @@ function collectGameRatings(cb){
 	// write the metadata in the file
 	data.push(
 				{ 
-					name:"meta",						
-					root:"fifa",
+						name:"meta",						
+						root:"fifa",
 				}
 			);
 	
@@ -146,9 +146,12 @@ function collectPlatformRatings(game, cb){
 }
 function writeDataForGamePlatform(game, idx, cb){
 	var gamePlatform= fifaData[game][idx];
+	console.log("In writing data for game platform");
+	console.log(gamePlatform);
 	var parent;
 	var children=[];
-	var ratings;
+	var ratings_char;
+	var ratings_int=[];
 	var relevance;
 	var name;
 	if(game==KEY_FIFA14){
@@ -159,9 +162,14 @@ function writeDataForGamePlatform(game, idx, cb){
 	}
 	
 	name =gamePlatform[KEY_GAME_PLATFORM_NAME];
-	ratings = gamePlatform[KEY_RLIST];
+	ratings_char = gamePlatform[KEY_RLIST];
+	for(var i=0; i<ratings_char.length; i++){
+		ratings_int.push(ratings_char[i]-'0');
+	}
 	relevance= gamePlatform[KEY_ReLIST];
-	var obj = createNewServiceObject(parent, name, ratings, relevance, children);
+	var obj = createNewServiceObject(parent, name, ratings_int, relevance, children);
+	console.log(obj);
+	//data.push(JSON.stringify(obj));
 	data.push(obj);
 	cb(null, 'data obj written to file');
 	
@@ -184,23 +192,6 @@ function createNewServiceObject(parent, name, ratings, relevance, children){
 			}
 	return obj;
 }
-collectGameRatings(function(err, result){
-	if(err)console.log(err);
-	else if (result!=null){
-		//console.log(result);
-		console.log('\n\n');
-		//console.log(fifaData[KEY_FIFA14]);
-		//console.log(fifaData[KEY_FIFA15]);
-		
-		console.log('abt to write');
-		console.log(data);
-		fs.writeFile('fifaReviewData.txt',data[1] , function (err) {
-		  if (err) console.log(err);
-		  else console.log('Written to file');
-		});
-	}
-});
-
 
 function calculateRelevance(game, idx,cb){
 	console.log("in calc relevance");
@@ -231,11 +222,12 @@ function calculateRelevance(game, idx,cb){
 	
 	var importanceZHR= 1-fracZHR;
 	
-	var avgZHRRelevance=BASE_SCORE* ( 1 + importanceZHR*((avgUpvotes-avgDownvotes)/avgTotalVotes));
+	//var avgZHRRelevance=BASE_SCORE* ( 1 + importanceZHR*((avgUpvotes-avgDownvotes)/avgTotalVotes));
+	var avgConstZHRRelevance=2.5;
+	
 	console.log('\n numReviews',numReviews,'\n sumUpvotes',sumUpvotes,
 				'\n sumDownvotes',sumDownvotes,'\n sumTotalVotes',sumTotalVotes,
-				'\n zeroHelpfulReviews',zeroHelpfulReviews,'\n avgZHRRelevance', avgZHRRelevance);
-	var avgConstZHRRelevance=2.5;
+				'\n zeroHelpfulReviews',zeroHelpfulReviews,'\n avgConstZHRRelevance', avgConstZHRRelevance);
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0){
 			platform[KEY_ReLIST].push(avgConstZHRRelevance);
@@ -342,11 +334,30 @@ function calculateRelevance(game, idx,cb){
 }
 		
 
-// calculate average of postive votes and negative votes for the reviews
-// calc the num of zero helpfulness reviews
-// and thus calc importance
-// calc the total votes that have been casted
-// calc the avg relevance score for the zero helpfulness reviews
-// calc the relevance scores for all other reviews
 // aggregate feedback from start
 // then do the routing part
+
+
+// The main function that scraps the relevance data
+// , calculates relevance for each of them and then
+// writes them to a file for use in aggregation
+// of feedback
+collectGameRatings(function(err, result){
+	if(err)console.log(err);
+	else if (result!=null){
+		//console.log(result);
+		console.log('\n\n');
+		//console.log(fifaData[KEY_FIFA14]);
+		//console.log(fifaData[KEY_FIFA15]);
+		
+		console.log('abt to write');
+		console.log(data);
+		// It is important to convert the JSON Object into
+		// string before writing to the file 
+		// otherwise you will have only 'object' written in the output file
+		fs.writeFile('fifaReviewData1.txt',JSON.stringify(data) , function (err) {
+		  if (err) console.log(err);
+		  else console.log('Written to file');
+		});
+	}
+});
