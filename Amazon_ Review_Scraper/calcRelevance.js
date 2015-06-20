@@ -192,7 +192,74 @@ function createNewServiceObject(parent, name, ratings, relevance, children){
 			}
 	return obj;
 }
+// check for characters in the list
+function performScaling(reList){
+	var numReviews= reList.length;
+	var maxRelevance=0;
+	for(var i=0; i<numReviews; i++){
+		if(platform[KEY_ReLIST][i]>maxRelevance){
+			maxRelevance=platform[KEY_ReLIST][i];
+		}
+	}
+	
+	// perform Scaling
+	for(var i=0; i<numReviews; i++){
+		var scaledRelevance= (platform[KEY_ReLIST][i]/maxRelevance)*5;
+		platform[KEY_ReLIST][i]=scaledRelevance;
+	}
+		
+} 
+function calcAvgUniversalRelevance(iReList, uvList, tvList){
+	var universeRelevanceSum=0;
+	for(var i=0; i<uvList.length; i++){
+		universeRelevanceSum+=iReList[i];
+	}
+	var avgURe= universeRelevanceSum/uvList.length;
+	return avgURe;
+}
 
+function calcAvgUniversalRelevance1(iReList, uvList, tvList){
+	var sumUv=0;
+	var sumDv=0;
+	var sumTv=0;
+	
+	for(var i=0; i<uvList.length; i++){
+		sumUv+= uvList[i];
+		sumDv+= tvList[i]-uvList[i];
+		sumTv+= tvList[i];
+	}
+	var avgURe = 2.5 + (2.5*((sumUv- sumDv)/sumTv));
+	return avgURe;
+}
+function calcWt(tvList){
+	var maxTv=0;
+	for(var i=0;i<tvList.length; i++){
+		if(tvList[i]>maxTv){
+			maxTv=tvList[i];
+		}
+	}
+	var wtList=[];
+	for(var i=0; i<tvList.length; i++){
+		wtList.push(tvList[i]/maxTv);
+	}
+	return wtList;
+}
+
+function calculateAdjustedRelevance(reList, uvList, tvList, wtList,avgURe){
+	var numReviews = uvList.length;
+	for(var i=0; i<numReviews; i++){
+		if(uvList[i]!=0 || tvList[i]!=0){
+			var iRe= reList[i];
+			var adRe= (1-wtList[i])*avgURe;
+			adRe+= wtList[i]*iRe;
+			reList[i]=adRe;
+		}
+		else {
+			// if it is a ZHR
+			reList[i]=avgURe;
+		}
+	}
+}
 function calculateRelevance(game, idx,cb){
 	console.log("in calc relevance");
 	console.log(game);
@@ -204,6 +271,9 @@ function calculateRelevance(game, idx,cb){
 	var sumDownvotes=0;
 	var sumTotalVotes=0;
 	var maxTotalVotes=0;
+	// Calculate sum of upvotes, downvotes, totalvotes
+	// , num of ZHR and also calculate the maxvotes
+	
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0)zeroHelpfulReviews++;
 		sumUpvotes+=(platform[KEY_UVLIST][i]-'0');
@@ -228,6 +298,9 @@ function calculateRelevance(game, idx,cb){
 	console.log('\n numReviews',numReviews,'\n sumUpvotes',sumUpvotes,
 				'\n sumDownvotes',sumDownvotes,'\n sumTotalVotes',sumTotalVotes,
 				'\n zeroHelpfulReviews',zeroHelpfulReviews,'\n avgConstZHRRelevance', avgConstZHRRelevance);
+	
+	// calc initial relevance
+	
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0){
 			platform[KEY_ReLIST].push(avgConstZHRRelevance);
@@ -236,18 +309,29 @@ function calculateRelevance(game, idx,cb){
 			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + (2*(platform[KEY_UVLIST][i]-'0')-(platform[KEY_TVLIST][i]-'0'))/platform[KEY_TVLIST][i]));
 		}
 	}
+	
+	var avgUniverseRelevance= calcAvgUniversalRelevance(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
 	// calculate mean universe relevance
+	/*
 	var universeRelevanceSum=0;
 	for(var i=0; i<numReviews; i++){
 		universeRelevanceSum+=platform[KEY_ReLIST][i];
 	}
 	var avgUniverseRelevance=universeRelevanceSum/numReviews;
-	
+	*/
 	console.log("avgTotalVotes ", avgTotalVotes);
 	console.log("avgUniverseRelevance ", avgUniverseRelevance);
-					
 	// calculate the adjusted relevance scores for each of them
 	
+	
+	// getWt
+	var wtList = calcWt(platform[KEY_TVLIST]);
+	
+	// keep faith on pass by value (call by sharing)
+	calculateAdjustedRelevance(platform[KEY_ReLIST], platform[KEY_UVLIST], 
+								platform[KEY_TVLIST], wtList,avgUniverseRelevance);
+	
+	/*
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]!=0 || platform[KEY_TVLIST][i]!=0){
 			var initRelevance=platform[KEY_ReLIST][i];
@@ -259,6 +343,9 @@ function calculateRelevance(game, idx,cb){
 			platform[KEY_ReLIST][i]=avgUniverseRelevance;
 		}
 	}
+	*/
+	performScaling(platform[KEY_ReLIST]);
+	/*
 	var maxRelevance=0;
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_ReLIST][i]>maxRelevance){
@@ -266,11 +353,13 @@ function calculateRelevance(game, idx,cb){
 		}
 	}
 	
+	// perform Scaling
 	for(var i=0; i<numReviews; i++){
 		var scaledRelevance= (platform[KEY_ReLIST][i]/maxRelevance)*5;
 		platform[KEY_ReLIST][i]=scaledRelevance;
 	}
 	
+	*/
 	
 	/*
 	// this the second way 
@@ -333,9 +422,6 @@ function calculateRelevance(game, idx,cb){
 	cb(null, platform[KEY_ReLIST]);
 }
 		
-
-// aggregate feedback from start
-// then do the routing part
 
 
 // The main function that scraps the relevance data
