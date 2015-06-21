@@ -197,15 +197,14 @@ function performScaling(reList){
 	var numReviews= reList.length;
 	var maxRelevance=0;
 	for(var i=0; i<numReviews; i++){
-		if(platform[KEY_ReLIST][i]>maxRelevance){
-			maxRelevance=platform[KEY_ReLIST][i];
+		if(reList[i]>maxRelevance){
+			maxRelevance=reList[i];
 		}
 	}
 	
-	// perform Scaling
 	for(var i=0; i<numReviews; i++){
-		var scaledRelevance= (platform[KEY_ReLIST][i]/maxRelevance)*5;
-		platform[KEY_ReLIST][i]=scaledRelevance;
+		var scaledRelevance= (reList[i]/maxRelevance)*5;
+		reList[i]=scaledRelevance;
 	}
 		
 } 
@@ -271,16 +270,22 @@ function calculateRelevance(game, idx,cb){
 	var sumDownvotes=0;
 	var sumTotalVotes=0;
 	var maxTotalVotes=0;
+	
+	for(var i=0; i<numReviews; i++){
+		platform[KEY_RLIST][i] = platform[KEY_RLIST][i]-'0';
+		platform[KEY_TVLIST][i] = platform[KEY_TVLIST][i]-'0';
+		platform[KEY_UVLIST][i] = platform[KEY_UVLIST][i]-'0';
+	}
 	// Calculate sum of upvotes, downvotes, totalvotes
 	// , num of ZHR and also calculate the maxvotes
 	
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0)zeroHelpfulReviews++;
-		sumUpvotes+=(platform[KEY_UVLIST][i]-'0');
-		sumDownvotes+= (platform[KEY_TVLIST][i]-'0')-(platform[KEY_UVLIST][i]-'0');
-		sumTotalVotes+= (platform[KEY_TVLIST][i]-'0');
-		if(maxTotalVotes<(platform[KEY_TVLIST][i]-'0')){
-			maxTotalVotes=(platform[KEY_TVLIST][i]-'0');
+		sumUpvotes+= platform[KEY_UVLIST][i];
+		sumDownvotes+= platform[KEY_TVLIST][i]-platform[KEY_UVLIST][i];
+		sumTotalVotes+= platform[KEY_TVLIST][i];
+		if(maxTotalVotes<platform[KEY_TVLIST][i]){
+			maxTotalVotes=platform[KEY_TVLIST][i];
 		}
 		
 	}
@@ -306,19 +311,13 @@ function calculateRelevance(game, idx,cb){
 			platform[KEY_ReLIST].push(avgConstZHRRelevance);
 		}
 		else {
-			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + (2*(platform[KEY_UVLIST][i]-'0')-(platform[KEY_TVLIST][i]-'0'))/platform[KEY_TVLIST][i]));
+			platform[KEY_ReLIST].push(BASE_SCORE* ( 1 + 
+					(2*platform[KEY_UVLIST][i]-platform[KEY_TVLIST][i])/platform[KEY_TVLIST][i]));
 		}
 	}
 	
-	var avgUniverseRelevance= calcAvgUniversalRelevance(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
-	// calculate mean universe relevance
-	/*
-	var universeRelevanceSum=0;
-	for(var i=0; i<numReviews; i++){
-		universeRelevanceSum+=platform[KEY_ReLIST][i];
-	}
-	var avgUniverseRelevance=universeRelevanceSum/numReviews;
-	*/
+	var avgUniverseRelevance= calcAvgUniversalRelevance1(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
+	
 	console.log("avgTotalVotes ", avgTotalVotes);
 	console.log("avgUniverseRelevance ", avgUniverseRelevance);
 	// calculate the adjusted relevance scores for each of them
@@ -331,35 +330,11 @@ function calculateRelevance(game, idx,cb){
 	calculateAdjustedRelevance(platform[KEY_ReLIST], platform[KEY_UVLIST], 
 								platform[KEY_TVLIST], wtList,avgUniverseRelevance);
 	
-	/*
-	for(var i=0; i<numReviews; i++){
-		if(platform[KEY_UVLIST][i]!=0 || platform[KEY_TVLIST][i]!=0){
-			var initRelevance=platform[KEY_ReLIST][i];
-			var adjRelevance= ((maxTotalVotes-(platform[KEY_TVLIST][i]-'0'))/maxTotalVotes)*avgUniverseRelevance;
-			adjRelevance+= ((platform[KEY_TVLIST][i]-'0')/(maxTotalVotes))*initRelevance;
-			platform[KEY_ReLIST][i]=adjRelevance;
-		}
-		else {
-			platform[KEY_ReLIST][i]=avgUniverseRelevance;
-		}
-	}
-	*/
+	console.log("before scaling");
+	console.log(platform[KEY_ReLIST][0],platform[KEY_ReLIST][1]);
 	performScaling(platform[KEY_ReLIST]);
-	/*
-	var maxRelevance=0;
-	for(var i=0; i<numReviews; i++){
-		if(platform[KEY_ReLIST][i]>maxRelevance){
-			maxRelevance=platform[KEY_ReLIST][i];
-		}
-	}
-	
-	// perform Scaling
-	for(var i=0; i<numReviews; i++){
-		var scaledRelevance= (platform[KEY_ReLIST][i]/maxRelevance)*5;
-		platform[KEY_ReLIST][i]=scaledRelevance;
-	}
-	
-	*/
+	console.log("atfer scaling");
+	console.log(platform[KEY_ReLIST][0],platform[KEY_ReLIST][1]);
 	
 	/*
 	// this the second way 
