@@ -2,6 +2,9 @@ var scraper= require('./reviewScraper');
 var fifaData= require('./Input_files/fifaAmazonData');
 var fs = require('fs');
 
+
+var currentDate = Date.parse ("June 22, 2015");
+
 var refBase= "cm_cr_pr_btm_link_";
 		
 var KEY_NAME="name";
@@ -212,6 +215,7 @@ function calcAvgUniversalRelevance(iReList, uvList, tvList){
 	var universeRelevanceSum=0;
 	for(var i=0; i<uvList.length; i++){
 		universeRelevanceSum+=iReList[i];
+		
 	}
 	var avgURe= universeRelevanceSum/uvList.length;
 	return avgURe;
@@ -228,6 +232,20 @@ function calcAvgUniversalRelevance1(iReList, uvList, tvList){
 		sumTv+= tvList[i];
 	}
 	var avgURe = 2.5 + (2.5*((sumUv- sumDv)/sumTv));
+	return avgURe;
+}
+function calcAvgUniversalRelevance2(iReList, uvList, tvList){
+	var sumVoteFraction=0;
+	var numNormalReviews=0;
+	for(var i=0; i<uvList.length; i++){
+		
+		sumVoteFraction+=(iReList[i]-2.5);
+		if(iReList[i]!==2.5)numNormalReviews++;
+	}
+	
+	console.log("numNormal Reviews are");
+	console.log(numNormalReviews);
+	var avgURe= 2.5 + (sumVoteFraction/numNormalReviews);
 	return avgURe;
 }
 function calcWt(tvList){
@@ -316,7 +334,7 @@ function calculateRelevance(game, idx,cb){
 		}
 	}
 	
-	var avgUniverseRelevance= calcAvgUniversalRelevance1(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
+	var avgUniverseRelevance= calcAvgUniversalRelevance2(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
 	
 	console.log("avgTotalVotes ", avgTotalVotes);
 	console.log("avgUniverseRelevance ", avgUniverseRelevance);
@@ -336,6 +354,12 @@ function calculateRelevance(game, idx,cb){
 	console.log("atfer scaling");
 	console.log(platform[KEY_ReLIST][0],platform[KEY_ReLIST][1]);
 	
+	var sumReviews=0;
+	for( var i=0 ; i<numReviews; i++){
+		sumReviews += platform[KEY_ReLIST][i];
+	}
+	var avgReviews= sumReviews/ numReviews;
+	console.log(" here is the average \n ", avgReviews);
 	/*
 	// this the second way 
 	for(var i=0; i<numReviews; i++){
