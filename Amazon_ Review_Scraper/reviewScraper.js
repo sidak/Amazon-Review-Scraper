@@ -1,6 +1,7 @@
 // use jsdom 3.x with nodejs
 var jsdom = require('jsdom');
 var exports = module.exports = {};
+
 exports.scrape = function(name, id, ref, page, cb) {
     // The url, scripts, done keywords are optional 
     // but if you use them enclose them in curly braces 
@@ -14,7 +15,7 @@ exports.scrape = function(name, id, ref, page, cb) {
 						cb(errors);
 					}
 					var $ = window.jQuery;
-					var upvotesList=[], totalVotesList=[], ratingList=[];
+					var upvotesList=[], totalVotesList=[], ratingList=[], reviewDatesList=[];
 
 					//console.log(errors);
 					//console.log("hello");
@@ -42,11 +43,19 @@ exports.scrape = function(name, id, ref, page, cb) {
 							totalVotesList.push(totalVotes);
 							ratingList.push(rating);
 							
-							console.log("IN reveiewScraper.js Helpfulness: " + upvotes+"/"+totalVotes  +"\nRating: " + rating +"\n\n");
+							var reviewDateString = $(this).find("div.a-row.helpful-votes-count").next().next()
+													.find("span.a-size-base.a-color-secondary.review-date").text();
+							
+							var reviewDate= Date.parse(reviewDateString);
+							reviewDatesList.push(reviewDate);
+							
+							console.log("IN reveiewScraper.js Helpfulness: " + 
+									upvotes+"/"+totalVotes  +"\nRating: " + rating +"\n\n");
+							console.log("the date of review is ", reviewDate);
 						});
 					window.close();
 					var result=[];
-					result.push(upvotesList, totalVotesList, ratingList);
+					result.push(upvotesList, totalVotesList, ratingList, reviewDatesList);
 					cb(null,result);
 				}
     });
