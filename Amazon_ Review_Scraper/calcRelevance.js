@@ -3,7 +3,7 @@ var fifaData= require('./Input_files/fifaAmazonData');
 var fs = require('fs');
 
 
-var currentDate = Date.parse ("June 22, 2015");
+var currentDate = Date.parse ("June 25, 2015");
 
 var refBase= "cm_cr_pr_btm_link_";
 		
@@ -16,16 +16,25 @@ var KEY_UVLIST="upvotesList";
 var KEY_TVLIST="totalVotesList";
 var KEY_RLIST="ratingList";
 var KEY_ReLIST="relevanceList";
+var KEY_DLIST="reviewDatesList";
 var KEY_GAME_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
+
+// Take care of these constants when plugging
+// in some other example
+// Further the naming of some of the variables
+// has to be made independent of the kind of 
+// example we are using - ex: fifa
+
 var NUM_VERSIONS=2;
 var NUM_PLATFORMS=4;
-var NUM_PAGES_TO_SCRAPE=2;
+//var NUM_PAGES_TO_SCRAPE=2;
 var BASE_SCORE=2.5;
 
 var upvotesList=[];
 var totalVotesList=[];
 var ratingList=[];
+var reviewDatesList=[];
 
 var sumTotalVotes=0;
 var relevanceScores=[];
@@ -58,6 +67,8 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
 			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
 			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
+			fifaData[game][idx][KEY_DLIST]=fifaData[game][idx][KEY_DLIST].concat(result[3]);
+
 			console.log("after adding the result\n");
 			console.log(fifaData[game][idx]);
 			//console.log('Now going to my cb \n\n');
@@ -136,8 +147,9 @@ function collectPlatformRatings(game, cb){
 	for(var j=0; j<NUM_PLATFORMS; j++){
 		(function(){
 			var idx=j;
-			// Collect reviews on only 2 pages for 
-			// given game and platform as idx 
+			// Collect reviews on only the number of pages for 
+			// given game and platform as idx specified in 
+			// the fifaAmazonData.js file 
 			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep,function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
@@ -157,6 +169,7 @@ function writeDataForGamePlatform(game, idx, cb){
 	var ratings_int=[];
 	var relevance;
 	var name;
+	var dates;
 	if(game==KEY_FIFA14){
 		parent=KEY_FIFA14;
 	}
@@ -170,14 +183,20 @@ function writeDataForGamePlatform(game, idx, cb){
 		ratings_int.push(ratings_char[i]-'0');
 	}
 	relevance= gamePlatform[KEY_ReLIST];
-	var obj = createNewServiceObject(parent, name, ratings_int, relevance, children);
+	
+	//check if dates are not strings and rather numbers
+	dates= gamePlatform[KEY_DLIST];
+	// There is actually no need to write the dates in the file 
+	// They are only used for the calculation of relevance
+	
+	var obj = createNewServiceObject(parent, name, ratings_int, relevance,dates, children);
 	console.log(obj);
 	//data.push(JSON.stringify(obj));
 	data.push(obj);
 	cb(null, 'data obj written to file');
 	
 }
-function createNewServiceObject(parent, name, ratings, relevance, children){
+function createNewServiceObject(parent, name, ratings, relevance,dates, children){
 	var obj = {
 					"name":name,
 					"agg_rating_score":0,
@@ -187,6 +206,7 @@ function createNewServiceObject(parent, name, ratings, relevance, children){
 					"universe_wmean_rating":0,
 					"consumer_ratings":ratings,
 					"consumer_relevance":relevance,
+					"review_dates":dates,
 					"consumer_feedback_count":0,
 					"rating_trust_value":0,
 					"trust_votes":0,
@@ -237,15 +257,23 @@ function calcAvgUniversalRelevance1(iReList, uvList, tvList){
 function calcAvgUniversalRelevance2(iReList, uvList, tvList){
 	var sumVoteFraction=0;
 	var numNormalReviews=0;
+	var numZHR=0;
 	for(var i=0; i<uvList.length; i++){
-		
-		sumVoteFraction+=(iReList[i]-2.5);
-		if(iReList[i]!==2.5)numNormalReviews++;
+		if(uvList[i]==0 && tvList[i]==0){
+			numZHR++;
+		}
+		else {
+			console.log("iReList i ", iReList[i]);
+			sumVoteFraction+=(iReList[i]-2.5);
+		}
 	}
+	numNormalReviews= uvList.length - numZHR;
 	
 	console.log("numNormal Reviews are");
 	console.log(numNormalReviews);
+	console.log("sumVoteFraction ", sumVoteFraction);
 	var avgURe= 2.5 + (sumVoteFraction/numNormalReviews);
+	console.log("avgURe is ",avgURe);
 	return avgURe;
 }
 function calcWt(tvList){
@@ -274,6 +302,21 @@ function calculateAdjustedRelevance(reList, uvList, tvList, wtList,avgURe){
 		else {
 			// if it is a ZHR
 			reList[i]=avgURe;
+		}
+	}
+}
+function doTimeAdjustment(reList, uvList, tvList, dList, timeStep){
+	var numReviews=uvList.length;
+
+	for(var i=0;  i<numReviews; i++){
+		// if it is ZHR
+		if(uvList[i]===0 && tvList[i]===0){
+			//console.log("before ta ", reList[i]);
+			var daysPassed = (currentDate-dList[i])/86400000
+			if(Math.ceil(daysPassed/timeStep) > 1 ){
+				reList[i]= reList[i]/((daysPassed/timeStep));
+			}
+			console.log("after ta for ZHR", reList[i]);
 		}
 	}
 }
@@ -334,7 +377,7 @@ function calculateRelevance(game, idx,cb){
 		}
 	}
 	
-	var avgUniverseRelevance= calcAvgUniversalRelevance2(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
+	var avgUniverseRelevance= calcAvgUniversalRelevance1(platform[KEY_ReLIST], platform[KEY_UVLIST], platform[KEY_TVLIST]);
 	
 	console.log("avgTotalVotes ", avgTotalVotes);
 	console.log("avgUniverseRelevance ", avgUniverseRelevance);
@@ -354,6 +397,9 @@ function calculateRelevance(game, idx,cb){
 	console.log("atfer scaling");
 	console.log(platform[KEY_ReLIST][0],platform[KEY_ReLIST][1]);
 	
+	doTimeAdjustment(platform[KEY_ReLIST], platform[KEY_UVLIST],
+					platform[KEY_TVLIST], platform[KEY_DLIST] ,60);
+						
 	var sumReviews=0;
 	for( var i=0 ; i<numReviews; i++){
 		sumReviews += platform[KEY_ReLIST][i];
@@ -440,7 +486,7 @@ collectGameRatings(function(err, result){
 		// It is important to convert the JSON Object into
 		// string before writing to the file 
 		// otherwise you will have only 'object' written in the output file
-		fs.writeFile('fifaReviewData1.txt',JSON.stringify(data) , function (err) {
+		fs.writeFile('fifaReviewData2.txt',JSON.stringify(data) , function (err) {
 		  if (err) console.log(err);
 		  else console.log('Written to file');
 		});
