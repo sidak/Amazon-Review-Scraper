@@ -306,6 +306,9 @@ function calculateAdjustedRelevance(reList, uvList, tvList, wtList,avgURe){
 	}
 }
 function doTimeAdjustment(reList, uvList, tvList, dList, timeStep){
+	if(timeStep===-1){
+		timeStep= calcTimeStep(reList, uvList, tvList, dList);
+	}
 	var numReviews=uvList.length;
 
 	for(var i=0;  i<numReviews; i++){
@@ -316,9 +319,31 @@ function doTimeAdjustment(reList, uvList, tvList, dList, timeStep){
 			if(Math.ceil(daysPassed/timeStep) > 1 ){
 				reList[i]= reList[i]/((daysPassed/timeStep));
 			}
-			console.log("after ta for ZHR", reList[i]);
+			console.log("after ta for ZHR", reList[i], " with daysPassed = ", daysPassed);
 		}
 	}
+}
+function calcTimeStep(reList, uvList, tvList, dList){
+	var numReviews=uvList.length;
+	var daysPassed=[];
+	var numZHR=0;
+	for(var i=0; i<numReviews; i++){
+		daysPassed[i]= (currentDate-dList[i])/86400000;
+		if(uvList[i]===0 && tvList[i]===0)numZHR++;
+	}
+	console.log("number of zhr is ", numZHR);
+	var sumVoteTime=0;
+	for(var i=0; i<numReviews; i++){
+		if(tvList[i]!==0){
+			sumVoteTime+= (daysPassed[i]/tvList[i]);
+		} 
+	}
+	
+	console.log("sumVoteTime " , sumVoteTime);
+	var avgVoteTime = sumVoteTime/(numReviews);
+	console.log("avgVoteTime " , avgVoteTime);
+	
+	return avgVoteTime;
 }
 function calculateRelevance(game, idx,cb){
 	console.log("in calc relevance");
@@ -398,7 +423,7 @@ function calculateRelevance(game, idx,cb){
 	console.log(platform[KEY_ReLIST][0],platform[KEY_ReLIST][1]);
 	
 	doTimeAdjustment(platform[KEY_ReLIST], platform[KEY_UVLIST],
-					platform[KEY_TVLIST], platform[KEY_DLIST] ,60);
+					platform[KEY_TVLIST], platform[KEY_DLIST] ,-1);
 						
 	var sumReviews=0;
 	for( var i=0 ; i<numReviews; i++){
@@ -486,7 +511,7 @@ collectGameRatings(function(err, result){
 		// It is important to convert the JSON Object into
 		// string before writing to the file 
 		// otherwise you will have only 'object' written in the output file
-		fs.writeFile('fifaReviewData2.txt',JSON.stringify(data) , function (err) {
+		fs.writeFile('fifaReviewData_avgTime3.txt',JSON.stringify(data) , function (err) {
 		  if (err) console.log(err);
 		  else console.log('Written to file');
 		});
