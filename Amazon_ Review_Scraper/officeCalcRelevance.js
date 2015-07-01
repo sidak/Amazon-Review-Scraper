@@ -1,33 +1,39 @@
 var scraper= require('./reviewScraper');
-var fifaData= require('./Input_files/fifaAmazonData');
+var serviceData= require('./Input_files/officeAmazonData');
 var fs = require('fs');
 
 
-var currentDate = Date.parse ("June 25, 2015");
+var currentDate = Date.parse ("June 30, 2015");
 
 var refBase= "cm_cr_pr_btm_link_";
 		
 var KEY_NAME="name";
 var KEY_ID="id";
 
-var KEY_FIFA14="fifa14";
-var KEY_FIFA15="fifa15";
+var KEY_SERVICE="office";
+var KEY_SERVICE_VERSION1="office2013";
+var KEY_SERVICE_VERSION2="office365";
 var KEY_UVLIST="upvotesList";
 var KEY_TVLIST="totalVotesList";
 var KEY_RLIST="ratingList";
 var KEY_ReLIST="relevanceList";
 var KEY_DLIST="reviewDatesList";
-var KEY_GAME_PLATFORM_NAME="name";
+var KEY_SERVICE_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
 
 // Take care of these constants when plugging
 // in some other example
 // Further the naming of some of the variables
 // has to be made independent of the kind of 
-// example we are using - ex: fifa
+// example we are using - ex: iphone
 
 var NUM_VERSIONS=2;
-var NUM_PLATFORMS=4;
+var NUM_PLATFORMS=
+				{
+					"office2013":3, 
+					"office365":4
+				};
+
 //var NUM_PAGES_TO_SCRAPE=2;
 var BASE_SCORE=2.5;
 
@@ -39,38 +45,38 @@ var reviewDatesList=[];
 var sumTotalVotes=0;
 var relevanceScores=[];
 
-var games=["fifa14","fifa15"];
+var serviceVersions=["office2013","office365"];
 
 // Final data to be written in a file
 var data=[];
 
 // Async task for collecting the reviews on a page 
-// numbered as (2-ct)+1 for game and idx as the platform
+// numbered as (2-ct)+1 for service and idx as the platform
 
-var collectPageRatingStep= function (ct,game, idx, cb) {
-	var normCt= (fifaData[game][idx][KEY_PAGES]-ct)+1;
+var collectPageRatingStep= function (ct,service, idx, cb) {
+	var normCt= (serviceData[service][idx][KEY_PAGES]-ct)+1;
 	var ref=refBase+normCt;
 	var pageNumber=normCt;
 
-	console.log("let's scrap the page num "+pageNumber+"in the game " +game+ "with platform idx "+idx+'\n');
-	//console.log(fifaData[game]);
-	scraper.scrape(fifaData[game][idx][KEY_NAME],fifaData[game][idx][KEY_ID], ref , pageNumber, function(err, result){
+	console.log("let's scrap the page num "+pageNumber+"in the service " +service+ "with platform idx "+idx+'\n');
+	//console.log(serviceData[service]);
+	scraper.scrape(serviceData[service][idx][KEY_NAME],serviceData[service][idx][KEY_ID], ref , pageNumber, function(err, result){
 		if(err){
 			console.log("there was an error ", err);
 			cb(err);
 		}
 		else if (result!=null){
 			//console.log("before adding the result\n");
-			//console.log(fifaData[game][idx]);
+			//console.log(serviceData[service][idx]);
 			
 			//Concatenate the initial votes list with the one scraped now
-			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
-			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
-			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
-			fifaData[game][idx][KEY_DLIST]=fifaData[game][idx][KEY_DLIST].concat(result[3]);
+			serviceData[service][idx][KEY_UVLIST]=serviceData[service][idx][KEY_UVLIST].concat(result[0]);
+			serviceData[service][idx][KEY_TVLIST]=serviceData[service][idx][KEY_TVLIST].concat(result[1]);
+			serviceData[service][idx][KEY_RLIST]=serviceData[service][idx][KEY_RLIST].concat(result[2]);
+			serviceData[service][idx][KEY_DLIST]=serviceData[service][idx][KEY_DLIST].concat(result[3]);
 
 			console.log("after adding the result\n");
-			console.log(fifaData[game][idx]);
+			//console.log(serviceData[service][idx]);
 			//console.log('Now going to my cb \n\n');
 			cb(null,  result);
 		}
@@ -79,13 +85,13 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 }
 
 // Final task 
-function final(cb, game, idx) { 
-	calculateRelevance(game, idx, function(err, result){
+function final(cb, service, idx) { 
+	calculateRelevance(service, idx, function(err, result){
 		if(err)cb(err);
 		else if (result!=null){
 			console.log('Done scraping the number of elements you said and also calculated the relevance scores for them ');
 			// write the data to file
-			writeDataForGamePlatform(game, idx, function(err, result){
+			writeDataForservicePlatform(service, idx, function(err, result){
 				if(err)cb(err);
 				else if(result!=null){
 					cb(null, result);
@@ -97,40 +103,40 @@ function final(cb, game, idx) {
 	
 }
 
-// Async traversal of given "ct" of pages for "game" 
+// Async traversal of given "ct" of pages for "service" 
 // with platform as "idx" and scrape the most helpful reviews
 // on these pages
-function asyncTraversal(ct, game,idx, traversalStep, cb) {
+function asyncTraversal(ct, service,idx, traversalStep, cb) {
   if(ct>0) {
-    traversalStep( ct, game, idx, function(err, result) {
+    traversalStep( ct, service, idx, function(err, result) {
       if(err)cb(err);
       else {
 		  ct--;
 		  console.log(result)
-		  return asyncTraversal(ct, game, idx, traversalStep, cb);
+		  return asyncTraversal(ct, service, idx, traversalStep, cb);
 	  }
     });
   } else {
-    return final(cb,game, idx);
+    return final(cb,service, idx);
   }
 }
 // Collect ratings for all versions
-// of the game and for the different platforms it runs on
-function collectGameRatings(cb){
+// of the service and for the different platforms it runs on
+function collectServiceRatings(cb){
 	// write the metadata in the file
 	data.push(
 				{ 
 						name:"meta",						
-						root:"fifa",
+						root:KEY_SERVICE,
 				}
 			);
 	
 	// There are 2 versions that we are considering
-	// Fifa14 and Fifa15
+	// office2013 and office365
 	for(var i=0; i<NUM_VERSIONS; i++){
 		(function(){
-			var game=games[i];
-			collectPlatformRatings (game, function(err, result){
+			var service=serviceVersions[i];
+			collectPlatformRatings (service, function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
 					cb(null, result);
@@ -142,15 +148,15 @@ function collectGameRatings(cb){
 }
 
 // Collect ratings for the different platforms
-// for the given game
-function collectPlatformRatings(game, cb){
-	for(var j=0; j<NUM_PLATFORMS; j++){
+// for the given service
+function collectPlatformRatings(service, cb){
+	for(var j=0; j<NUM_PLATFORMS[service]; j++){
 		(function(){
 			var idx=j;
 			// Collect reviews on only the number of pages for 
-			// given game and platform as idx specified in 
-			// the fifaAmazonData.js file 
-			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep,function(err, result){
+			// given service and platform as idx specified in 
+			// the iphoneAmazonData.js file 
+			asyncTraversal(serviceData[service][idx][KEY_PAGES],service, idx, collectPageRatingStep,function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
 					cb(null,result);
@@ -159,44 +165,44 @@ function collectPlatformRatings(game, cb){
 		})();
 	}
 }
-function writeDataForGamePlatform(game, idx, cb){
-	var gamePlatform= fifaData[game][idx];
-	console.log("In writing data for game platform");
-	console.log(gamePlatform);
+function writeDataForservicePlatform(service, idx, cb){
+	var servicePlatform= serviceData[service][idx];
+	console.log("In writing data for service platform");
+	console.log(servicePlatform);
 	var parent;
 	var children=[];
 	var ratings_char;
 	var ratings_int=[];
 	var relevance;
 	var name;
-	var dates;
-	if(game==KEY_FIFA14){
-		parent=KEY_FIFA14;
+	//var dates;
+	if(service==KEY_SERVICE_VERSION1){
+		parent=KEY_SERVICE_VERSION1;
 	}
 	else {
-		parent=KEY_FIFA15;
+		parent=KEY_SERVICE_VERSION2;
 	}
 	
-	name =gamePlatform[KEY_GAME_PLATFORM_NAME];
-	ratings_char = gamePlatform[KEY_RLIST];
+	name =servicePlatform[KEY_SERVICE_PLATFORM_NAME];
+	ratings_char = servicePlatform[KEY_RLIST];
 	for(var i=0; i<ratings_char.length; i++){
 		ratings_int.push(ratings_char[i]-'0');
 	}
-	relevance= gamePlatform[KEY_ReLIST];
+	relevance= servicePlatform[KEY_ReLIST];
 	
 	//check if dates are not strings and rather numbers
-	dates= gamePlatform[KEY_DLIST];
+	//dates= servicePlatform[KEY_DLIST];
 	// There is actually no need to write the dates in the file 
 	// They are only used for the calculation of relevance
 	
-	var obj = createNewServiceObject(parent, name, ratings_int, relevance,dates, children);
+	var obj = createNewServiceObject(parent, name, ratings_int, relevance, children);
 	console.log(obj);
 	//data.push(JSON.stringify(obj));
 	data.push(obj);
 	cb(null, 'data obj written to file');
 	
 }
-function createNewServiceObject(parent, name, ratings, relevance,dates, children){
+function createNewServiceObject(parent, name, ratings, relevance, children){
 	var obj = {
 					"name":name,
 					"agg_rating_score":0,
@@ -206,7 +212,7 @@ function createNewServiceObject(parent, name, ratings, relevance,dates, children
 					"universe_wmean_rating":0,
 					"consumer_ratings":ratings,
 					"consumer_relevance":relevance,
-					"review_dates":dates,
+					//"review_dates":dates,
 					"consumer_feedback_count":0,
 					"rating_trust_value":0,
 					"trust_votes":0,
@@ -340,16 +346,16 @@ function calcTimeStep(reList, uvList, tvList, dList){
 	}
 	
 	console.log("sumVoteTime " , sumVoteTime);
-	var avgVoteTime = sumVoteTime/(numReviews-numZHR);
+	var avgVoteTime = sumVoteTime/(numReviews);
 	console.log("avgVoteTime " , avgVoteTime);
 	
 	return avgVoteTime;
 }
-function calculateRelevance(game, idx,cb){
+function calculateRelevance(service, idx,cb){
 	console.log("in calc relevance");
-	console.log(game);
+	console.log(service);
 	console.log(idx);
-	var platform = fifaData[game][idx];
+	var platform = serviceData[service][idx];
 	var zeroHelpfulReviews=0;
 	var numReviews= platform[KEY_RLIST].length;
 	var sumUpvotes=0;
@@ -359,19 +365,30 @@ function calculateRelevance(game, idx,cb){
 	
 	for(var i=0; i<numReviews; i++){
 		platform[KEY_RLIST][i] = platform[KEY_RLIST][i]-'0';
-		platform[KEY_TVLIST][i] = platform[KEY_TVLIST][i]-'0';
-		platform[KEY_UVLIST][i] = platform[KEY_UVLIST][i]-'0';
+		//platform[KEY_TVLIST][i]).replace(',', '');
+		if(i===0)console.log("check");
+		if(i===0)console.log(platform[KEY_TVLIST][i]);
+		var x = "" + platform[KEY_TVLIST][i];
+		x=x.replace(/\,/g, '');
+		var y = parseFloat(x); 
+		platform[KEY_TVLIST][i] = y;
+		if(i===0)console.log(platform[KEY_TVLIST][i]);
+		var x1 = "" + platform[KEY_UVLIST][i];
+		x1=x1.replace(/\,/g, '');
+		var y1 = parseFloat(x1); 
+		platform[KEY_UVLIST][i] = y1;
 	}
 	// Calculate sum of upvotes, downvotes, totalvotes
 	// , num of ZHR and also calculate the maxvotes
+	console.log("check out the 0th element", platform[KEY_UVLIST][0]);
 	
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UVLIST][i]==0 && platform[KEY_TVLIST][i]==0)zeroHelpfulReviews++;
-		sumUpvotes+= platform[KEY_UVLIST][i];
-		sumDownvotes+= platform[KEY_TVLIST][i]-platform[KEY_UVLIST][i];
-		sumTotalVotes+= platform[KEY_TVLIST][i];
-		if(maxTotalVotes<platform[KEY_TVLIST][i]){
-			maxTotalVotes=platform[KEY_TVLIST][i];
+		sumUpvotes += platform[KEY_UVLIST][i];
+		sumDownvotes += platform[KEY_TVLIST][i]-platform[KEY_UVLIST][i];
+		sumTotalVotes += platform[KEY_TVLIST][i];
+		if(maxTotalVotes < platform[KEY_TVLIST][i]){
+			maxTotalVotes = platform[KEY_TVLIST][i];
 		}
 		
 	}
@@ -426,17 +443,12 @@ function calculateRelevance(game, idx,cb){
 	doTimeAdjustment(platform[KEY_ReLIST], platform[KEY_UVLIST],
 					platform[KEY_TVLIST], platform[KEY_DLIST] ,-1);
 	
-	var sumRelevance=0;
-	var sumRating=0;
+	var sumReviews=0;
 	for( var i=0 ; i<numReviews; i++){
-		sumRelevance += platform[KEY_ReLIST][i];
-		sumRating += platform[KEY_RLIST][i];
+		sumReviews += platform[KEY_ReLIST][i];
 	}
-	var avgRating = sumRating/numReviews;
-	var avgRelevance= sumRelevance/ numReviews;
-	console.log(" here is the average of all relevance scores \n ", avgRelevance);
-	console.log(" here is the average of all rating scores \n ", avgRating);
-	
+	var avgReviews= sumReviews/ numReviews;
+	console.log(" here is the average \n ", avgReviews);
 	/*
 	// this the second way 
 	for(var i=0; i<numReviews; i++){
@@ -504,20 +516,20 @@ function calculateRelevance(game, idx,cb){
 // , calculates relevance for each of them and then
 // writes them to a file for use in aggregation
 // of feedback
-collectGameRatings(function(err, result){
+collectServiceRatings(function(err, result){
 	if(err)console.log(err);
 	else if (result!=null){
 		//console.log(result);
 		console.log('\n\n');
-		//console.log(fifaData[KEY_FIFA14]);
-		//console.log(fifaData[KEY_FIFA15]);
+		//console.log(serviceData[KEY_SERVICE_VERSION1]);
+		//console.log(serviceData[KEY_SERVICE_VERSION2]);
 		
 		console.log('abt to write');
 		console.log(data);
 		// It is important to convert the JSON Object into
 		// string before writing to the file 
 		// otherwise you will have only 'object' written in the output file
-		fs.writeFile('fifaReviewData_calc_time_step_avg_rating_scores.txt',JSON.stringify(data) , function (err) {
+		fs.writeFile('officeReviewData4.txt',JSON.stringify(data) , function (err) {
 		  if (err) console.log(err);
 		  else console.log('Written to file');
 		});
