@@ -21,13 +21,14 @@ exports.scrape = function(name, id, ref, page, cb) {
 					//console.log("hello");
 					//console.log("yhuj");
 					
-					$("div#cm_cr-review_list.a-section.a-spacing-none.reviews.celwidget")
+					$("div#cm_cr-review_list")
 						.children('div.a-section.review')
 						.each(function() {
 							//console.log("fuck");
 							var upvotes=0;
 							var totalVotes=0;
-							var helpfulness = $(this).find("div.a-row.helpful-votes-count").find("span.a-size-small.a-color-secondary.review-votes").text();
+							var helpfulness = $(this).find("div.a-row.a-spacing-top-small.review-comments").find("span.a-size-small.a-color-secondary.review-votes").text();
+
 							if(helpfulness==""){
 								helpfulness=0;
 							}
@@ -35,16 +36,13 @@ exports.scrape = function(name, id, ref, page, cb) {
 								upvotes=helpfulness.split(" ")[0];
 								totalVotes= helpfulness.split(" ")[2];
 							}
-							var rating = $(this).find("div.a-row.helpful-votes-count").next()
-										.find("a.a-link-normal").find("i")
-										.find("span.a-icon-alt").text();
+							var rating = $(this).find("div.a-row").eq(0).find("a.a-link-normal").find("i").find("span.a-icon-alt").text();
 							
+							var reviewDateString = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
+
 							upvotesList.push(upvotes);
 							totalVotesList.push(totalVotes);
 							ratingList.push(rating);
-							
-							var reviewDateString = $(this).find("div.a-row.helpful-votes-count").next().next()
-													.find("span.a-size-base.a-color-secondary.review-date").text();
 							
 							var reviewDate= Date.parse(reviewDateString);
 							reviewDatesList.push(reviewDate);
