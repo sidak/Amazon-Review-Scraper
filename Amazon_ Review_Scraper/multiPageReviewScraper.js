@@ -52,7 +52,7 @@ var scrape = function(page,ref, cb) {
 								totalVotes= helpfulness.split(" ")[2];
 								
 							}
-							var rating = $(this).closest("div.a-row").find("a.a-link-normal").find("i").find("span.a-icon-alt").text();
+							var rating = $(this).find("div.a-row").eq(0).find("a.a-link-normal").find("i").find("span.a-icon-alt").text();
 							
 							var reviewDate = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
 
@@ -62,7 +62,7 @@ var scrape = function(page,ref, cb) {
 							ratingList.push(rating);
 							dateStringList.push(reviewDate);
 							totalReviews++;
-							console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +" Date is " + reviewDate + "\n\n");
+							console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +"\nDate is " + reviewDate + "\n\n");
 						});
 					window.close();
 					cb(null, "Scraped the page "+page);
