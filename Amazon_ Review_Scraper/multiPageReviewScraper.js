@@ -18,6 +18,7 @@ var name = process.argv[2],
 var upvotesList=[];
 var totalVotesList=[];
 var ratingList=[];
+var dateStringList = [];
 var totalReviews=0;
 var totalZeroHelpfulReviews=0;
 
@@ -40,7 +41,8 @@ var scrape = function(page,ref, cb) {
 							//console.log("fuck");
 							var upvotes =0;
 							var totalVotes=0;
-							var helpfulness = $(this).find("div.a-row.helpful-votes-count").find("span.a-size-small.a-color-secondary.review-votes").text();
+
+							var helpfulness = $(this).find("div.a-row.a-spacing-top-small.review-comments").find("span.a-size-small.a-color-secondary.review-votes").text();
 							if(helpfulness==""){
 								helpfulness=0;
 								totalZeroHelpfulReviews++;
@@ -50,16 +52,17 @@ var scrape = function(page,ref, cb) {
 								totalVotes= helpfulness.split(" ")[2];
 								
 							}
-							var rating = $(this).find("div.a-row.helpful-votes-count").next()
-										.find("a.a-link-normal").find("i")
-										.find("span.a-icon-alt").text();
+							var rating = $(this).closest("div.a-row").find("a.a-link-normal").find("i").find("span.a-icon-alt").text();
 							
+							var reviewDate = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
+
 							// store the data for processing of relevance
 							upvotesList.push(upvotes);
 							totalVotesList.push(totalVotes);
 							ratingList.push(rating);
+							dateStringList.push(reviewDate);
 							totalReviews++;
-							console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +"\n\n");
+							console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +" Date is " + reviewDate + "\n\n");
 						});
 					window.close();
 					cb(null, "Scraped the page "+page);
