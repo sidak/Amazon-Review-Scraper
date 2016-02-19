@@ -1,10 +1,11 @@
 var scraper= require('./reviewScraper');
-var fifaData= require('./Input_files/fifaAmazonData');
+var fifaData= require('./Input_files/fifaAmazonData_Feb13');
 var fs = require('fs');
 
 
-var currentDate = Date.parse ("June 25, 2015");
+var currentDate = Date.parse ("February 13, 2015");
 
+// The value of the below constants is specific to the Fifa example
 var refBase= "cm_cr_pr_btm_link_";
 		
 var KEY_NAME="name";
@@ -20,8 +21,6 @@ var KEY_DLIST="reviewDatesList";
 var KEY_GAME_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
 
-// Take care of these constants when plugging
-// in some other example
 // Further the naming of some of the variables
 // has to be made independent of the kind of 
 // example we are using - ex: fifa
@@ -77,6 +76,19 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 	});
 
 }
+
+function sortByProperty(prop){
+   return function(a,b){
+      if( a[prop] > b[prop]){
+          return 1;
+      }else if( a[prop] < b[prop] ){
+          return -1;
+      }
+      return 0;
+   }
+}
+
+//Usage
 
 // Final task 
 function final(cb, game, idx) { 
@@ -358,6 +370,7 @@ function calculateRelevance(game, idx,cb){
 	var maxTotalVotes=0;
 	
 	for(var i=0; i<numReviews; i++){
+		
 		platform[KEY_RLIST][i] = platform[KEY_RLIST][i]-'0';
 		platform[KEY_TVLIST][i] = platform[KEY_TVLIST][i]-'0';
 		platform[KEY_UVLIST][i] = platform[KEY_UVLIST][i]-'0';
@@ -513,11 +526,13 @@ collectGameRatings(function(err, result){
 		//console.log(fifaData[KEY_FIFA15]);
 		
 		console.log('abt to write');
+
+		data.sort(sortByProperty(KEY_NAME));
 		console.log(data);
 		// It is important to convert the JSON Object into
 		// string before writing to the file 
 		// otherwise you will have only 'object' written in the output file
-		fs.writeFile('fifaReviewData_calc_time_step_avg_rating_scores.txt',JSON.stringify(data) , function (err) {
+		fs.writeFile('fifaReviewData_calc_time_step_avg_rating_scores2.txt',JSON.stringify(data, null, '\t') , function (err) {
 		  if (err) console.log(err);
 		  else console.log('Written to file');
 		});
