@@ -36,8 +36,11 @@ exports.scrape = function(name, id, ref, page, cb) {
 								upvotes=helpfulness.split(" ")[0];
 								totalVotes= helpfulness.split(" ")[2];
 							}
-							var rating = $(this).find("div.a-row").eq(0).find("a.a-link-normal").find("i").find("span.a-icon-alt").text();
 							
+							var rating = $(this).find("div.a-row").eq(0).find("a.a-link-normal").find("i").find("span.a-icon-alt").text().split(" ")[0];
+							// remove the decimal place and zero after it
+							rating = rating.substring(0, rating.length - 2);
+
 							var reviewDateString = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
 
 							upvotesList.push(upvotes);
