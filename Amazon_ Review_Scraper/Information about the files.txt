@@ -1,0 +1,30 @@
+File name along with their functionality
+
+./
+	
+	calcRelevance.js			Calculate relevance of reviews scraped from Amazon
+	reviewScraper.js			Invoked by the calcRelevance module to scrape reviews for a particular product at a given page number
+	multiPageReviewScraper.js	Scrapes multiple pages of reviews associated with a product
+	README 						How to set up and run the files 
+
+
+./Input_Files/
+
+	fifaAmazonDataFormat_Feb2016.js		Format specifics of fifa data (as in Feb 2016)
+	fifaAmazonDataFormat_June2016.js	Format specifics of fifa data (as in June 2015)
+
+./Output_Files/
+	
+	Relevance_Calculation/
+		fifaReviewData.txt				Complete fifa data with relevance of reviews calculated
+	
+	Review_Scraping/
+		fifa_x_y_all.txt			Reviews scraped for the specified number of pages for fifa game of year x and platform y
+
+./Other_Files/
+
+	Earliest Review Dates.txt				Information about the earliest date of reviews for the various fifa games and platforms
+	Iphone data.txt							Information about the listings of iphone on Amazon
+	bash_commands_scraping_reviews.txt		Commands to scrape reviews for different fifa games and platforms
+
+
