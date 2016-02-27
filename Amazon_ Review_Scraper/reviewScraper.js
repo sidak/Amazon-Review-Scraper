@@ -24,7 +24,6 @@ exports.scrape = function(name, id, ref, page, cb) {
 					$("div#cm_cr-review_list")
 						.children('div.a-section.review')
 						.each(function() {
-							//console.log("fuck");
 							var upvotes=0;
 							var totalVotes=0;
 							var helpfulness = $(this).find("div.a-row.a-spacing-top-small.review-comments").find("span.a-size-small.a-color-secondary.review-votes").text();
