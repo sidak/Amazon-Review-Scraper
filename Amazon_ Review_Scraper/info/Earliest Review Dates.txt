@@ -1,0 +1,21 @@
+Earliest Review Dates
+
+"FIFA-14-Playstation-3"		September 24, 2013	
+"FIFA-14-PlayStation-4"		November 12, 2013
+"FIFA-14-Xbox-One"			November 20, 2013
+"FIFA-14-Xbox-360"			September 24, 2013
+"FIFA-15-PlayStation-3"		September 23, 2014
+"FIFA-15-PlayStation-4"		September 23, 2014
+"FIFA-15-Xbox-One"			September 23, 2014
+"FIFA-15-Xbox-360"			September 23, 2014
+
+Today's date is :			February 14, 2016
+
+Earliest of them all is : 	September 24, 2013
+Days passed in total:		873
+Years, Months, Days:		2, 4, 21
+
+Latest of them all is :		September 23, 2014
+Days passed in total:		509
+Years, Months, Days:		1, 4, 22	
+							

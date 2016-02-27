@@ -1,0 +1,42 @@
+Iphone data
+
+Apple iPhone 4 Verizon Cellphone, 16GB, White	634 	(no sales rank given)
+Apple iPhone 4 Verizon Cellphone, 8GB, Black	1873
+Apple iPhone 4 CDMA Verizon Cellphone, 16GB, Black	1297
+
+
+Apple iPhone 5 64GB (Black) - AT&T	119	*
+Apple iPhone 5 Unlocked Cellphone, 16GB, Black	964	*
+Apple iPhone 5 A1428 Factory Unlocked Cellphone, 16GB, Black	1595	*
+Apple iPhone 5s Unlocked Cellphone, 16GB, Space Gray	2361 *
+Apple iPhone 5c Unlocked Cellphone, 16GB, White	1644	*
+
+
+Apple iPhone 6s Plus 128 GB US Warranty Unlocked Cellphone - Retail Packaging (Gold)	145 *
+Apple iPhone 6 16GB 4G LTE Unlocked GSM Cell Phone - Space Gray	1493	*
+Apple iPhone 6 Plus, Gold, 128 GB (Unlocked)	839 *
+Apple iPhone 6S Factory Sealed Unlocked Phone, 64GB (Gold)	350	*
+Apple iPhone 6 - Unlocked (Silver) 16GB	41 ?
+
+Assume all iphones are new. No refurbished phones taken into account.
+
+
+Trash data:
+iPhone 6 Plus, Gold, 16GB (Unlocked)	8 	http://www.amazon.com/iPhone-Plus-Gold-16GB-Unlocked/dp/B00OB5TCN6/ref=sr_1_10?ie=UTF8&qid=1455855126&sr=8-10&keywords=iphone
+NEW IPHONE 4S AND IPHONE 4 VERIZON & SPRINT BACK GLASS (MIRROR AND LIGHT BLUE),USA SELLER	3
+
+
+Refurbished
+Apple iPhone 5S Silver 16GB Unlocked GSM Smartphone (Certified Refurbished)	341
+Apple iPhone 5 - 32GB Unlocked - White (Certified Refurbished)	62
+Apple iPhone 5 16GB - Unlocked - White (Certified Refurbished)	160	
+Apple iPhone 5C Pink 8GB Unlocked GSM Smartphone (Certified Refurbished)	324
+Apple iPhone 5S Silver 16GB Unlocked GSM Smartphone (Certified Refurbished)	343
+Apple iPhone 4 (MD439LL/A) - 8GB Smartphone - Black - Verizon (Certified Refurbished)	380
+Apple iPhone 4S 16GB Unlocked - White (Certified Refurbished)	154
+Apple MC676LL/A - iPhone 4 16GB Verizon Locked - Black (Certified Refurbished)	68
+
+
+
+Phones with different colors and memory sizes have different model numbers, identifiers and sales rank
+For time being, don't care abt color and memory. But then how do we correlate it with sales rank?
