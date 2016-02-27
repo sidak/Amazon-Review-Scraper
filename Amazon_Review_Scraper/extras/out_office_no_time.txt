@@ -1,0 +1,9399 @@
+let's scrap the page num 1in the service office2013with platform idx 0
+
+let's scrap the page num 1in the service office2013with platform idx 1
+
+let's scrap the page num 1in the service office2013with platform idx 2
+
+let's scrap the page num 1in the service office365with platform idx 0
+
+let's scrap the page num 1in the service office365with platform idx 1
+
+let's scrap the page num 1in the service office365with platform idx 2
+
+let's scrap the page num 1in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 69/70
+Rating: 3
+
+
+the date of review is  1408075200000
+IN reveiewScraper.js Helpfulness: 19/21
+Rating: 1
+
+
+the date of review is  1419570000000
+IN reveiewScraper.js Helpfulness: 28/34
+Rating: 2
+
+
+the date of review is  1380340800000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1424235600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 2
+
+
+the date of review is  1417496400000
+IN reveiewScraper.js Helpfulness: 38/49
+Rating: 1
+
+
+the date of review is  1383627600000
+IN reveiewScraper.js Helpfulness: 12/14
+Rating: 1
+
+
+the date of review is  1399003200000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1423544400000
+IN reveiewScraper.js Helpfulness: 19/24
+Rating: 5
+
+
+the date of review is  1396152000000
+IN reveiewScraper.js Helpfulness: 23/30
+Rating: 1
+
+
+the date of review is  1379390400000
+after adding the result
+
+[ [ '69', '19', '28', '10', '6', '38', '12', '6', '19', '23' ],
+  [ '70', '21', '34', '11', '6', '49', '14', '6', '24', '30' ],
+  [ '3', '1', '2', '1', '2', '1', '1', '1', '5', '1' ],
+  [ 1408075200000,
+    1419570000000,
+    1380340800000,
+    1424235600000,
+    1417496400000,
+    1383627600000,
+    1399003200000,
+    1423544400000,
+    1396152000000,
+    1379390400000 ] ]
+let's scrap the page num 2in the service office365with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 2,760/2,886
+Rating: 1
+
+
+the date of review is  1359608400000
+IN reveiewScraper.js Helpfulness: 436/454
+Rating: 1
+
+
+the date of review is  1361077200000
+IN reveiewScraper.js Helpfulness: 570/596
+Rating: 4
+
+
+the date of review is  1359781200000
+IN reveiewScraper.js Helpfulness: 492/524
+Rating: 1
+
+
+the date of review is  1359867600000
+IN reveiewScraper.js Helpfulness: 239/252
+Rating: 1
+
+
+the date of review is  1360040400000
+IN reveiewScraper.js Helpfulness: 209/220
+Rating: 1
+
+
+the date of review is  1360126800000
+IN reveiewScraper.js Helpfulness: 353/379
+Rating: 2
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 130/137
+Rating: 1
+
+
+the date of review is  1361509200000
+IN reveiewScraper.js Helpfulness: 70/71
+Rating: 1
+
+
+the date of review is  1360818000000
+IN reveiewScraper.js Helpfulness: 188/204
+Rating: 2
+
+
+the date of review is  1359781200000
+after adding the result
+
+[ [ '2,760',
+    '436',
+    '570',
+    '492',
+    '239',
+    '209',
+    '353',
+    '130',
+    '70',
+    '188' ],
+  [ '2,886',
+    '454',
+    '596',
+    '524',
+    '252',
+    '220',
+    '379',
+    '137',
+    '71',
+    '204' ],
+  [ '1', '1', '4', '1', '1', '1', '2', '1', '1', '2' ],
+  [ 1359608400000,
+    1361077200000,
+    1359781200000,
+    1359867600000,
+    1360040400000,
+    1360126800000,
+    1359694800000,
+    1361509200000,
+    1360818000000,
+    1359781200000 ] ]
+let's scrap the page num 2in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 101/109
+Rating: 4
+
+
+the date of review is  1408161600000
+IN reveiewScraper.js Helpfulness: 48/55
+Rating: 3
+
+
+the date of review is  1407729600000
+IN reveiewScraper.js Helpfulness: 14/16
+Rating: 1
+
+
+the date of review is  1415163600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 5
+
+
+the date of review is  1407816000000
+IN reveiewScraper.js Helpfulness: 36/48
+Rating: 1
+
+
+the date of review is  1408593600000
+IN reveiewScraper.js Helpfulness: 28/37
+Rating: 2
+
+
+the date of review is  1409112000000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 2
+
+
+the date of review is  1408248000000
+IN reveiewScraper.js Helpfulness: 12/15
+Rating: 1
+
+
+the date of review is  1409198400000
+IN reveiewScraper.js Helpfulness: 20/26
+Rating: 1
+
+
+the date of review is  1402891200000
+IN reveiewScraper.js Helpfulness: 19/25
+Rating: 2
+
+
+the date of review is  1401768000000
+after adding the result
+
+[ [ '101', '48', '14', '6', '36', '28', '7', '12', '20', '19' ],
+  [ '109', '55', '16', '6', '48', '37', '8', '15', '26', '25' ],
+  [ '4', '3', '1', '5', '1', '2', '2', '1', '1', '2' ],
+  [ 1408161600000,
+    1407729600000,
+    1415163600000,
+    1407816000000,
+    1408593600000,
+    1409112000000,
+    1408248000000,
+    1409198400000,
+    1402891200000,
+    1401768000000 ] ]
+let's scrap the page num 2in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 230/239
+Rating: 4
+
+
+the date of review is  1359781200000
+IN reveiewScraper.js Helpfulness: 323/343
+Rating: 1
+
+
+the date of review is  1361509200000
+IN reveiewScraper.js Helpfulness: 497/540
+Rating: 1
+
+
+the date of review is  1365480000000
+IN reveiewScraper.js Helpfulness: 352/390
+Rating: 1
+
+
+the date of review is  1361077200000
+IN reveiewScraper.js Helpfulness: 76/82
+Rating: 1
+
+
+the date of review is  1369800000000
+IN reveiewScraper.js Helpfulness: 58/62
+Rating: 1
+
+
+the date of review is  1366948800000
+IN reveiewScraper.js Helpfulness: 110/122
+Rating: 1
+
+
+the date of review is  1359954000000
+IN reveiewScraper.js Helpfulness: 176/199
+Rating: 1
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 98/111
+Rating: 1
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 110/127
+Rating: 1
+
+
+the date of review is  1359608400000
+after adding the result
+
+[ [ '230', '323', '497', '352', '76', '58', '110', '176', '98', '110' ],
+  [ '239', '343', '540', '390', '82', '62', '122', '199', '111', '127' ],
+  [ '4', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1359781200000,
+    1361509200000,
+    1365480000000,
+    1361077200000,
+    1369800000000,
+    1366948800000,
+    1359954000000,
+    1359694800000,
+    1359694800000,
+    1359608400000 ] ]
+let's scrap the page num 2in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 252/257
+Rating: 4
+
+
+the date of review is  1368849600000
+IN reveiewScraper.js Helpfulness: 67/69
+Rating: 3
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 90/103
+Rating: 1
+
+
+the date of review is  1362546000000
+IN reveiewScraper.js Helpfulness: 47/53
+Rating: 1
+
+
+the date of review is  1371873600000
+IN reveiewScraper.js Helpfulness: 49/57
+Rating: 5
+
+
+the date of review is  1360472400000
+IN reveiewScraper.js Helpfulness: 65/77
+Rating: 1
+
+
+the date of review is  1370232000000
+IN reveiewScraper.js Helpfulness: 40/46
+Rating: 1
+
+
+the date of review is  1368417600000
+IN reveiewScraper.js Helpfulness: 32/37
+Rating: 4
+
+
+the date of review is  1360299600000
+IN reveiewScraper.js Helpfulness: 68/83
+Rating: 1
+
+
+the date of review is  1360299600000
+IN reveiewScraper.js Helpfulness: 13/14
+Rating: 1
+
+
+the date of review is  1393045200000
+after adding the result
+
+[ [ '252', '67', '90', '47', '49', '65', '40', '32', '68', '13' ],
+  [ '257', '69', '103', '53', '57', '77', '46', '37', '83', '14' ],
+  [ '4', '3', '1', '1', '5', '1', '1', '4', '1', '1' ],
+  [ 1368849600000,
+    1384923600000,
+    1362546000000,
+    1371873600000,
+    1360472400000,
+    1370232000000,
+    1368417600000,
+    1360299600000,
+    1360299600000,
+    1393045200000 ] ]
+let's scrap the page num 2in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 186/198
+Rating: 2
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 199/213
+Rating: 1
+
+
+the date of review is  1359954000000
+IN reveiewScraper.js Helpfulness: 92/99
+Rating: 1
+
+
+the date of review is  1361422800000
+IN reveiewScraper.js Helpfulness: 98/107
+Rating: 1
+
+
+the date of review is  1361077200000
+IN reveiewScraper.js Helpfulness: 196/223
+Rating: 1
+
+
+the date of review is  1361941200000
+IN reveiewScraper.js Helpfulness: 32/33
+Rating: 1
+
+
+the date of review is  1402027200000
+IN reveiewScraper.js Helpfulness: 67/75
+Rating: 2
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 38/41
+Rating: 1
+
+
+the date of review is  1362027600000
+IN reveiewScraper.js Helpfulness: 38/41
+Rating: 1
+
+
+the date of review is  1366430400000
+IN reveiewScraper.js Helpfulness: 45/51
+Rating: 2
+
+
+the date of review is  1360386000000
+after adding the result
+
+[ [ '186', '199', '92', '98', '196', '32', '67', '38', '38', '45' ],
+  [ '198', '213', '99', '107', '223', '33', '75', '41', '41', '51' ],
+  [ '2', '1', '1', '1', '1', '1', '2', '1', '1', '2' ],
+  [ 1359694800000,
+    1359954000000,
+    1361422800000,
+    1361077200000,
+    1361941200000,
+    1402027200000,
+    1359694800000,
+    1362027600000,
+    1366430400000,
+    1360386000000 ] ]
+let's scrap the page num 2in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 739/765
+Rating: 4
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 181/197
+Rating: 3
+
+
+the date of review is  1359435600000
+IN reveiewScraper.js Helpfulness: 352/418
+Rating: 1
+
+
+the date of review is  1362718800000
+IN reveiewScraper.js Helpfulness: 148/174
+Rating: 1
+
+
+the date of review is  1363233600000
+IN reveiewScraper.js Helpfulness: 28/30
+Rating: 1
+
+
+the date of review is  1371441600000
+IN reveiewScraper.js Helpfulness: 35/39
+Rating: 2
+
+
+the date of review is  1360904400000
+IN reveiewScraper.js Helpfulness: 29/32
+Rating: 1
+
+
+the date of review is  1386046800000
+IN reveiewScraper.js Helpfulness: 43/49
+Rating: 1
+
+
+the date of review is  1361768400000
+IN reveiewScraper.js Helpfulness: 16/16
+Rating: 1
+
+
+the date of review is  1397448000000
+IN reveiewScraper.js Helpfulness: 66/78
+Rating: 1
+
+
+the date of review is  1365739200000
+after adding the result
+
+[ [ '739', '181', '352', '148', '28', '35', '29', '43', '16', '66' ],
+  [ '765', '197', '418', '174', '30', '39', '32', '49', '16', '78' ],
+  [ '4', '3', '1', '1', '1', '2', '1', '1', '1', '1' ],
+  [ 1359694800000,
+    1359435600000,
+    1362718800000,
+    1363233600000,
+    1371441600000,
+    1360904400000,
+    1386046800000,
+    1361768400000,
+    1397448000000,
+    1365739200000 ] ]
+let's scrap the page num 2in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 125/134
+Rating: 1
+
+
+the date of review is  1362200400000
+IN reveiewScraper.js Helpfulness: 44/44
+Rating: 2
+
+
+the date of review is  1362546000000
+IN reveiewScraper.js Helpfulness: 128/138
+Rating: 2
+
+
+the date of review is  1360299600000
+IN reveiewScraper.js Helpfulness: 82/87
+Rating: 1
+
+
+the date of review is  1361077200000
+IN reveiewScraper.js Helpfulness: 113/122
+Rating: 1
+
+
+the date of review is  1361163600000
+IN reveiewScraper.js Helpfulness: 36/36
+Rating: 1
+
+
+the date of review is  1365307200000
+IN reveiewScraper.js Helpfulness: 49/51
+Rating: 1
+
+
+the date of review is  1360299600000
+IN reveiewScraper.js Helpfulness: 48/51
+Rating: 1
+
+
+the date of review is  1361768400000
+IN reveiewScraper.js Helpfulness: 91/101
+Rating: 1
+
+
+the date of review is  1360645200000
+IN reveiewScraper.js Helpfulness: 76/84
+Rating: 1
+
+
+the date of review is  1361509200000
+after adding the result
+
+[ [ '125', '44', '128', '82', '113', '36', '49', '48', '91', '76' ],
+  [ '134', '44', '138', '87', '122', '36', '51', '51', '101', '84' ],
+  [ '1', '2', '2', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1362200400000,
+    1362546000000,
+    1360299600000,
+    1361077200000,
+    1361163600000,
+    1365307200000,
+    1360299600000,
+    1361768400000,
+    1360645200000,
+    1361509200000 ] ]
+let's scrap the page num 3in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 11/14
+Rating: 1
+
+
+the date of review is  1393822800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1422853200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1428465600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1427515200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1424926800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 2
+
+
+the date of review is  1407816000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1412740800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 4
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1395547200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1424840400000
+after adding the result
+
+[ [ '11', '4', '2', '2', '2', '4', '2', '4', '6', '1' ],
+  [ '14', '4', '2', '2', '2', '5', '2', '5', '8', '1' ],
+  [ '1', '1', '1', '1', '1', '2', '4', '4', '1', '3' ],
+  [ 1393822800000,
+    1422853200000,
+    1428465600000,
+    1427515200000,
+    1424926800000,
+    1407816000000,
+    1412740800000,
+    1384923600000,
+    1395547200000,
+    1424840400000 ] ]
+let's scrap the page num 3in the service office365with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 20/27
+Rating: 1
+
+
+the date of review is  1406001600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 4
+
+
+the date of review is  1413864000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 4
+
+
+the date of review is  1418792400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1428465600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1411012800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1412222400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1428465600000
+IN reveiewScraper.js Helpfulness: 11/15
+Rating: 2
+
+
+the date of review is  1407297600000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 5
+
+
+the date of review is  1415250000000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1418101200000
+after adding the result
+
+[ [ '20', '3', '3', '2', '2', '3', '2', '11', '4', '5' ],
+  [ '27', '3', '3', '2', '2', '3', '2', '15', '5', '6' ],
+  [ '1', '4', '4', '1', '5', '1', '1', '2', '5', '1' ],
+  [ 1406001600000,
+    1413864000000,
+    1418792400000,
+    1428465600000,
+    1411012800000,
+    1412222400000,
+    1428465600000,
+    1407297600000,
+    1415250000000,
+    1418101200000 ] ]
+let's scrap the page num 3in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 17/17
+Rating: 1
+
+
+the date of review is  1367121600000
+IN reveiewScraper.js Helpfulness: 62/72
+Rating: 5
+
+
+the date of review is  1359435600000
+IN reveiewScraper.js Helpfulness: 36/40
+Rating: 1
+
+
+the date of review is  1361509200000
+IN reveiewScraper.js Helpfulness: 38/43
+Rating: 2
+
+
+the date of review is  1360386000000
+IN reveiewScraper.js Helpfulness: 20/21
+Rating: 1
+
+
+the date of review is  1371787200000
+IN reveiewScraper.js Helpfulness: 25/27
+Rating: 3
+
+
+the date of review is  1362718800000
+IN reveiewScraper.js Helpfulness: 14/14
+Rating: 1
+
+
+the date of review is  1375675200000
+IN reveiewScraper.js Helpfulness: 12/12
+Rating: 1
+
+
+the date of review is  1399694400000
+IN reveiewScraper.js Helpfulness: 20/23
+Rating: 1
+
+
+the date of review is  1372392000000
+IN reveiewScraper.js Helpfulness: 20/23
+Rating: 2
+
+
+the date of review is  1362200400000
+after adding the result
+
+[ [ '17', '62', '36', '38', '20', '25', '14', '12', '20', '20' ],
+  [ '17', '72', '40', '43', '21', '27', '14', '12', '23', '23' ],
+  [ '1', '5', '1', '2', '1', '3', '1', '1', '1', '2' ],
+  [ 1367121600000,
+    1359435600000,
+    1361509200000,
+    1360386000000,
+    1371787200000,
+    1362718800000,
+    1375675200000,
+    1399694400000,
+    1372392000000,
+    1362200400000 ] ]
+let's scrap the page num 3in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 29/35
+Rating: 1
+
+
+the date of review is  1364184000000
+IN reveiewScraper.js Helpfulness: 13/14
+Rating: 1
+
+
+the date of review is  1371787200000
+IN reveiewScraper.js Helpfulness: 14/16
+Rating: 5
+
+
+the date of review is  1380945600000
+IN reveiewScraper.js Helpfulness: 27/33
+Rating: 1
+
+
+the date of review is  1378008000000
+IN reveiewScraper.js Helpfulness: 31/39
+Rating: 5
+
+
+the date of review is  1360645200000
+IN reveiewScraper.js Helpfulness: 21/26
+Rating: 1
+
+
+the date of review is  1362546000000
+IN reveiewScraper.js Helpfulness: 24/30
+Rating: 5
+
+
+the date of review is  1360213200000
+IN reveiewScraper.js Helpfulness: 14/17
+Rating: 3
+
+
+the date of review is  1382500800000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1391662800000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1394683200000
+after adding the result
+
+[ [ '29', '13', '14', '27', '31', '21', '24', '14', '6', '6' ],
+  [ '35', '14', '16', '33', '39', '26', '30', '17', '6', '6' ],
+  [ '1', '1', '5', '1', '5', '1', '5', '3', '1', '1' ],
+  [ 1364184000000,
+    1371787200000,
+    1380945600000,
+    1378008000000,
+    1360645200000,
+    1362546000000,
+    1360213200000,
+    1382500800000,
+    1391662800000,
+    1394683200000 ] ]
+let's scrap the page num 3in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 99/119
+Rating: 1
+
+
+the date of review is  1363233600000
+IN reveiewScraper.js Helpfulness: 57/67
+Rating: 1
+
+
+the date of review is  1367467200000
+IN reveiewScraper.js Helpfulness: 51/60
+Rating: 5
+
+
+the date of review is  1367726400000
+IN reveiewScraper.js Helpfulness: 14/14
+Rating: 1
+
+
+the date of review is  1382932800000
+IN reveiewScraper.js Helpfulness: 23/25
+Rating: 1
+
+
+the date of review is  1366603200000
+IN reveiewScraper.js Helpfulness: 33/38
+Rating: 4
+
+
+the date of review is  1380513600000
+IN reveiewScraper.js Helpfulness: 71/86
+Rating: 5
+
+
+the date of review is  1359522000000
+IN reveiewScraper.js Helpfulness: 13/13
+Rating: 1
+
+
+the date of review is  1381723200000
+IN reveiewScraper.js Helpfulness: 52/62
+Rating: 1
+
+
+the date of review is  1365998400000
+IN reveiewScraper.js Helpfulness: 20/22
+Rating: 1
+
+
+the date of review is  1370836800000
+after adding the result
+
+[ [ '99', '57', '51', '14', '23', '33', '71', '13', '52', '20' ],
+  [ '119', '67', '60', '14', '25', '38', '86', '13', '62', '22' ],
+  [ '1', '1', '5', '1', '1', '4', '5', '1', '1', '1' ],
+  [ 1363233600000,
+    1367467200000,
+    1367726400000,
+    1382932800000,
+    1366603200000,
+    1380513600000,
+    1359522000000,
+    1381723200000,
+    1365998400000,
+    1370836800000 ] ]
+let's scrap the page num 3in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 5
+
+
+the date of review is  1419656400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1421470800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1432785600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1416200400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1399867200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1433995200000
+IN reveiewScraper.js Helpfulness: 6/9
+Rating: 5
+
+
+the date of review is  1384232400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1434945600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 5
+
+
+the date of review is  1421211600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1416632400000
+after adding the result
+
+[ [ '3', '1', 0, '1', '1', 0, '6', 0, '2', '1' ],
+  [ '4', '1', 0, '1', '1', 0, '9', 0, '3', '1' ],
+  [ '5', '2', '1', '3', '2', '1', '5', '5', '5', '5' ],
+  [ 1419656400000,
+    1421470800000,
+    1432785600000,
+    1416200400000,
+    1399867200000,
+    1433995200000,
+    1384232400000,
+    1434945600000,
+    1421211600000,
+    1416632400000 ] ]
+let's scrap the page num 4in the service office365with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 28/30
+Rating: 1
+
+
+the date of review is  1364529600000
+IN reveiewScraper.js Helpfulness: 94/111
+Rating: 1
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 41/47
+Rating: 1
+
+
+the date of review is  1361422800000
+IN reveiewScraper.js Helpfulness: 32/36
+Rating: 5
+
+
+the date of review is  1361077200000
+IN reveiewScraper.js Helpfulness: 61/72
+Rating: 1
+
+
+the date of review is  1359867600000
+IN reveiewScraper.js Helpfulness: 47/55
+Rating: 1
+
+
+the date of review is  1360299600000
+IN reveiewScraper.js Helpfulness: 21/23
+Rating: 1
+
+
+the date of review is  1366776000000
+IN reveiewScraper.js Helpfulness: 18/19
+Rating: 1
+
+
+the date of review is  1363665600000
+IN reveiewScraper.js Helpfulness: 17/18
+Rating: 2
+
+
+the date of review is  1363060800000
+IN reveiewScraper.js Helpfulness: 24/27
+Rating: 1
+
+
+the date of review is  1361163600000
+after adding the result
+
+[ [ '28', '94', '41', '32', '61', '47', '21', '18', '17', '24' ],
+  [ '30', '111', '47', '36', '72', '55', '23', '19', '18', '27' ],
+  [ '1', '1', '1', '5', '1', '1', '1', '1', '2', '1' ],
+  [ 1364529600000,
+    1359694800000,
+    1361422800000,
+    1361077200000,
+    1359867600000,
+    1360299600000,
+    1366776000000,
+    1363665600000,
+    1363060800000,
+    1361163600000 ] ]
+let's scrap the page num 3in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 38/40
+Rating: 1
+
+
+the date of review is  1361595600000
+IN reveiewScraper.js Helpfulness: 26/26
+Rating: 1
+
+
+the date of review is  1360818000000
+IN reveiewScraper.js Helpfulness: 46/50
+Rating: 1
+
+
+the date of review is  1360386000000
+IN reveiewScraper.js Helpfulness: 96/110
+Rating: 1
+
+
+the date of review is  1359781200000
+IN reveiewScraper.js Helpfulness: 26/27
+Rating: 1
+
+
+the date of review is  1364270400000
+IN reveiewScraper.js Helpfulness: 20/20
+Rating: 1
+
+
+the date of review is  1363320000000
+IN reveiewScraper.js Helpfulness: 19/19
+Rating: 1
+
+
+the date of review is  1364443200000
+IN reveiewScraper.js Helpfulness: 34/37
+Rating: 1
+
+
+the date of review is  1362027600000
+IN reveiewScraper.js Helpfulness: 19/19
+Rating: 1
+
+
+the date of review is  1366257600000
+IN reveiewScraper.js Helpfulness: 32/35
+Rating: 1
+
+
+the date of review is  1360472400000
+after adding the result
+
+[ [ '38', '26', '46', '96', '26', '20', '19', '34', '19', '32' ],
+  [ '40', '26', '50', '110', '27', '20', '19', '37', '19', '35' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1361595600000,
+    1360818000000,
+    1360386000000,
+    1359781200000,
+    1364270400000,
+    1363320000000,
+    1364443200000,
+    1362027600000,
+    1366257600000,
+    1360472400000 ] ]
+let's scrap the page num 4in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 19/24
+Rating: 1
+
+
+the date of review is  1361854800000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 5
+
+
+the date of review is  1379390400000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1368936000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1392699600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1397707200000
+IN reveiewScraper.js Helpfulness: 15/19
+Rating: 2
+
+
+the date of review is  1385960400000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1377403200000
+IN reveiewScraper.js Helpfulness: 21/28
+Rating: 4
+
+
+the date of review is  1360386000000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1380254400000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 3
+
+
+the date of review is  1378267200000
+after adding the result
+
+[ [ '19', '6', '8', '5', '4', '15', '7', '21', '6', '6' ],
+  [ '24', '6', '9', '5', '4', '19', '8', '28', '7', '7' ],
+  [ '1', '5', '1', '1', '1', '2', '1', '4', '1', '3' ],
+  [ 1361854800000,
+    1379390400000,
+    1368936000000,
+    1392699600000,
+    1397707200000,
+    1385960400000,
+    1377403200000,
+    1360386000000,
+    1380254400000,
+    1378267200000 ] ]
+let's scrap the page num 4in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1435636800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1431576000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1429156800000
+IN reveiewScraper.js Helpfulness: 3/5
+Rating: 1
+
+
+the date of review is  1402027200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1432267200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1426392000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1429588800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1427947200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1415768400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1434686400000
+after adding the result
+
+[ [ 0, 0, 0, '3', 0, 0, 0, '1', 0, 0 ],
+  [ 0, 0, 0, '5', 0, 0, 0, '1', 0, 0 ],
+  [ '5', '5', '5', '1', '5', '3', '5', '5', '3', '4' ],
+  [ 1435636800000,
+    1431576000000,
+    1429156800000,
+    1402027200000,
+    1432267200000,
+    1426392000000,
+    1429588800000,
+    1427947200000,
+    1415768400000,
+    1434686400000 ] ]
+let's scrap the page num 5in the service office365with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 31/36
+Rating: 5
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 16/17
+Rating: 1
+
+
+the date of review is  1378872000000
+IN reveiewScraper.js Helpfulness: 12/12
+Rating: 1
+
+
+the date of review is  1382587200000
+IN reveiewScraper.js Helpfulness: 12/12
+Rating: 1
+
+
+the date of review is  1386824400000
+IN reveiewScraper.js Helpfulness: 11/11
+Rating: 1
+
+
+the date of review is  1399608000000
+IN reveiewScraper.js Helpfulness: 11/11
+Rating: 1
+
+
+the date of review is  1382673600000
+IN reveiewScraper.js Helpfulness: 14/15
+Rating: 1
+
+
+the date of review is  1396324800000
+IN reveiewScraper.js Helpfulness: 14/15
+Rating: 1
+
+
+the date of review is  1368849600000
+IN reveiewScraper.js Helpfulness: 10/10
+Rating: 1
+
+
+the date of review is  1399953600000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 2
+
+
+the date of review is  1394596800000
+after adding the result
+
+[ [ '31', '16', '12', '12', '11', '11', '14', '14', '10', '12' ],
+  [ '36', '17', '12', '12', '11', '11', '15', '15', '10', '13' ],
+  [ '5', '1', '1', '1', '1', '1', '1', '1', '1', '2' ],
+  [ 1359694800000,
+    1378872000000,
+    1382587200000,
+    1386824400000,
+    1399608000000,
+    1382673600000,
+    1396324800000,
+    1368849600000,
+    1399953600000,
+    1394596800000 ] ]
+let's scrap the page num 4in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 47/59
+Rating: 1
+
+
+the date of review is  1359522000000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1378008000000
+IN reveiewScraper.js Helpfulness: 21/25
+Rating: 1
+
+
+the date of review is  1360126800000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1380168000000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 3
+
+
+the date of review is  1366862400000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 5
+
+
+the date of review is  1384318800000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1371787200000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1376539200000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1392354000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1389848400000
+after adding the result
+
+[ [ '47', '8', '21', '8', '8', '7', '10', '7', '6', '6' ],
+  [ '59', '8', '25', '8', '8', '7', '11', '7', '6', '6' ],
+  [ '1', '1', '1', '1', '3', '5', '1', '1', '1', '1' ],
+  [ 1359522000000,
+    1378008000000,
+    1360126800000,
+    1380168000000,
+    1366862400000,
+    1384318800000,
+    1371787200000,
+    1376539200000,
+    1392354000000,
+    1389848400000 ] ]
+let's scrap the page num 4in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1414468800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 4
+
+
+the date of review is  1422075600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1413086400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1408161600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1421125200000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1413777600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1425618000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1426046400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1425272400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 2
+
+
+the date of review is  1404705600000
+after adding the result
+
+[ [ '4', '3', '1', '1', '2', '6', '2', '2', '2', '4' ],
+  [ '5', '3', '1', '1', '2', '8', '2', '2', '2', '5' ],
+  [ '1', '4', '4', '4', '4', '1', '1', '1', '4', '2' ],
+  [ 1414468800000,
+    1422075600000,
+    1413086400000,
+    1408161600000,
+    1421125200000,
+    1413777600000,
+    1425618000000,
+    1426046400000,
+    1425272400000,
+    1404705600000 ] ]
+let's scrap the page num 4in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 16/17
+Rating: 1
+
+
+the date of review is  1368849600000
+IN reveiewScraper.js Helpfulness: 46/55
+Rating: 1
+
+
+the date of review is  1359781200000
+IN reveiewScraper.js Helpfulness: 33/39
+Rating: 1
+
+
+the date of review is  1360731600000
+IN reveiewScraper.js Helpfulness: 11/11
+Rating: 1
+
+
+the date of review is  1376107200000
+IN reveiewScraper.js Helpfulness: 82/102
+Rating: 4
+
+
+the date of review is  1359954000000
+IN reveiewScraper.js Helpfulness: 14/15
+Rating: 1
+
+
+the date of review is  1365998400000
+IN reveiewScraper.js Helpfulness: 21/24
+Rating: 1
+
+
+the date of review is  1365480000000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1380081600000
+IN reveiewScraper.js Helpfulness: 10/10
+Rating: 1
+
+
+the date of review is  1384318800000
+after adding the result
+
+[ [ '16', '46', '33', '11', '82', '14', '21', '9', '9', '10' ],
+  [ '17', '55', '39', '11', '102', '15', '24', '9', '9', '10' ],
+  [ '1', '1', '1', '1', '4', '1', '1', '1', '1', '1' ],
+  [ 1368849600000,
+    1359781200000,
+    1360731600000,
+    1376107200000,
+    1359954000000,
+    1365998400000,
+    1365480000000,
+    1384923600000,
+    1380081600000,
+    1384318800000 ] ]
+let's scrap the page num 4in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1390539600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1390107600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1387774800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1387602000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 5
+
+
+the date of review is  1376971200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1385787600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1405483200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 5
+
+
+the date of review is  1396584000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1386738000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1412308800000
+after adding the result
+
+[ [ '4', '4', '4', '4', '4', '4', '3', '3', '3', '3' ],
+  [ '4', '4', '4', '4', '4', '4', '3', '3', '3', '3' ],
+  [ '1', '1', '1', '1', '5', '1', '2', '5', '2', '1' ],
+  [ 1390539600000,
+    1390107600000,
+    1387774800000,
+    1387602000000,
+    1376971200000,
+    1385787600000,
+    1405483200000,
+    1396584000000,
+    1386738000000,
+    1412308800000 ] ]
+let's scrap the page num 5in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 28/30
+Rating: 3
+
+
+the date of review is  1361250000000
+IN reveiewScraper.js Helpfulness: 18/18
+Rating: 1
+
+
+the date of review is  1375761600000
+IN reveiewScraper.js Helpfulness: 17/17
+Rating: 2
+
+
+the date of review is  1369713600000
+IN reveiewScraper.js Helpfulness: 17/17
+Rating: 1
+
+
+the date of review is  1363752000000
+IN reveiewScraper.js Helpfulness: 21/22
+Rating: 1
+
+
+the date of review is  1362974400000
+IN reveiewScraper.js Helpfulness: 25/27
+Rating: 1
+
+
+the date of review is  1360731600000
+IN reveiewScraper.js Helpfulness: 15/15
+Rating: 1
+
+
+the date of review is  1373860800000
+IN reveiewScraper.js Helpfulness: 54/63
+Rating: 1
+
+
+the date of review is  1359781200000
+IN reveiewScraper.js Helpfulness: 20/21
+Rating: 1
+
+
+the date of review is  1361163600000
+IN reveiewScraper.js Helpfulness: 20/21
+Rating: 1
+
+
+the date of review is  1363406400000
+after adding the result
+
+[ [ '28', '18', '17', '17', '21', '25', '15', '54', '20', '20' ],
+  [ '30', '18', '17', '17', '22', '27', '15', '63', '21', '21' ],
+  [ '3', '1', '2', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1361250000000,
+    1375761600000,
+    1369713600000,
+    1363752000000,
+    1362974400000,
+    1360731600000,
+    1373860800000,
+    1359781200000,
+    1361163600000,
+    1363406400000 ] ]
+let's scrap the page num 5in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1432958400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1435291200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1416373200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1431921600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 5
+
+
+the date of review is  1417323600000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 4
+
+
+the date of review is  1421902800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1435377600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1434340800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1411704000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1425873600000
+after adding the result
+
+[ [ 0, 0, 0, 0, '2', '1', 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, '3', '2', 0, 0, 0, 0 ],
+  [ '5', '5', '5', '5', '5', '4', '4', '5', '3', '5' ],
+  [ 1432958400000,
+    1435291200000,
+    1416373200000,
+    1431921600000,
+    1417323600000,
+    1421902800000,
+    1435377600000,
+    1434340800000,
+    1411704000000,
+    1425873600000 ] ]
+let's scrap the page num 6in the service office365with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 19/22
+Rating: 1
+
+
+the date of review is  1361509200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1373688000000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1383019200000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 1
+
+
+the date of review is  1363579200000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 3
+
+
+the date of review is  1374033600000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1382068800000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 5
+
+
+the date of review is  1367640000000
+IN reveiewScraper.js Helpfulness: 13/15
+Rating: 1
+
+
+the date of review is  1362114000000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1413777600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 2
+
+
+the date of review is  1418792400000
+after adding the result
+
+[ [ '19', '8', '8', '11', '7', '8', '10', '13', '7', '6' ],
+  [ '22', '8', '8', '12', '7', '8', '11', '15', '7', '6' ],
+  [ '1', '1', '1', '1', '3', '1', '5', '1', '1', '2' ],
+  [ 1361509200000,
+    1373688000000,
+    1383019200000,
+    1363579200000,
+    1374033600000,
+    1382068800000,
+    1367640000000,
+    1362114000000,
+    1413777600000,
+    1418792400000 ] ]
+let's scrap the page num 5in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1376280000000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1389243600000
+IN reveiewScraper.js Helpfulness: 12/14
+Rating: 3
+
+
+the date of review is  1360386000000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 2
+
+
+the date of review is  1370750400000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1364961600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1388811600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 5
+
+
+the date of review is  1385010000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1367208000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1377921600000
+after adding the result
+
+[ [ '10', '7', '12', '9', '8', '5', '5', '4', '4', '4' ],
+  [ '11', '7', '14', '10', '9', '5', '5', '4', '4', '4' ],
+  [ '1', '1', '3', '2', '1', '1', '1', '5', '2', '1' ],
+  [ 1376280000000,
+    1389243600000,
+    1360386000000,
+    1370750400000,
+    1364961600000,
+    1384923600000,
+    1388811600000,
+    1385010000000,
+    1367208000000,
+    1377921600000 ] ]
+let's scrap the page num 5in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 3
+
+
+the date of review is  1386306000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1415163600000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1399608000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1401940800000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 5
+
+
+the date of review is  1383714000000
+IN reveiewScraper.js Helpfulness: 10/13
+Rating: 5
+
+
+the date of review is  1372219200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1392008400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1388984400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1379476800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 3
+
+
+the date of review is  1370059200000
+after adding the result
+
+[ [ '5', '3', '5', '3', '5', '10', '3', '3', '3', '3' ],
+  [ '6', '3', '6', '3', '6', '13', '3', '3', '3', '3' ],
+  [ '3', '1', '1', '1', '5', '5', '2', '1', '1', '3' ],
+  [ 1386306000000,
+    1415163600000,
+    1399608000000,
+    1401940800000,
+    1383714000000,
+    1372219200000,
+    1392008400000,
+    1388984400000,
+    1379476800000,
+    1370059200000 ] ]
+let's scrap the page num 6in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1409284800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1418965200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1416718800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1433044800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1434340800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1411272000000
+IN reveiewScraper.js Helpfulness: 5/7
+Rating: 1
+
+
+the date of review is  1427688000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1426392000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1412654400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1427342400000
+after adding the result
+
+[ [ '2', '4', '1', '1', '1', '1', '5', '4', '1', '1' ],
+  [ '2', '5', '1', '1', '1', '1', '7', '5', '1', '1' ],
+  [ '1', '1', '3', '5', '1', '3', '1', '1', '2', '5' ],
+  [ 1409284800000,
+    1418965200000,
+    1416718800000,
+    1433044800000,
+    1434340800000,
+    1411272000000,
+    1427688000000,
+    1426392000000,
+    1412654400000,
+    1427342400000 ] ]
+let's scrap the page num 5in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 15/15
+Rating: 1
+
+
+the date of review is  1375848000000
+IN reveiewScraper.js Helpfulness: 14/14
+Rating: 1
+
+
+the date of review is  1367121600000
+IN reveiewScraper.js Helpfulness: 13/13
+Rating: 1
+
+
+the date of review is  1383364800000
+IN reveiewScraper.js Helpfulness: 13/13
+Rating: 1
+
+
+the date of review is  1366689600000
+IN reveiewScraper.js Helpfulness: 14/14
+Rating: 1
+
+
+the date of review is  1383973200000
+IN reveiewScraper.js Helpfulness: 17/18
+Rating: 1
+
+
+the date of review is  1365480000000
+IN reveiewScraper.js Helpfulness: 13/13
+Rating: 2
+
+
+the date of review is  1370145600000
+IN reveiewScraper.js Helpfulness: 12/12
+Rating: 1
+
+
+the date of review is  1366862400000
+IN reveiewScraper.js Helpfulness: 30/35
+Rating: 5
+
+
+the date of review is  1367812800000
+IN reveiewScraper.js Helpfulness: 13/13
+Rating: 1
+
+
+the date of review is  1376107200000
+after adding the result
+
+[ [ '15', '14', '13', '13', '14', '17', '13', '12', '30', '13' ],
+  [ '15', '14', '13', '13', '14', '18', '13', '12', '35', '13' ],
+  [ '1', '1', '1', '1', '1', '1', '2', '1', '5', '1' ],
+  [ 1375848000000,
+    1367121600000,
+    1383364800000,
+    1366689600000,
+    1383973200000,
+    1365480000000,
+    1370145600000,
+    1366862400000,
+    1367812800000,
+    1376107200000 ] ]
+let's scrap the page num 6in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 1
+
+
+the date of review is  1371960000000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 5
+
+
+the date of review is  1366948800000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 1
+
+
+the date of review is  1368763200000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1394596800000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 2
+
+
+the date of review is  1372219200000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 1
+
+
+the date of review is  1374206400000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1407556800000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1399867200000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1396324800000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1381032000000
+after adding the result
+
+[ [ '12', '12', '12', '9', '12', '11', '8', '8', '7', '7' ],
+  [ '13', '13', '13', '9', '13', '12', '8', '8', '7', '7' ],
+  [ '1', '5', '1', '1', '2', '1', '1', '1', '1', '1' ],
+  [ 1371960000000,
+    1366948800000,
+    1368763200000,
+    1394596800000,
+    1372219200000,
+    1374206400000,
+    1407556800000,
+    1399867200000,
+    1396324800000,
+    1381032000000 ] ]
+let's scrap the page num 5in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1398139200000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 1
+
+
+the date of review is  1365998400000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1378353600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1377748800000
+IN reveiewScraper.js Helpfulness: 12/14
+Rating: 1
+
+
+the date of review is  1361941200000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1369800000000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1385442000000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1385355600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1416286800000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1366689600000
+after adding the result
+
+[ [ '6', '9', '6', '6', '12', '6', '8', '8', '6', '8' ],
+  [ '6', '10', '6', '6', '14', '6', '9', '9', '6', '9' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1398139200000,
+    1365998400000,
+    1378353600000,
+    1377748800000,
+    1361941200000,
+    1369800000000,
+    1385442000000,
+    1385355600000,
+    1416286800000,
+    1366689600000 ] ]
+let's scrap the page num 6in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1426824000000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 5
+
+
+the date of review is  1421038800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1427774400000
+IN reveiewScraper.js Helpfulness: 2/4
+Rating: 5
+
+
+the date of review is  1426564800000
+IN reveiewScraper.js Helpfulness: 4/7
+Rating: 4
+
+
+the date of review is  1378699200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1433995200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1427256000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1423803600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1408852800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1425186000000
+after adding the result
+
+[ [ 0, '1', 0, '2', '4', 0, 0, 0, 0, 0 ],
+  [ 0, '2', 0, '4', '7', 0, 0, 0, 0, 0 ],
+  [ '5', '5', '3', '5', '4', '4', '5', '5', '5', '5' ],
+  [ 1426824000000,
+    1421038800000,
+    1427774400000,
+    1426564800000,
+    1378699200000,
+    1433995200000,
+    1427256000000,
+    1423803600000,
+    1408852800000,
+    1425186000000 ] ]
+let's scrap the page num 7in the service office365with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 4
+
+
+the date of review is  1361941200000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1408766400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1420002000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1387515600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1391058000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1377144000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 5
+
+
+the date of review is  1368417600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 3
+
+
+the date of review is  1395633600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1381809600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1381464000000
+after adding the result
+
+[ [ '7', '6', '4', '4', '4', '4', '4', '3', '3', '3' ],
+  [ '8', '7', '4', '4', '4', '4', '4', '3', '3', '3' ],
+  [ '4', '1', '1', '1', '1', '2', '5', '3', '2', '1' ],
+  [ 1361941200000,
+    1408766400000,
+    1420002000000,
+    1387515600000,
+    1391058000000,
+    1377144000000,
+    1368417600000,
+    1395633600000,
+    1381809600000,
+    1381464000000 ] ]
+let's scrap the page num 6in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1382328000000
+IN reveiewScraper.js Helpfulness: 7/9
+Rating: 1
+
+
+the date of review is  1382414400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1398571200000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 5
+
+
+the date of review is  1376971200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1383364800000
+IN reveiewScraper.js Helpfulness: 14/19
+Rating: 1
+
+
+the date of review is  1362891600000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1383627600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1407297600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1397880000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1399262400000
+after adding the result
+
+[ [ '2', '7', '2', '5', '2', '14', '4', '2', '2', '3' ],
+  [ '2', '9', '2', '6', '2', '19', '5', '2', '2', '3' ],
+  [ '3', '1', '1', '5', '4', '1', '1', '1', '1', '1' ],
+  [ 1382328000000,
+    1382414400000,
+    1398571200000,
+    1376971200000,
+    1383364800000,
+    1362891600000,
+    1383627600000,
+    1407297600000,
+    1397880000000,
+    1399262400000 ] ]
+let's scrap the page num 7in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1430107200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1425873600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1420347600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1420866000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1420606800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1426392000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1416200400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1430625600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1432094400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1411185600000
+after adding the result
+
+[ [ '1', '1', '1', '2', '3', '1', '1', '1', 0, 0 ],
+  [ '1', '1', '1', '2', '4', '1', '1', '1', 0, 0 ],
+  [ '4', '5', '1', '1', '1', '5', '4', '5', '5', '3' ],
+  [ 1430107200000,
+    1425873600000,
+    1420347600000,
+    1420866000000,
+    1420606800000,
+    1426392000000,
+    1416200400000,
+    1430625600000,
+    1432094400000,
+    1411185600000 ] ]
+let's scrap the page num 6in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1373256000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1371009600000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1383451200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1377662400000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1418878800000
+IN reveiewScraper.js Helpfulness: 11/13
+Rating: 1
+
+
+the date of review is  1363492800000
+IN reveiewScraper.js Helpfulness: 11/13
+Rating: 1
+
+
+the date of review is  1362286800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1373256000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 2
+
+
+the date of review is  1380686400000
+IN reveiewScraper.js Helpfulness: 21/27
+Rating: 1
+
+
+the date of review is  1360990800000
+after adding the result
+
+[ [ '6', '6', '8', '5', '8', '11', '11', '5', '5', '21' ],
+  [ '6', '6', '9', '5', '9', '13', '13', '5', '5', '27' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '2', '1' ],
+  [ 1373256000000,
+    1371009600000,
+    1383451200000,
+    1377662400000,
+    1418878800000,
+    1363492800000,
+    1362286800000,
+    1373256000000,
+    1380686400000,
+    1360990800000 ] ]
+let's scrap the page num 7in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 30/35
+Rating: 1
+
+
+the date of review is  1359694800000
+IN reveiewScraper.js Helpfulness: 23/26
+Rating: 1
+
+
+the date of review is  1362200400000
+IN reveiewScraper.js Helpfulness: 18/20
+Rating: 1
+
+
+the date of review is  1361336400000
+IN reveiewScraper.js Helpfulness: 12/12
+Rating: 1
+
+
+the date of review is  1375675200000
+IN reveiewScraper.js Helpfulness: 10/10
+Rating: 2
+
+
+the date of review is  1369713600000
+IN reveiewScraper.js Helpfulness: 10/10
+Rating: 2
+
+
+the date of review is  1365739200000
+IN reveiewScraper.js Helpfulness: 10/10
+Rating: 1
+
+
+the date of review is  1375502400000
+IN reveiewScraper.js Helpfulness: 14/15
+Rating: 1
+
+
+the date of review is  1367899200000
+IN reveiewScraper.js Helpfulness: 34/41
+Rating: 4
+
+
+the date of review is  1360386000000
+IN reveiewScraper.js Helpfulness: 13/14
+Rating: 1
+
+
+the date of review is  1365307200000
+after adding the result
+
+[ [ '30', '23', '18', '12', '10', '10', '10', '14', '34', '13' ],
+  [ '35', '26', '20', '12', '10', '10', '10', '15', '41', '14' ],
+  [ '1', '1', '1', '1', '2', '2', '1', '1', '4', '1' ],
+  [ 1359694800000,
+    1362200400000,
+    1361336400000,
+    1375675200000,
+    1369713600000,
+    1365739200000,
+    1375502400000,
+    1367899200000,
+    1360386000000,
+    1365307200000 ] ]
+let's scrap the page num 7in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1395028800000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1403582400000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1372564800000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1382328000000
+IN reveiewScraper.js Helpfulness: 13/15
+Rating: 1
+
+
+the date of review is  1374292800000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1395288000000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 5
+
+
+the date of review is  1390453200000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1380686400000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1380859200000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 2
+
+
+the date of review is  1380427200000
+after adding the result
+
+[ [ '7', '10', '10', '10', '13', '10', '11', '7', '7', '9' ],
+  [ '7', '11', '11', '11', '15', '11', '12', '7', '7', '10' ],
+  [ '1', '1', '1', '1', '1', '1', '5', '1', '1', '2' ],
+  [ 1395028800000,
+    1403582400000,
+    1372564800000,
+    1382328000000,
+    1374292800000,
+    1395288000000,
+    1390453200000,
+    1380686400000,
+    1380859200000,
+    1380427200000 ] ]
+let's scrap the page num 6in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1422853200000
+IN reveiewScraper.js Helpfulness: 2/4
+Rating: 5
+
+
+the date of review is  1398830400000
+IN reveiewScraper.js Helpfulness: 5/9
+Rating: 5
+
+
+the date of review is  1386306000000
+IN reveiewScraper.js Helpfulness: 1/3
+Rating: 1
+
+
+the date of review is  1430625600000
+IN reveiewScraper.js Helpfulness: 1/3
+Rating: 1
+
+
+the date of review is  1422334800000
+IN reveiewScraper.js Helpfulness: 2/5
+Rating: 1
+
+
+the date of review is  1416718800000
+IN reveiewScraper.js Helpfulness: 4/29
+Rating: 1
+
+
+the date of review is  1375243200000
+after adding the result
+
+[ [ 0, '2', '5', '1', '1', '2', '4' ],
+  [ 0, '4', '9', '3', '3', '5', '29' ],
+  [ '5', '5', '5', '1', '1', '1', '1' ],
+  [ 1422853200000,
+    1398830400000,
+    1386306000000,
+    1430625600000,
+    1422334800000,
+    1416718800000,
+    1375243200000 ] ]
+in calc relevance
+office365
+2
+check
+70
+70
+check out the 0th element 69
+
+ numReviews 67 
+ sumUpvotes 312 
+ sumDownvotes 95 
+ sumTotalVotes 407 
+ zeroHelpfulReviews 27 
+ avgConstZHRRelevance 2.5
+avgTotalVotes  10.175
+avgUniverseRelevance  3.832923832923833
+before scaling
+4.928571428571429 4.04018954018954
+atfer scaling
+5 4.09874301178649
+ here is the average 
+  3.888473453690841
+Done scraping the number of elements you said and also calculated the relevance scores for them 
+In writing data for service platform
+{ name: 'Microsoft-Office-Small-Business-Premium',
+  id: 'B00AZMREAM',
+  upvotesList: 
+   [ 69,
+     19,
+     28,
+     10,
+     6,
+     38,
+     12,
+     6,
+     19,
+     23,
+     11,
+     4,
+     2,
+     2,
+     2,
+     4,
+     2,
+     4,
+     6,
+     1,
+     3,
+     1,
+     0,
+     1,
+     1,
+     0,
+     6,
+     0,
+     2,
+     1,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     5,
+     1,
+     1,
+     2,
+     4 ],
+  totalVotesList: 
+   [ 70,
+     21,
+     34,
+     11,
+     6,
+     49,
+     14,
+     6,
+     24,
+     30,
+     14,
+     4,
+     2,
+     2,
+     2,
+     5,
+     2,
+     5,
+     8,
+     1,
+     4,
+     1,
+     0,
+     1,
+     1,
+     0,
+     9,
+     0,
+     3,
+     1,
+     0,
+     0,
+     0,
+     5,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     4,
+     7,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     9,
+     3,
+     3,
+     5,
+     29 ],
+  ratingList: 
+   [ 3,
+     1,
+     2,
+     1,
+     2,
+     1,
+     1,
+     1,
+     5,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     4,
+     4,
+     1,
+     3,
+     5,
+     2,
+     1,
+     3,
+     2,
+     1,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     1,
+     5,
+     3,
+     5,
+     5,
+     3,
+     4,
+     5,
+     5,
+     5,
+     5,
+     5,
+     4,
+     4,
+     5,
+     3,
+     5,
+     5,
+     5,
+     3,
+     5,
+     4,
+     4,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     1,
+     1,
+     1,
+     1 ],
+  relevanceList: 
+   [ 5,
+     4.09874301178649,
+     4.028771854858811,
+     4.002065306413132,
+     3.989958337784425,
+     3.9201652245130503,
+     3.9803439803439806,
+     3.989958337784425,
+     3.9320941494854544,
+     3.888651497347149,
+     3.9078802122280387,
+     3.9561300430865645,
+     3.922301748388705,
+     3.922301748388705,
+     3.922301748388705,
+     3.900580422319553,
+     3.922301748388705,
+     3.900580422319553,
+     3.8788590962504004,
+     3.9053876010397754,
+     3.8836662749706226,
+     3.9053876010397754,
+     3.888473453690845,
+     3.9053876010397754,
+     3.9053876010397754,
+     3.888473453690845,
+     3.8233094754833887,
+     3.888473453690845,
+     3.8667521276216927,
+     3.9053876010397754,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.828116654203611,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.9053876010397754,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.8667521276216927,
+     3.849837980272763,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.849837980272763,
+     3.888473453690845,
+     3.8112025068546806,
+     3.789481180785529,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.8112025068546806,
+     3.750845707367447,
+     3.794288359505751,
+     3.794288359505751,
+     3.7556528860876686,
+     2.5673895239112627 ],
+  pages: 7,
+  reviewDatesList: 
+   [ 1408075200000,
+     1419570000000,
+     1380340800000,
+     1424235600000,
+     1417496400000,
+     1383627600000,
+     1399003200000,
+     1423544400000,
+     1396152000000,
+     1379390400000,
+     1393822800000,
+     1422853200000,
+     1428465600000,
+     1427515200000,
+     1424926800000,
+     1407816000000,
+     1412740800000,
+     1384923600000,
+     1395547200000,
+     1424840400000,
+     1419656400000,
+     1421470800000,
+     1432785600000,
+     1416200400000,
+     1399867200000,
+     1433995200000,
+     1384232400000,
+     1434945600000,
+     1421211600000,
+     1416632400000,
+     1435636800000,
+     1431576000000,
+     1429156800000,
+     1402027200000,
+     1432267200000,
+     1426392000000,
+     1429588800000,
+     1427947200000,
+     1415768400000,
+     1434686400000,
+     1432958400000,
+     1435291200000,
+     1416373200000,
+     1431921600000,
+     1417323600000,
+     1421902800000,
+     1435377600000,
+     1434340800000,
+     1411704000000,
+     1425873600000,
+     1426824000000,
+     1421038800000,
+     1427774400000,
+     1426564800000,
+     1378699200000,
+     1433995200000,
+     1427256000000,
+     1423803600000,
+     1408852800000,
+     1425186000000,
+     1422853200000,
+     1398830400000,
+     1386306000000,
+     1430625600000,
+     1422334800000,
+     1416718800000,
+     1375243200000 ] }
+{ name: 'Microsoft-Office-Small-Business-Premium',
+  agg_rating_score: 0,
+  own_rating_cont: 0,
+  children_rating_cont: 0,
+  own_wmean_rating: 0,
+  universe_wmean_rating: 0,
+  consumer_ratings: 
+   [ 3,
+     1,
+     2,
+     1,
+     2,
+     1,
+     1,
+     1,
+     5,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     4,
+     4,
+     1,
+     3,
+     5,
+     2,
+     1,
+     3,
+     2,
+     1,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     1,
+     5,
+     3,
+     5,
+     5,
+     3,
+     4,
+     5,
+     5,
+     5,
+     5,
+     5,
+     4,
+     4,
+     5,
+     3,
+     5,
+     5,
+     5,
+     3,
+     5,
+     4,
+     4,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     1,
+     1,
+     1,
+     1 ],
+  consumer_relevance: 
+   [ 5,
+     4.09874301178649,
+     4.028771854858811,
+     4.002065306413132,
+     3.989958337784425,
+     3.9201652245130503,
+     3.9803439803439806,
+     3.989958337784425,
+     3.9320941494854544,
+     3.888651497347149,
+     3.9078802122280387,
+     3.9561300430865645,
+     3.922301748388705,
+     3.922301748388705,
+     3.922301748388705,
+     3.900580422319553,
+     3.922301748388705,
+     3.900580422319553,
+     3.8788590962504004,
+     3.9053876010397754,
+     3.8836662749706226,
+     3.9053876010397754,
+     3.888473453690845,
+     3.9053876010397754,
+     3.9053876010397754,
+     3.888473453690845,
+     3.8233094754833887,
+     3.888473453690845,
+     3.8667521276216927,
+     3.9053876010397754,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.828116654203611,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.9053876010397754,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.8667521276216927,
+     3.849837980272763,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.849837980272763,
+     3.888473453690845,
+     3.8112025068546806,
+     3.789481180785529,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.888473453690845,
+     3.8112025068546806,
+     3.750845707367447,
+     3.794288359505751,
+     3.794288359505751,
+     3.7556528860876686,
+     2.5673895239112627 ],
+  consumer_feedback_count: 0,
+  rating_trust_value: 0,
+  trust_votes: 0,
+  children: [],
+  parent: [ 'office365' ] }
+
+
+
+abt to write
+[ { name: 'meta', root: 'office' },
+  { name: 'Microsoft-Office-Small-Business-Premium',
+    agg_rating_score: 0,
+    own_rating_cont: 0,
+    children_rating_cont: 0,
+    own_wmean_rating: 0,
+    universe_wmean_rating: 0,
+    consumer_ratings: 
+     [ 3,
+       1,
+       2,
+       1,
+       2,
+       1,
+       1,
+       1,
+       5,
+       1,
+       1,
+       1,
+       1,
+       1,
+       1,
+       2,
+       4,
+       4,
+       1,
+       3,
+       5,
+       2,
+       1,
+       3,
+       2,
+       1,
+       5,
+       5,
+       5,
+       5,
+       5,
+       5,
+       5,
+       1,
+       5,
+       3,
+       5,
+       5,
+       3,
+       4,
+       5,
+       5,
+       5,
+       5,
+       5,
+       4,
+       4,
+       5,
+       3,
+       5,
+       5,
+       5,
+       3,
+       5,
+       4,
+       4,
+       5,
+       5,
+       5,
+       5,
+       5,
+       5,
+       5,
+       1,
+       1,
+       1,
+       1 ],
+    consumer_relevance: 
+     [ 5,
+       4.09874301178649,
+       4.028771854858811,
+       4.002065306413132,
+       3.989958337784425,
+       3.9201652245130503,
+       3.9803439803439806,
+       3.989958337784425,
+       3.9320941494854544,
+       3.888651497347149,
+       3.9078802122280387,
+       3.9561300430865645,
+       3.922301748388705,
+       3.922301748388705,
+       3.922301748388705,
+       3.900580422319553,
+       3.922301748388705,
+       3.900580422319553,
+       3.8788590962504004,
+       3.9053876010397754,
+       3.8836662749706226,
+       3.9053876010397754,
+       3.888473453690845,
+       3.9053876010397754,
+       3.9053876010397754,
+       3.888473453690845,
+       3.8233094754833887,
+       3.888473453690845,
+       3.8667521276216927,
+       3.9053876010397754,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.828116654203611,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.9053876010397754,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.8667521276216927,
+       3.849837980272763,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.849837980272763,
+       3.888473453690845,
+       3.8112025068546806,
+       3.789481180785529,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.888473453690845,
+       3.8112025068546806,
+       3.750845707367447,
+       3.794288359505751,
+       3.794288359505751,
+       3.7556528860876686,
+       2.5673895239112627 ],
+    consumer_feedback_count: 0,
+    rating_trust_value: 0,
+    trust_votes: 0,
+    children: [],
+    parent: [ 'office365' ] } ]
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1421384400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1392094800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1402459200000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1373515200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1410148800000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1380600000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1397793600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1394082000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1392613200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1392526800000
+after adding the result
+
+[ [ '2', '2', '2', '4', '2', '6', '2', '2', '2', '2' ],
+  [ '2', '2', '2', '5', '2', '8', '2', '2', '2', '2' ],
+  [ '1', '3', '1', '1', '3', '1', '5', '1', '1', '1' ],
+  [ 1421384400000,
+    1392094800000,
+    1402459200000,
+    1373515200000,
+    1410148800000,
+    1380600000000,
+    1397793600000,
+    1394082000000,
+    1392613200000,
+    1392526800000 ] ]
+let's scrap the page num 8in the service office365with platform idx 3
+
+Written to file
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1383973200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1405915200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1395460800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1410062400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1413432000000
+IN reveiewScraper.js Helpfulness: 18/24
+Rating: 3
+
+
+the date of review is  1359608400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1403150400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1424667600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1411185600000
+IN reveiewScraper.js Helpfulness: 17/23
+Rating: 1
+
+
+the date of review is  1360904400000
+after adding the result
+
+[ [ '3', '4', '3', '4', '3', '18', '3', '3', '3', '17' ],
+  [ '3', '4', '3', '4', '3', '24', '3', '3', '3', '23' ],
+  [ '1', '1', '1', '1', '1', '3', '1', '1', '1', '1' ],
+  [ 1383973200000,
+    1405915200000,
+    1395460800000,
+    1410062400000,
+    1413432000000,
+    1359608400000,
+    1403150400000,
+    1424667600000,
+    1411185600000,
+    1360904400000 ] ]
+let's scrap the page num 7in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1410926400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1410667200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1410408000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1409112000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1409025600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1408680000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1408161600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1408075200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1407988800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1407556800000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '4', '3', '3', '4', '5', '3', '5', '2', '3', '4' ],
+  [ 1410926400000,
+    1410667200000,
+    1410408000000,
+    1409112000000,
+    1409025600000,
+    1408680000000,
+    1408161600000,
+    1408075200000,
+    1407988800000,
+    1407556800000 ] ]
+let's scrap the page num 7in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 2
+
+
+the date of review is  1375070400000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 2
+
+
+the date of review is  1371441600000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1366948800000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1367899200000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1365912000000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 3
+
+
+the date of review is  1382328000000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 1
+
+
+the date of review is  1369800000000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1370059200000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1367294400000
+IN reveiewScraper.js Helpfulness: 12/13
+Rating: 1
+
+
+the date of review is  1364270400000
+after adding the result
+
+[ [ '9', '9', '9', '9', '9', '12', '12', '9', '9', '12' ],
+  [ '9', '9', '9', '9', '9', '13', '13', '9', '9', '13' ],
+  [ '2', '2', '1', '1', '1', '3', '1', '1', '1', '1' ],
+  [ 1375070400000,
+    1371441600000,
+    1366948800000,
+    1367899200000,
+    1365912000000,
+    1382328000000,
+    1369800000000,
+    1370059200000,
+    1367294400000,
+    1364270400000 ] ]
+let's scrap the page num 8in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1380772800000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 1
+
+
+the date of review is  1371355200000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 5
+
+
+the date of review is  1372305600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1384750800000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 1
+
+
+the date of review is  1393304400000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1423458000000
+IN reveiewScraper.js Helpfulness: 31/40
+Rating: 1
+
+
+the date of review is  1361595600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1383627600000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1401336000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1405742400000
+after adding the result
+
+[ [ '7', '7', '9', '6', '9', '6', '31', '6', '6', '6' ],
+  [ '7', '7', '10', '6', '10', '6', '40', '6', '6', '6' ],
+  [ '1', '1', '5', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1380772800000,
+    1371355200000,
+    1372305600000,
+    1384750800000,
+    1393304400000,
+    1423458000000,
+    1361595600000,
+    1383627600000,
+    1401336000000,
+    1405742400000 ] ]
+let's scrap the page num 7in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1377748800000
+IN reveiewScraper.js Helpfulness: 10/12
+Rating: 1
+
+
+the date of review is  1367726400000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1373428800000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1368417600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1413259200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1376625600000
+IN reveiewScraper.js Helpfulness: 42/56
+Rating: 1
+
+
+the date of review is  1359608400000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1383541200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 3
+
+
+the date of review is  1401163200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1385442000000
+after adding the result
+
+[ [ '5', '10', '7', '8', '5', '5', '42', '5', '4', '4' ],
+  [ '5', '12', '8', '9', '5', '5', '56', '5', '4', '4' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '3', '2' ],
+  [ 1377748800000,
+    1367726400000,
+    1373428800000,
+    1368417600000,
+    1413259200000,
+    1376625600000,
+    1359608400000,
+    1383541200000,
+    1401163200000,
+    1385442000000 ] ]
+let's scrap the page num 8in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1392440400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1389589200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1389416400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1389330000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1389070800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1388293200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1387342800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1387256400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1383800400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1372046400000
+after adding the result
+
+[ [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '3', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1392440400000,
+    1389589200000,
+    1389416400000,
+    1389330000000,
+    1389070800000,
+    1388293200000,
+    1387342800000,
+    1387256400000,
+    1383800400000,
+    1372046400000 ] ]
+let's scrap the page num 9in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1415163600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 5
+
+
+the date of review is  1405569600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1410753600000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1416459600000
+IN reveiewScraper.js Helpfulness: 45/67
+Rating: 1
+
+
+the date of review is  1398052800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1410408000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1409889600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1410408000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1428292800000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1420174800000
+after adding the result
+
+[ [ '1', '2', 0, '3', '45', 0, 0, 0, '1', '3' ],
+  [ '1', '3', 0, '4', '67', 0, 0, 0, '1', '4' ],
+  [ '4', '5', '4', '1', '1', '3', '3', '4', '5', '1' ],
+  [ 1415163600000,
+    1405569600000,
+    1410753600000,
+    1416459600000,
+    1398052800000,
+    1410408000000,
+    1409889600000,
+    1410408000000,
+    1428292800000,
+    1420174800000 ] ]
+let's scrap the page num 8in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1367812800000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1370404800000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1373256000000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1375070400000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1399953600000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1367121600000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1364097600000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1374465600000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1364356800000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1366689600000
+after adding the result
+
+[ [ '9', '9', '9', '9', '8', '9', '9', '9', '9', '9' ],
+  [ '9', '9', '9', '9', '8', '9', '9', '9', '9', '9' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1367812800000,
+    1370404800000,
+    1373256000000,
+    1375070400000,
+    1399953600000,
+    1367121600000,
+    1364097600000,
+    1374465600000,
+    1364356800000,
+    1366689600000 ] ]
+let's scrap the page num 9in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1422594000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1399953600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1385010000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1383627600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 3
+
+
+the date of review is  1371614400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 5
+
+
+the date of review is  1369108800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 5
+
+
+the date of review is  1369022400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1425790800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1366689600000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1364270400000
+after adding the result
+
+[ [ '3', '3', '3', '3', '3', '3', '3', '2', '2', '5' ],
+  [ '3', '3', '3', '3', '3', '3', '3', '2', '2', '6' ],
+  [ '1', '1', '2', '1', '3', '5', '5', '1', '3', '1' ],
+  [ 1422594000000,
+    1399953600000,
+    1385010000000,
+    1383627600000,
+    1371614400000,
+    1369108800000,
+    1369022400000,
+    1425790800000,
+    1366689600000,
+    1364270400000 ] ]
+let's scrap the page num 8in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 23/30
+Rating: 1
+
+
+the date of review is  1361077200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1377230400000
+IN reveiewScraper.js Helpfulness: 10/12
+Rating: 1
+
+
+the date of review is  1362027600000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1415336400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1396411200000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1365652800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1381982400000
+IN reveiewScraper.js Helpfulness: 15/19
+Rating: 1
+
+
+the date of review is  1362027600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1389070800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1398139200000
+after adding the result
+
+[ [ '23', '5', '10', '7', '4', '8', '5', '15', '4', '5' ],
+  [ '30', '5', '12', '8', '4', '9', '5', '19', '4', '5' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1361077200000,
+    1377230400000,
+    1362027600000,
+    1415336400000,
+    1396411200000,
+    1365652800000,
+    1381982400000,
+    1362027600000,
+    1389070800000,
+    1398139200000 ] ]
+let's scrap the page num 9in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1364184000000
+IN reveiewScraper.js Helpfulness: 7/9
+Rating: 1
+
+
+the date of review is  1367812800000
+IN reveiewScraper.js Helpfulness: 8/11
+Rating: 1
+
+
+the date of review is  1381118400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1410408000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1406001600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1411012800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1408075200000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 5
+
+
+the date of review is  1379649600000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1376798400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 5
+
+
+the date of review is  1369886400000
+after adding the result
+
+[ [ '2', '7', '8', '1', '1', '2', '1', '4', '4', '4' ],
+  [ '2', '9', '11', '1', '1', '2', '1', '5', '5', '5' ],
+  [ '1', '1', '1', '3', '2', '1', '3', '5', '1', '5' ],
+  [ 1364184000000,
+    1367812800000,
+    1381118400000,
+    1410408000000,
+    1406001600000,
+    1411012800000,
+    1408075200000,
+    1379649600000,
+    1376798400000,
+    1369886400000 ] ]
+let's scrap the page num 10in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1403841600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 2
+
+
+the date of review is  1399867200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1392181200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1375329600000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1396152000000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1378353600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1403841600000
+IN reveiewScraper.js Helpfulness: 11/13
+Rating: 1
+
+
+the date of review is  1395720000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1418274000000
+after adding the result
+
+[ [ '5', '5', '5', '5', '8', '8', '5', '5', '11', '6' ],
+  [ '5', '5', '5', '5', '9', '9', '5', '5', '13', '6' ],
+  [ '1', '2', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1403841600000,
+    1399867200000,
+    1392181200000,
+    1375329600000,
+    1396152000000,
+    1384923600000,
+    1378353600000,
+    1403841600000,
+    1395720000000,
+    1418274000000 ] ]
+let's scrap the page num 8in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1365566400000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 3
+
+
+the date of review is  1365739200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1383886800000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1371960000000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1367380800000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1368676800000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1394082000000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1366171200000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 1
+
+
+the date of review is  1367208000000
+IN reveiewScraper.js Helpfulness: 9/9
+Rating: 1
+
+
+the date of review is  1375848000000
+after adding the result
+
+[ [ '9', '8', '8', '8', '9', '8', '8', '9', '11', '9' ],
+  [ '9', '8', '8', '8', '9', '8', '8', '9', '12', '9' ],
+  [ '1', '3', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1365566400000,
+    1365739200000,
+    1383886800000,
+    1371960000000,
+    1367380800000,
+    1368676800000,
+    1394082000000,
+    1366171200000,
+    1367208000000,
+    1375848000000 ] ]
+let's scrap the page num 10in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 4
+
+
+the date of review is  1362546000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1369713600000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1366430400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1397707200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1395460800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1413691200000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1366430400000
+IN reveiewScraper.js Helpfulness: 11/15
+Rating: 1
+
+
+the date of review is  1366084800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1421470800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1422421200000
+after adding the result
+
+[ [ '5', '3', '4', '2', '2', '4', '4', '11', '2', '2' ],
+  [ '6', '3', '5', '2', '2', '5', '5', '15', '2', '2' ],
+  [ '4', '1', '1', '3', '1', '1', '1', '1', '1', '1' ],
+  [ 1362546000000,
+    1369713600000,
+    1366430400000,
+    1397707200000,
+    1395460800000,
+    1413691200000,
+    1366430400000,
+    1366084800000,
+    1421470800000,
+    1422421200000 ] ]
+let's scrap the page num 9in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408248000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1409803200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1410148800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1408766400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1409198400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1409630400000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 2
+
+
+the date of review is  1424754000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1407556800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408420800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1408852800000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, '2', 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, '3', 0, 0, 0 ],
+  [ '4', '5', '4', '3', '3', '4', '2', '4', '4', '5' ],
+  [ 1408248000000,
+    1409803200000,
+    1410148800000,
+    1408766400000,
+    1409198400000,
+    1409630400000,
+    1424754000000,
+    1407556800000,
+    1408420800000,
+    1408852800000 ] ]
+let's scrap the page num 9in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1370577600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 2
+
+
+the date of review is  1390539600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1406606400000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1387342800000
+IN reveiewScraper.js Helpfulness: 10/12
+Rating: 1
+
+
+the date of review is  1377921600000
+IN reveiewScraper.js Helpfulness: 10/12
+Rating: 3
+
+
+the date of review is  1369368000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1400817600000
+IN reveiewScraper.js Helpfulness: 13/16
+Rating: 1
+
+
+the date of review is  1370232000000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1420606800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1403928000000
+after adding the result
+
+[ [ '5', '5', '5', '5', '10', '10', '5', '13', '7', '5' ],
+  [ '5', '5', '5', '5', '12', '12', '5', '16', '8', '5' ],
+  [ '1', '2', '1', '1', '1', '3', '1', '1', '1', '1' ],
+  [ 1370577600000,
+    1390539600000,
+    1406606400000,
+    1387342800000,
+    1377921600000,
+    1369368000000,
+    1400817600000,
+    1370232000000,
+    1420606800000,
+    1403928000000 ] ]
+let's scrap the page num 9in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 5
+
+
+the date of review is  1361422800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1433736000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 4
+
+
+the date of review is  1387429200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1393218000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1398139200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1379217600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1393995600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1402113600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1367985600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1413000000000
+after adding the result
+
+[ [ '4', '2', '3', '2', '2', '1', '1', '1', '1', '1' ],
+  [ '5', '2', '4', '2', '2', '1', '1', '1', '1', '1' ],
+  [ '5', '4', '4', '1', '1', '3', '3', '1', '1', '1' ],
+  [ 1361422800000,
+    1433736000000,
+    1387429200000,
+    1393218000000,
+    1398139200000,
+    1379217600000,
+    1393995600000,
+    1402113600000,
+    1367985600000,
+    1413000000000 ] ]
+let's scrap the page num 11in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1381464000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1384578000000
+IN reveiewScraper.js Helpfulness: 9/11
+Rating: 1
+
+
+the date of review is  1367294400000
+IN reveiewScraper.js Helpfulness: 9/11
+Rating: 1
+
+
+the date of review is  1383627600000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 3
+
+
+the date of review is  1359522000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1384750800000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1366603200000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1364356800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1403496000000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1382587200000
+after adding the result
+
+[ [ '5', '4', '9', '9', '7', '4', '7', '7', '4', '6' ],
+  [ '5', '4', '11', '11', '8', '4', '8', '8', '4', '7' ],
+  [ '1', '1', '1', '1', '3', '1', '1', '1', '1', '1' ],
+  [ 1381464000000,
+    1384578000000,
+    1367294400000,
+    1383627600000,
+    1359522000000,
+    1384750800000,
+    1366603200000,
+    1364356800000,
+    1403496000000,
+    1382587200000 ] ]
+let's scrap the page num 10in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1374465600000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 3
+
+
+the date of review is  1363406400000
+IN reveiewScraper.js Helpfulness: 14/16
+Rating: 1
+
+
+the date of review is  1362891600000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 1
+
+
+the date of review is  1378526400000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 1
+
+
+the date of review is  1365393600000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1375243200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1371009600000
+IN reveiewScraper.js Helpfulness: 11/12
+Rating: 1
+
+
+the date of review is  1365134400000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1376107200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1368849600000
+after adding the result
+
+[ [ '8', '8', '14', '11', '11', '8', '8', '11', '8', '8' ],
+  [ '8', '8', '16', '12', '12', '8', '8', '12', '8', '8' ],
+  [ '1', '3', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1374465600000,
+    1363406400000,
+    1362891600000,
+    1378526400000,
+    1365393600000,
+    1375243200000,
+    1371009600000,
+    1365134400000,
+    1376107200000,
+    1368849600000 ] ]
+let's scrap the page num 11in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 2
+
+
+the date of review is  1400126400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1395374400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1371700800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1369627200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1367380800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1366344000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1385010000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1375761600000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 3
+
+
+the date of review is  1369886400000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1368072000000
+after adding the result
+
+[ [ '4', '2', '2', '2', '2', '2', '1', '4', '4', '3' ],
+  [ '5', '2', '2', '2', '2', '2', '1', '5', '5', '4' ],
+  [ '2', '1', '4', '1', '2', '3', '3', '1', '3', '1' ],
+  [ 1400126400000,
+    1395374400000,
+    1371700800000,
+    1369627200000,
+    1367380800000,
+    1366344000000,
+    1385010000000,
+    1375761600000,
+    1369886400000,
+    1368072000000 ] ]
+let's scrap the page num 10in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1417237200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1424235600000
+IN reveiewScraper.js Helpfulness: 4/6
+Rating: 1
+
+
+the date of review is  1404964800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1411531200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1415509200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1426392000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1407988800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1410408000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1411704000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1407470400000
+after adding the result
+
+[ [ '1', '1', '4', 0, '1', '1', 0, '1', 0, 0 ],
+  [ '1', '1', '6', 0, '1', '1', 0, '1', 0, 0 ],
+  [ '5', '4', '1', '2', '4', '5', '4', '2', '3', '4' ],
+  [ 1417237200000,
+    1424235600000,
+    1404964800000,
+    1411531200000,
+    1415509200000,
+    1426392000000,
+    1407988800000,
+    1410408000000,
+    1411704000000,
+    1407470400000 ] ]
+let's scrap the page num 10in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 5
+
+
+the date of review is  1402372800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1383800400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1415336400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1381896000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1381377600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1378267200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1376971200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1376366400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1373256000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1371528000000
+after adding the result
+
+[ [ '3', '3', '3', '4', '3', '3', '3', '3', '3', '3' ],
+  [ '3', '3', '3', '4', '3', '3', '3', '3', '3', '3' ],
+  [ '5', '2', '2', '1', '2', '1', '1', '1', '1', '1' ],
+  [ 1402372800000,
+    1383800400000,
+    1415336400000,
+    1381896000000,
+    1381377600000,
+    1378267200000,
+    1376971200000,
+    1376366400000,
+    1373256000000,
+    1371528000000 ] ]
+let's scrap the page num 11in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1378612800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 5
+
+
+the date of review is  1376539200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1415163600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1384146000000
+IN reveiewScraper.js Helpfulness: 7/10
+Rating: 1
+
+
+the date of review is  1361854800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1412568000000
+IN reveiewScraper.js Helpfulness: 5/7
+Rating: 1
+
+
+the date of review is  1366603200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1380686400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1382241600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1424149200000
+after adding the result
+
+[ [ '4', '4', '1', '1', '7', '1', '5', '1', '1', '1' ],
+  [ '5', '5', '1', '1', '10', '1', '7', '1', '1', '1' ],
+  [ '1', '5', '1', '3', '1', '3', '1', '3', '4', '5' ],
+  [ 1378612800000,
+    1376539200000,
+    1415163600000,
+    1384146000000,
+    1361854800000,
+    1412568000000,
+    1366603200000,
+    1380686400000,
+    1382241600000,
+    1424149200000 ] ]
+let's scrap the page num 12in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 3
+
+
+the date of review is  1374033600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1409803200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1422939600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1408075200000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1384405200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1393909200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1431230400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1387256400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1425531600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1397880000000
+after adding the result
+
+[ [ '6', '1', '1', '2', '4', '1', '1', '1', '1', '1' ],
+  [ '8', '1', '1', '2', '5', '1', '1', '1', '1', '1' ],
+  [ '3', '5', '4', '1', '1', '3', '1', '3', '1', '3' ],
+  [ 1374033600000,
+    1409803200000,
+    1422939600000,
+    1408075200000,
+    1384405200000,
+    1393909200000,
+    1431230400000,
+    1387256400000,
+    1425531600000,
+    1397880000000 ] ]
+let's scrap the page num 11in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1365307200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1368763200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1362805200000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 3
+
+
+the date of review is  1363060800000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1368072000000
+IN reveiewScraper.js Helpfulness: 8/8
+Rating: 1
+
+
+the date of review is  1373774400000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 3
+
+
+the date of review is  1391144400000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 3
+
+
+the date of review is  1385701200000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 3
+
+
+the date of review is  1380686400000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 2
+
+
+the date of review is  1374033600000
+after adding the result
+
+[ [ '10', '8', '8', '8', '8', '8', '6', '6', '7', '7' ],
+  [ '11', '8', '8', '8', '8', '8', '6', '6', '7', '7' ],
+  [ '1', '1', '1', '3', '1', '1', '3', '3', '3', '2' ],
+  [ 1365307200000,
+    1368763200000,
+    1362805200000,
+    1363060800000,
+    1368072000000,
+    1373774400000,
+    1391144400000,
+    1385701200000,
+    1380686400000,
+    1374033600000 ] ]
+let's scrap the page num 12in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 2
+
+
+the date of review is  1379390400000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1386910800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1374120000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1373342400000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1401336000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1402200000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1405742400000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1417237200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1386910800000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1420261200000
+after adding the result
+
+[ [ '5', '5', '5', '5', '5', '4', '5', '7', '5', '7' ],
+  [ '5', '5', '5', '5', '5', '4', '5', '8', '5', '8' ],
+  [ '2', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1379390400000,
+    1386910800000,
+    1374120000000,
+    1373342400000,
+    1401336000000,
+    1402200000000,
+    1405742400000,
+    1417237200000,
+    1386910800000,
+    1420261200000 ] ]
+let's scrap the page num 10in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1417237200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1427947200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1412136000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1410235200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1412222400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1410321600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1418533200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1435636800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1428033600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1428724800000
+after adding the result
+
+[ [ '1', '1', '1', 0, 0, 0, '1', 0, '1', 0 ],
+  [ '1', '1', '1', 0, 0, 0, '1', 0, '1', 0 ],
+  [ '5', '5', '5', '2', '5', '3', '3', '3', '5', '2' ],
+  [ 1417237200000,
+    1427947200000,
+    1412136000000,
+    1410235200000,
+    1412222400000,
+    1410321600000,
+    1418533200000,
+    1435636800000,
+    1428033600000,
+    1428724800000 ] ]
+let's scrap the page num 11in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1371268800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1371009600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1370577600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1417928400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1426910400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1407124800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1400990400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1380859200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1398312000000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1390107600000
+after adding the result
+
+[ [ '3', '3', '3', '3', '2', '2', '2', '2', '2', '5' ],
+  [ '3', '3', '3', '3', '2', '2', '2', '2', '2', '6' ],
+  [ '1', '1', '1', '1', '1', '5', '5', '2', '1', '1' ],
+  [ 1371268800000,
+    1371009600000,
+    1370577600000,
+    1417928400000,
+    1426910400000,
+    1407124800000,
+    1400990400000,
+    1380859200000,
+    1398312000000,
+    1390107600000 ] ]
+let's scrap the page num 12in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1368417600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1411617600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1424149200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1399348800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1404100800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1401854400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1400299200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1398052800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1397707200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1391922000000
+after adding the result
+
+[ [ '3', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '4', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '1', '1', '5', '1', '2', '5', '5', '5', '1', '3' ],
+  [ 1368417600000,
+    1411617600000,
+    1424149200000,
+    1399348800000,
+    1404100800000,
+    1401854400000,
+    1400299200000,
+    1398052800000,
+    1397707200000,
+    1391922000000 ] ]
+let's scrap the page num 13in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 2
+
+
+the date of review is  1367121600000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 2
+
+
+the date of review is  1366171200000
+IN reveiewScraper.js Helpfulness: 7/7
+Rating: 2
+
+
+the date of review is  1364616000000
+IN reveiewScraper.js Helpfulness: 10/11
+Rating: 1
+
+
+the date of review is  1363838400000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1384318800000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 2
+
+
+the date of review is  1375416000000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 1
+
+
+the date of review is  1363147200000
+IN reveiewScraper.js Helpfulness: 9/10
+Rating: 1
+
+
+the date of review is  1367640000000
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1366862400000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1395892800000
+after adding the result
+
+[ [ '7', '7', '7', '10', '6', '9', '9', '9', '8', '6' ],
+  [ '7', '7', '7', '11', '6', '10', '10', '10', '9', '6' ],
+  [ '2', '2', '2', '1', '1', '2', '1', '1', '1', '1' ],
+  [ 1367121600000,
+    1366171200000,
+    1364616000000,
+    1363838400000,
+    1384318800000,
+    1375416000000,
+    1363147200000,
+    1367640000000,
+    1366862400000,
+    1395892800000 ] ]
+let's scrap the page num 13in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1398052800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1394596800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1387256400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1386133200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1383451200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1383105600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1383019200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1380859200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1380772800000
+after adding the result
+
+[ [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '3', '1', '5', '1', '4', '5', '5', '2', '5', '5' ],
+  [ 1398052800000,
+    1394596800000,
+    1387256400000,
+    1386133200000,
+    1384923600000,
+    1383451200000,
+    1383105600000,
+    1383019200000,
+    1380859200000,
+    1380772800000 ] ]
+let's scrap the page num 12in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1398052800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1381723200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1401681600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1395115200000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 2
+
+
+the date of review is  1385528400000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1404705600000
+IN reveiewScraper.js Helpfulness: 11/14
+Rating: 1
+
+
+the date of review is  1412222400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1380686400000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1404878400000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1373515200000
+after adding the result
+
+[ [ '4', '5', '4', '5', '5', '6', '11', '4', '7', '7' ],
+  [ '4', '5', '4', '5', '5', '7', '14', '4', '8', '8' ],
+  [ '1', '1', '1', '1', '2', '1', '1', '1', '1', '1' ],
+  [ 1398052800000,
+    1381723200000,
+    1401681600000,
+    1395115200000,
+    1385528400000,
+    1404705600000,
+    1412222400000,
+    1380686400000,
+    1404878400000,
+    1373515200000 ] ]
+let's scrap the page num 11in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1411531200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1427601600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1421989200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1411185600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1419570000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1409630400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408075200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1407902400000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 5
+
+
+the date of review is  1399867200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1412136000000
+after adding the result
+
+[ [ 0, '1', '1', 0, '1', 0, 0, 0, '2', 0 ],
+  [ 0, '1', '1', 0, '1', 0, 0, 0, '3', 0 ],
+  [ '4', '5', '4', '5', '5', '3', '4', '3', '5', '4' ],
+  [ 1411531200000,
+    1427601600000,
+    1421989200000,
+    1411185600000,
+    1419570000000,
+    1409630400000,
+    1408075200000,
+    1407902400000,
+    1399867200000,
+    1412136000000 ] ]
+let's scrap the page num 12in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1389762000000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 4
+
+
+the date of review is  1381896000000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1366084800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1411444800000
+IN reveiewScraper.js Helpfulness: 23/32
+Rating: 1
+
+
+the date of review is  1361250000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1387774800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 5
+
+
+the date of review is  1406347200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1396324800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1397188800000
+IN reveiewScraper.js Helpfulness: 7/9
+Rating: 1
+
+
+the date of review is  1366862400000
+after adding the result
+
+[ [ '5', '5', '5', '2', '23', '2', '3', '2', '2', '7' ],
+  [ '6', '6', '6', '2', '32', '2', '3', '2', '2', '9' ],
+  [ '1', '4', '1', '3', '1', '1', '5', '1', '1', '1' ],
+  [ 1389762000000,
+    1381896000000,
+    1366084800000,
+    1411444800000,
+    1361250000000,
+    1387774800000,
+    1406347200000,
+    1396324800000,
+    1397188800000,
+    1366862400000 ] ]
+let's scrap the page num 13in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1390194000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1389416400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1389330000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1388120400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1387947600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1387429200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1387256400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1387083600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1386997200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1386824400000
+after adding the result
+
+[ [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '5', '5', '5', '5', '5', '5', '5', '5', '1', '5' ],
+  [ 1390194000000,
+    1389416400000,
+    1389330000000,
+    1388120400000,
+    1387947600000,
+    1387429200000,
+    1387256400000,
+    1387083600000,
+    1386997200000,
+    1386824400000 ] ]
+let's scrap the page num 14in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 2
+
+
+the date of review is  1395288000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1393822800000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1393650000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1390194000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1385874000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1385874000000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1373083200000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 1
+
+
+the date of review is  1371700800000
+IN reveiewScraper.js Helpfulness: 6/6
+Rating: 2
+
+
+the date of review is  1367726400000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1408075200000
+after adding the result
+
+[ [ '6', '6', '6', '6', '6', '6', '6', '6', '6', '5' ],
+  [ '6', '6', '6', '6', '6', '6', '6', '6', '6', '5' ],
+  [ '2', '1', '1', '1', '1', '1', '1', '1', '2', '1' ],
+  [ 1395288000000,
+    1393822800000,
+    1393650000000,
+    1390194000000,
+    1385874000000,
+    1385874000000,
+    1373083200000,
+    1371700800000,
+    1367726400000,
+    1408075200000 ] ]
+let's scrap the page num 14in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1380772800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1380600000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1376971200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1376625600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1374811200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1374379200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1373083200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1371614400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1371614400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1371441600000
+after adding the result
+
+[ [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '2', '3', '5', '3', '5', '5', '1', '4', '3', '3' ],
+  [ 1380772800000,
+    1380600000000,
+    1376971200000,
+    1376625600000,
+    1374811200000,
+    1374379200000,
+    1373083200000,
+    1371614400000,
+    1371614400000,
+    1371441600000 ] ]
+let's scrap the page num 13in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1397102400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1380513600000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1416891600000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1417842000000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1376712000000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1384405200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1423630800000
+IN reveiewScraper.js Helpfulness: 8/10
+Rating: 1
+
+
+the date of review is  1387602000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1390971600000
+IN reveiewScraper.js Helpfulness: 8/10
+Rating: 1
+
+
+the date of review is  1363492800000
+after adding the result
+
+[ [ '4', '4', '6', '7', '6', '6', '4', '8', '3', '8' ],
+  [ '4', '4', '7', '8', '7', '7', '4', '10', '3', '10' ],
+  [ '2', '1', '1', '1', '1', '1', '1', '1', '2', '1' ],
+  [ 1397102400000,
+    1380513600000,
+    1416891600000,
+    1417842000000,
+    1376712000000,
+    1384405200000,
+    1423630800000,
+    1387602000000,
+    1390971600000,
+    1363492800000 ] ]
+let's scrap the page num 12in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1423285200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1410840000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1422248400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1432872000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1435377600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408766400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1412481600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1408593600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1408334400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1434513600000
+after adding the result
+
+[ [ '1', 0, '3', 0, 0, 0, 0, 0, 0, 0 ],
+  [ '1', 0, '4', 0, 0, 0, 0, 0, 0, 0 ],
+  [ '3', '4', '1', '1', '1', '4', '4', '5', '5', '5' ],
+  [ 1423285200000,
+    1410840000000,
+    1422248400000,
+    1432872000000,
+    1435377600000,
+    1408766400000,
+    1412481600000,
+    1408593600000,
+    1408334400000,
+    1434513600000 ] ]
+let's scrap the page num 13in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1385787600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1384318800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1382673600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1382414400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1381464000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1381377600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1381377600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1380686400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1378958400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1378872000000
+after adding the result
+
+[ [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ '5', '1', '5', '4', '4', '1', '1', '4', '1', '5' ],
+  [ 1385787600000,
+    1384318800000,
+    1382673600000,
+    1382414400000,
+    1381464000000,
+    1381377600000,
+    1381377600000,
+    1380686400000,
+    1378958400000,
+    1378872000000 ] ]
+let's scrap the page num 15in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 7/9
+Rating: 1
+
+
+the date of review is  1362632400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1372478400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1400644800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1402372800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1414036800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1420261200000
+IN reveiewScraper.js Helpfulness: 22/31
+Rating: 1
+
+
+the date of review is  1361336400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1418187600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1406692800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1402632000000
+after adding the result
+
+[ [ '7', '2', '2', '2', '4', '2', '22', '2', '2', '2' ],
+  [ '9', '2', '2', '2', '5', '2', '31', '2', '2', '2' ],
+  [ '1', '1', '5', '4', '1', '2', '1', '4', '1', '5' ],
+  [ 1362632400000,
+    1372478400000,
+    1400644800000,
+    1402372800000,
+    1414036800000,
+    1420261200000,
+    1361336400000,
+    1418187600000,
+    1406692800000,
+    1402632000000 ] ]
+let's scrap the page num 14in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 8/9
+Rating: 1
+
+
+the date of review is  1365048000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1401422400000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1393995600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1393650000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1391922000000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1391403600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1390107600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1389934800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1389675600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1388638800000
+after adding the result
+
+[ [ '8', '5', '5', '5', '5', '5', '5', '5', '5', '5' ],
+  [ '9', '5', '5', '5', '5', '5', '5', '5', '5', '5' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1365048000000,
+    1401422400000,
+    1393995600000,
+    1393650000000,
+    1391922000000,
+    1391403600000,
+    1390107600000,
+    1389934800000,
+    1389675600000,
+    1388638800000 ] ]
+let's scrap the page num 15in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1371355200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1368072000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1367640000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1366344000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1389934800000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1381809600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 2
+
+
+the date of review is  1366516800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1416718800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1368590400000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 2
+
+
+the date of review is  1366689600000
+after adding the result
+
+[ [ '1', '1', '1', '1', '3', '2', '2', '2', 0, '2' ],
+  [ '1', '1', '1', '1', '4', '3', '3', '2', 0, '3' ],
+  [ '1', '4', '4', '3', '1', '1', '2', '1', '3', '2' ],
+  [ 1371355200000,
+    1368072000000,
+    1367640000000,
+    1366344000000,
+    1389934800000,
+    1381809600000,
+    1366516800000,
+    1416718800000,
+    1368590400000,
+    1366689600000 ] ]
+let's scrap the page num 14in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 11/14
+Rating: 1
+
+
+the date of review is  1371009600000
+IN reveiewScraper.js Helpfulness: 15/20
+Rating: 1
+
+
+the date of review is  1366862400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1420088400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1433995200000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1398744000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1373342400000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 4
+
+
+the date of review is  1407211200000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1376884800000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1388120400000
+IN reveiewScraper.js Helpfulness: 8/10
+Rating: 1
+
+
+the date of review is  1395115200000
+after adding the result
+
+[ [ '11', '15', '4', '3', '6', '4', '5', '5', '6', '8' ],
+  [ '14', '20', '4', '3', '7', '4', '6', '6', '7', '10' ],
+  [ '1', '1', '1', '1', '1', '1', '4', '1', '1', '1' ],
+  [ 1371009600000,
+    1366862400000,
+    1420088400000,
+    1433995200000,
+    1398744000000,
+    1373342400000,
+    1407211200000,
+    1376884800000,
+    1388120400000,
+    1395115200000 ] ]
+let's scrap the page num 13in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1418878800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408766400000
+IN reveiewScraper.js Helpfulness: 4/6
+Rating: 1
+
+
+the date of review is  1416027600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408939200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1409371200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1411012800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1420174800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1420088400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1429329600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 2
+
+
+the date of review is  1409544000000
+after adding the result
+
+[ [ '1', 0, '4', 0, 0, 0, '1', '1', 0, '2' ],
+  [ '1', 0, '6', 0, 0, 0, '1', '1', 0, '3' ],
+  [ '5', '4', '1', '4', '5', '4', '5', '4', '2', '2' ],
+  [ 1418878800000,
+    1408766400000,
+    1416027600000,
+    1408939200000,
+    1409371200000,
+    1411012800000,
+    1420174800000,
+    1420088400000,
+    1429329600000,
+    1409544000000 ] ]
+let's scrap the page num 14in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1399003200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1398830400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1397448000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1395806400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1394424000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1392613200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1388898000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1387342800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1386565200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 4
+
+
+the date of review is  1385010000000
+after adding the result
+
+[ [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '4', '1', '4' ],
+  [ 1399003200000,
+    1398830400000,
+    1397448000000,
+    1395806400000,
+    1394424000000,
+    1392613200000,
+    1388898000000,
+    1387342800000,
+    1386565200000,
+    1385010000000 ] ]
+let's scrap the page num 15in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 2
+
+
+the date of review is  1412568000000
+IN reveiewScraper.js Helpfulness: 8/10
+Rating: 1
+
+
+the date of review is  1374984000000
+IN reveiewScraper.js Helpfulness: 7/9
+Rating: 2
+
+
+the date of review is  1414123200000
+IN reveiewScraper.js Helpfulness: 7/9
+Rating: 2
+
+
+the date of review is  1366603200000
+IN reveiewScraper.js Helpfulness: 26/36
+Rating: 1
+
+
+the date of review is  1360299600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1405569600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1380340800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1379649600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1377576000000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 3
+
+
+the date of review is  1367899200000
+after adding the result
+
+[ [ '5', '8', '7', '7', '26', '3', '2', '2', '2', '5' ],
+  [ '6', '10', '9', '9', '36', '3', '2', '2', '2', '6' ],
+  [ '2', '1', '2', '2', '1', '2', '2', '5', '3', '3' ],
+  [ 1412568000000,
+    1374984000000,
+    1414123200000,
+    1366603200000,
+    1360299600000,
+    1405569600000,
+    1380340800000,
+    1379649600000,
+    1377576000000,
+    1367899200000 ] ]
+let's scrap the page num 14in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1396670400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1429675200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1434859200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1375588800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1410580800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1427083200000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1391576400000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1403236800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1431835200000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 4
+
+
+the date of review is  1361682000000
+after adding the result
+
+[ [ '2', 0, 0, 0, '1', 0, '2', '2', 0, '2' ],
+  [ '3', 0, 0, 0, '1', 0, '3', '3', 0, '3' ],
+  [ '1', '1', '4', '4', '1', '1', '1', '1', '4', '4' ],
+  [ 1396670400000,
+    1429675200000,
+    1434859200000,
+    1375588800000,
+    1410580800000,
+    1427083200000,
+    1391576400000,
+    1403236800000,
+    1431835200000,
+    1361682000000 ] ]
+let's scrap the page num 15in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1384318800000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 4
+
+
+the date of review is  1367553600000
+IN reveiewScraper.js Helpfulness: 5/5
+Rating: 1
+
+
+the date of review is  1400731200000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1385787600000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 2
+
+
+the date of review is  1379217600000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1378180800000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1378008000000
+IN reveiewScraper.js Helpfulness: 7/8
+Rating: 1
+
+
+the date of review is  1376452800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1403150400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1424840400000
+after adding the result
+
+[ [ '5', '5', '5', '7', '7', '7', '7', '7', '4', '4' ],
+  [ '5', '5', '5', '8', '8', '8', '8', '8', '4', '4' ],
+  [ '1', '4', '1', '1', '2', '1', '1', '1', '1', '1' ],
+  [ 1384318800000,
+    1367553600000,
+    1400731200000,
+    1385787600000,
+    1379217600000,
+    1378180800000,
+    1378008000000,
+    1376452800000,
+    1403150400000,
+    1424840400000 ] ]
+let's scrap the page num 16in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1378526400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1378094400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1376971200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1362805200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1393390800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1430107200000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1378008000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1374465600000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1364443200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1419397200000
+after adding the result
+
+[ [ '1', '1', '1', '1', '1', '1', '3', '3', '3', '1' ],
+  [ '1', '1', '1', '1', '1', '1', '4', '4', '4', '1' ],
+  [ '2', '2', '4', '5', '4', '1', '1', '1', '1', '1' ],
+  [ 1378526400000,
+    1378094400000,
+    1376971200000,
+    1362805200000,
+    1393390800000,
+    1430107200000,
+    1378008000000,
+    1374465600000,
+    1364443200000,
+    1419397200000 ] ]
+let's scrap the page num 16in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1427428800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1426392000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408334400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1433304000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1430020800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1425531600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1410494400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1409198400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1405137600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1409716800000
+after adding the result
+
+[ [ '1', '1', 0, 0, 0, '1', 0, 0, 0, 0 ],
+  [ '1', '1', 0, 0, 0, '1', 0, 0, 0, 0 ],
+  [ '5', '5', '4', '1', '1', '5', '5', '4', '3', '5' ],
+  [ 1427428800000,
+    1426392000000,
+    1408334400000,
+    1433304000000,
+    1430020800000,
+    1425531600000,
+    1410494400000,
+    1409198400000,
+    1405137600000,
+    1409716800000 ] ]
+let's scrap the page num 15in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1427515200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1426305600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1414728000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1373342400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1430539200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1429848000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1414990800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1401595200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1401076800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1400558400000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '1', '1', '5', '4', '2', '3', '4', '5', '5', '5' ],
+  [ 1427515200000,
+    1426305600000,
+    1414728000000,
+    1373342400000,
+    1430539200000,
+    1429848000000,
+    1414990800000,
+    1401595200000,
+    1401076800000,
+    1400558400000 ] ]
+let's scrap the page num 16in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1409025600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1392613200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1410148800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1433390400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408334400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1412136000000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 3
+
+
+the date of review is  1381291200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1424322000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1410408000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1382932800000
+after adding the result
+
+[ [ '1', '1', '1', '1', 0, '1', '2', '1', '1', '1' ],
+  [ '1', '1', '1', '1', 0, '1', '3', '1', '1', '1' ],
+  [ '1', '1', '1', '3', '4', '1', '3', '5', '4', '4' ],
+  [ 1409025600000,
+    1392613200000,
+    1410148800000,
+    1433390400000,
+    1408334400000,
+    1412136000000,
+    1381291200000,
+    1424322000000,
+    1410408000000,
+    1382932800000 ] ]
+let's scrap the page num 17in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1435550400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1431662400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1431144000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1426219200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1425873600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1407384000000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 3
+
+
+the date of review is  1430971200000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 4
+
+
+the date of review is  1409112000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1411617600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1420174800000
+after adding the result
+
+[ [ 0, 0, 0, '3', '1', 0, '1', '1', 0, '1' ],
+  [ 0, 0, 0, '4', '1', 0, '2', '2', 0, '1' ],
+  [ '3', '4', '1', '1', '5', '4', '3', '4', '3', '5' ],
+  [ 1435550400000,
+    1431662400000,
+    1431144000000,
+    1426219200000,
+    1425873600000,
+    1407384000000,
+    1430971200000,
+    1409112000000,
+    1411617600000,
+    1420174800000 ] ]
+let's scrap the page num 16in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 4
+
+
+the date of review is  1404705600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1427342400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1381896000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1391144400000
+IN reveiewScraper.js Helpfulness: 5/6
+Rating: 1
+
+
+the date of review is  1370750400000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1415336400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1420261200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1420174800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1367899200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1406433600000
+after adding the result
+
+[ [ '4', '2', '3', '4', '5', '6', '3', '3', '3', '2' ],
+  [ '5', '2', '3', '5', '6', '8', '3', '3', '3', '2' ],
+  [ '4', '5', '1', '1', '1', '1', '1', '1', '1', '2' ],
+  [ 1404705600000,
+    1427342400000,
+    1381896000000,
+    1391144400000,
+    1370750400000,
+    1415336400000,
+    1420261200000,
+    1420174800000,
+    1367899200000,
+    1406433600000 ] ]
+let's scrap the page num 15in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 13/17
+Rating: 5
+
+
+the date of review is  1377748800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1397534400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1396065600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1394424000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1394341200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1391662800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1391144400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1389762000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1389589200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1388811600000
+after adding the result
+
+[ [ '13', '4', '4', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '17', '4', '4', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '5', '1', '1', '1', '1', '1', '1', '2', '1', '1' ],
+  [ 1377748800000,
+    1397534400000,
+    1396065600000,
+    1394424000000,
+    1394341200000,
+    1391662800000,
+    1391144400000,
+    1389762000000,
+    1389589200000,
+    1388811600000 ] ]
+let's scrap the page num 17in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1384664400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1381809600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1380859200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1380600000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1379995200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1379649600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1378612800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1375675200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1375329600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1373860800000
+after adding the result
+
+[ [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '5', '3', '1', '2', '1', '1', '1', '1', '2', '1' ],
+  [ 1384664400000,
+    1381809600000,
+    1380859200000,
+    1380600000000,
+    1379995200000,
+    1379649600000,
+    1378612800000,
+    1375675200000,
+    1375329600000,
+    1373860800000 ] ]
+let's scrap the page num 16in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1387256400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1386046800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1385442000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 4
+
+
+the date of review is  1385355600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1384750800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1384232400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1383800400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1383541200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1383364800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1383278400000
+after adding the result
+
+[ [ '4', '4', '4', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '4', '4', '4', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '1', '1', '2', '4', '2', '1', '1', '1', '1', '1' ],
+  [ 1387256400000,
+    1386046800000,
+    1385442000000,
+    1385355600000,
+    1384750800000,
+    1384232400000,
+    1383800400000,
+    1383541200000,
+    1383364800000,
+    1383278400000 ] ]
+let's scrap the page num 18in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1435291200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1411617600000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 4
+
+
+the date of review is  1407816000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1434168000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1429934400000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 3
+
+
+the date of review is  1407902400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1427688000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1433131200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1434254400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1432699200000
+after adding the result
+
+[ [ 0, 0, '1', 0, 0, '1', '1', 0, 0, 0 ],
+  [ 0, 0, '2', 0, 0, '2', '1', 0, 0, 0 ],
+  [ '5', '3', '4', '5', '4', '3', '3', '1', '1', '5' ],
+  [ 1435291200000,
+    1411617600000,
+    1407816000000,
+    1434168000000,
+    1429934400000,
+    1407902400000,
+    1427688000000,
+    1433131200000,
+    1434254400000,
+    1432699200000 ] ]
+let's scrap the page num 17in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1400299200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1400126400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1398571200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1398225600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1398139200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1397448000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1397361600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1396497600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1396411200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1396065600000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '5', '4', '5', '4', '5', '5', '5', '2', '4', '1' ],
+  [ 1400299200000,
+    1400126400000,
+    1398571200000,
+    1398225600000,
+    1398139200000,
+    1397448000000,
+    1397361600000,
+    1396497600000,
+    1396411200000,
+    1396065600000 ] ]
+let's scrap the page num 17in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1423976400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1434427200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1423976400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1424062800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1414728000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1402286400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1414900800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1408680000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1429848000000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 2
+
+
+the date of review is  1383019200000
+after adding the result
+
+[ [ '1', '1', '1', '1', '1', 0, '1', 0, 0, '2' ],
+  [ '1', '1', '1', '1', '1', 0, '1', 0, 0, '3' ],
+  [ '5', '1', '4', '5', '4', '1', '1', '3', '3', '2' ],
+  [ 1423976400000,
+    1434427200000,
+    1423976400000,
+    1424062800000,
+    1414728000000,
+    1402286400000,
+    1414900800000,
+    1408680000000,
+    1429848000000,
+    1383019200000 ] ]
+let's scrap the page num 18in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1406001600000
+IN reveiewScraper.js Helpfulness: 9/12
+Rating: 2
+
+
+the date of review is  1362286800000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1420693200000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1419829200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1405051200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1400990400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1401336000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1423371600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1425013200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1388120400000
+after adding the result
+
+[ [ '2', '9', '6', '4', '3', '2', '2', '4', '2', '2' ],
+  [ '2', '12', '8', '5', '3', '2', '2', '5', '2', '2' ],
+  [ '2', '2', '1', '1', '2', '1', '1', '1', '3', '3' ],
+  [ 1406001600000,
+    1362286800000,
+    1420693200000,
+    1419829200000,
+    1405051200000,
+    1400990400000,
+    1401336000000,
+    1423371600000,
+    1425013200000,
+    1388120400000 ] ]
+let's scrap the page num 16in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1373083200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1371787200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1371700800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1371009600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1370232000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1367121600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1380081600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1406001600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1386824400000
+after adding the result
+
+[ [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '1' ],
+  [ '2', '2', '2', '2', '2', '2', '2', '2', '2', '1' ],
+  [ '1', '1', '5', '1', '1', '2', '1', '2', '5', '2' ],
+  [ 1373083200000,
+    1371787200000,
+    1371700800000,
+    1371009600000,
+    1370232000000,
+    1367121600000,
+    1384923600000,
+    1380081600000,
+    1406001600000,
+    1386824400000 ] ]
+let's scrap the page num 17in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1379995200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1377316800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1374552000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1372737600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1371787200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1371355200000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 3
+
+
+the date of review is  1371096000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1370318400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1370232000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1369713600000
+after adding the result
+
+[ [ '4', '4', '4', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '4', '4', '4', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '2', '2', '2', '1', '1', '1', '3', '1', '2', '2' ],
+  [ 1379995200000,
+    1377316800000,
+    1374552000000,
+    1372737600000,
+    1371787200000,
+    1371355200000,
+    1371096000000,
+    1370318400000,
+    1370232000000,
+    1369713600000 ] ]
+let's scrap the page num 19in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 3/5
+Rating: 1
+
+
+the date of review is  1409371200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1432526400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1434513600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 4
+
+
+the date of review is  1419656400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1431316800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1429070400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1435636800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1407902400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1432008000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1428897600000
+after adding the result
+
+[ [ '3', 0, 0, '2', 0, 0, 0, 0, 0, 0 ],
+  [ '5', 0, 0, '3', 0, 0, 0, 0, 0, 0 ],
+  [ '1', '5', '5', '4', '2', '2', '5', '4', '5', '5' ],
+  [ 1409371200000,
+    1432526400000,
+    1434513600000,
+    1419656400000,
+    1431316800000,
+    1429070400000,
+    1435636800000,
+    1407902400000,
+    1432008000000,
+    1428897600000 ] ]
+let's scrap the page num 18in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1383714000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1373860800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1427688000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1395720000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1391144400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1384664400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1381982400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1367380800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 2
+
+
+the date of review is  1365048000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1363665600000
+after adding the result
+
+[ [ '1', '1', '1', '4', '4', '4', '4', '4', '4', '4' ],
+  [ '1', '1', '1', '5', '5', '5', '5', '5', '5', '5' ],
+  [ '4', '4', '1', '1', '1', '1', '1', '1', '2', '1' ],
+  [ 1383714000000,
+    1373860800000,
+    1427688000000,
+    1395720000000,
+    1391144400000,
+    1384664400000,
+    1381982400000,
+    1367380800000,
+    1365048000000,
+    1363665600000 ] ]
+let's scrap the page num 18in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1395547200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1395374400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1394769600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1394168400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1393650000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1391662800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1391403600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1390366800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1390280400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1390194000000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '5', '5', '4', '5', '5', '5', '5', '5', '4', '4' ],
+  [ 1395547200000,
+    1395374400000,
+    1394769600000,
+    1394168400000,
+    1393650000000,
+    1391662800000,
+    1391403600000,
+    1390366800000,
+    1390280400000,
+    1390194000000 ] ]
+let's scrap the page num 18in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1388293200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1410667200000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1409544000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1418619600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1428465600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1405828800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1421298000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1410494400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1412308800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1419915600000
+after adding the result
+
+[ [ '3', 0, '2', '1', 0, 0, 0, '1', 0, 0 ],
+  [ '4', 0, '3', '1', 0, 0, 0, '1', 0, 0 ],
+  [ '1', '5', '1', '5', '1', '4', '3', '5', '5', '3' ],
+  [ 1388293200000,
+    1410667200000,
+    1409544000000,
+    1418619600000,
+    1428465600000,
+    1405828800000,
+    1421298000000,
+    1410494400000,
+    1412308800000,
+    1419915600000 ] ]
+let's scrap the page num 19in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1385960400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1376798400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1366776000000
+IN reveiewScraper.js Helpfulness: 15/21
+Rating: 3
+
+
+the date of review is  1366948800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1379044800000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1395028800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1425960000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1425099600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1424494800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1395028800000
+after adding the result
+
+[ [ '2', '2', '2', '15', '2', '4', '1', '1', '1', '1' ],
+  [ '2', '2', '2', '21', '2', '5', '1', '1', '1', '1' ],
+  [ '3', '3', '3', '3', '1', '1', '2', '2', '5', '1' ],
+  [ 1385960400000,
+    1376798400000,
+    1366776000000,
+    1366948800000,
+    1379044800000,
+    1395028800000,
+    1425960000000,
+    1425099600000,
+    1424494800000,
+    1395028800000 ] ]
+let's scrap the page num 17in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 2
+
+
+the date of review is  1369368000000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1368590400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1366516800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1365998400000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1364702400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1409457600000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1424840400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1414036800000
+IN reveiewScraper.js Helpfulness: 4/4
+Rating: 1
+
+
+the date of review is  1409976000000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1388293200000
+after adding the result
+
+[ [ '4', '4', '4', '4', '4', '3', '4', '3', '4', '6' ],
+  [ '4', '4', '4', '4', '4', '3', '4', '3', '4', '7' ],
+  [ '2', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1369368000000,
+    1368590400000,
+    1366516800000,
+    1365998400000,
+    1364702400000,
+    1409457600000,
+    1424840400000,
+    1414036800000,
+    1409976000000,
+    1388293200000 ] ]
+let's scrap the page num 20in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1389157200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1388811600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1388811600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1388552400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1388552400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1387429200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1387342800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1386392400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1385528400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1385010000000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '5', '5', '3', '4', '4', '5', '5', '2', '4', '4' ],
+  [ 1389157200000,
+    1388811600000,
+    1388811600000,
+    1388552400000,
+    1388552400000,
+    1387429200000,
+    1387342800000,
+    1386392400000,
+    1385528400000,
+    1385010000000 ] ]
+let's scrap the page num 19in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1409025600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1423976400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1408161600000
+IN reveiewScraper.js Helpfulness: 4/6
+Rating: 1
+
+
+the date of review is  1405310400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1408420800000
+IN reveiewScraper.js Helpfulness: 10/15
+Rating: 1
+
+
+the date of review is  1359954000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1408680000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1415336400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1381464000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1407816000000
+after adding the result
+
+[ [ 0, '1', '1', '4', '1', '10', 0, 0, 0, 0 ],
+  [ 0, '1', '1', '6', '1', '15', 0, 0, 0, 0 ],
+  [ '5', '5', '3', '1', '1', '1', '3', '5', '5', '3' ],
+  [ 1409025600000,
+    1423976400000,
+    1408161600000,
+    1405310400000,
+    1408420800000,
+    1359954000000,
+    1408680000000,
+    1415336400000,
+    1381464000000,
+    1407816000000 ] ]
+let's scrap the page num 20in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1414990800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1424322000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1368590400000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1368244800000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1365998400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1388725200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1406779200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1430193600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1408507200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 3
+
+
+the date of review is  1423371600000
+after adding the result
+
+[ [ '4', '2', '1', '6', '6', '2', '2', '1', '1', '2' ],
+  [ '5', '2', '1', '8', '8', '2', '2', '1', '1', '2' ],
+  [ '1', '1', '3', '1', '1', '1', '5', '1', '5', '3' ],
+  [ 1414990800000,
+    1424322000000,
+    1368590400000,
+    1368244800000,
+    1365998400000,
+    1388725200000,
+    1406779200000,
+    1430193600000,
+    1408507200000,
+    1423371600000 ] ]
+let's scrap the page num 19in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1401249600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1426478400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 5
+
+
+the date of review is  1372046400000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 3
+
+
+the date of review is  1368417600000
+IN reveiewScraper.js Helpfulness: 6/8
+Rating: 1
+
+
+the date of review is  1396584000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1399262400000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 5
+
+
+the date of review is  1417928400000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1406692800000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1390626000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 3
+
+
+the date of review is  1410408000000
+after adding the result
+
+[ [ '2', '2', '4', '4', '6', '2', '3', '3', '3', '3' ],
+  [ '2', '2', '5', '5', '8', '2', '4', '4', '4', '4' ],
+  [ '1', '1', '5', '3', '1', '2', '5', '1', '1', '3' ],
+  [ 1401249600000,
+    1426478400000,
+    1372046400000,
+    1368417600000,
+    1396584000000,
+    1399262400000,
+    1417928400000,
+    1406692800000,
+    1390626000000,
+    1410408000000 ] ]
+let's scrap the page num 18in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1431489600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1431316800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1435032000000
+IN reveiewScraper.js Helpfulness: 1/2
+Rating: 3
+
+
+the date of review is  1407729600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1435636800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1431403200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1429070400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 1
+
+
+the date of review is  1431662400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1428897600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1418792400000
+after adding the result
+
+[ [ 0, 0, 0, '1', 0, 0, 0, 0, 0, '1' ],
+  [ 0, 0, 0, '2', 0, 0, 0, 0, 0, '1' ],
+  [ '5', '4', '1', '3', '2', '5', '5', '1', '4', '5' ],
+  [ 1431489600000,
+    1431316800000,
+    1435032000000,
+    1407729600000,
+    1435636800000,
+    1431403200000,
+    1429070400000,
+    1431662400000,
+    1428897600000,
+    1418792400000 ] ]
+let's scrap the page num 19in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1381291200000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1380340800000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1377057600000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1376971200000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1367899200000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 1
+
+
+the date of review is  1365220800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1413777600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1418619600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1390366800000
+IN reveiewScraper.js Helpfulness: 8/10
+Rating: 1
+
+
+the date of review is  1376193600000
+after adding the result
+
+[ [ '6', '6', '6', '6', '6', '6', '3', '3', '3', '8' ],
+  [ '7', '7', '7', '7', '7', '7', '3', '3', '3', '10' ],
+  [ '1', '1', '1', '1', '1', '1', '1', '1', '1', '1' ],
+  [ 1381291200000,
+    1380340800000,
+    1377057600000,
+    1376971200000,
+    1367899200000,
+    1365220800000,
+    1413777600000,
+    1418619600000,
+    1390366800000,
+    1376193600000 ] ]
+let's scrap the page num 21in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1385010000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1385010000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1384923600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1384837200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1384837200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1384318800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1384318800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1384232400000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '5', '4', '4', '4', '5', '2', '4', '4', '2', '5' ],
+  [ 1385010000000,
+    1385010000000,
+    1384923600000,
+    1384923600000,
+    1384923600000,
+    1384837200000,
+    1384837200000,
+    1384318800000,
+    1384318800000,
+    1384232400000 ] ]
+let's scrap the page num 20in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 8/10
+Rating: 1
+
+
+the date of review is  1362027600000
+IN reveiewScraper.js Helpfulness: 6/7
+Rating: 5
+
+
+the date of review is  1372737600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1402113600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1400385600000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1400126400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1396756800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 4
+
+
+the date of review is  1393909200000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 4
+
+
+the date of review is  1381982400000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 4
+
+
+the date of review is  1379908800000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 3
+
+
+the date of review is  1372737600000
+after adding the result
+
+[ [ '8', '6', '3', '3', '3', '3', '3', '3', '3', '3' ],
+  [ '10', '7', '3', '3', '3', '3', '3', '3', '3', '3' ],
+  [ '1', '5', '1', '1', '1', '1', '4', '4', '4', '3' ],
+  [ 1362027600000,
+    1372737600000,
+    1402113600000,
+    1400385600000,
+    1400126400000,
+    1396756800000,
+    1393909200000,
+    1381982400000,
+    1379908800000,
+    1372737600000 ] ]
+let's scrap the page num 22in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1402977600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1403582400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1384146000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1413345600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1432526400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1429070400000
+IN reveiewScraper.js Helpfulness: 11/16
+Rating: 1
+
+
+the date of review is  1367812800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1399867200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1420088400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1424667600000
+after adding the result
+
+[ [ '2', '2', '1', '4', '1', '1', '11', '1', '2', '1' ],
+  [ '2', '2', '1', '5', '1', '1', '16', '1', '2', '1' ],
+  [ '2', '1', '3', '1', '4', '1', '1', '3', '1', '1' ],
+  [ 1402977600000,
+    1403582400000,
+    1384146000000,
+    1413345600000,
+    1432526400000,
+    1429070400000,
+    1367812800000,
+    1399867200000,
+    1420088400000,
+    1424667600000 ] ]
+let's scrap the page num 19in the service office365with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1417496400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1433476800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1418706000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1412308800000
+IN reveiewScraper.js Helpfulness: 5/8
+Rating: 1
+
+
+the date of review is  1409198400000
+IN reveiewScraper.js Helpfulness: 3/5
+Rating: 1
+
+
+the date of review is  1413864000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1429761600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1420347600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1411876800000
+IN reveiewScraper.js Helpfulness: 4/6
+Rating: 1
+
+
+the date of review is  1409544000000
+after adding the result
+
+[ [ 0, 0, '1', 0, '5', '3', 0, 0, '2', '4' ],
+  [ 0, 0, '1', 0, '8', '5', 0, 0, '3', '6' ],
+  [ '5', '5', '5', '4', '1', '1', '5', '5', '1', '1' ],
+  [ 1417496400000,
+    1433476800000,
+    1418706000000,
+    1412308800000,
+    1409198400000,
+    1413864000000,
+    1429761600000,
+    1420347600000,
+    1411876800000,
+    1409544000000 ] ]
+let's scrap the page num 20in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1400904000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1412395200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1424149200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1417669200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1423544400000
+IN reveiewScraper.js Helpfulness: 4/6
+Rating: 3
+
+
+the date of review is  1368244800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1413777600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 5
+
+
+the date of review is  1379908800000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1379476800000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1377230400000
+after adding the result
+
+[ [ '2', 0, '1', '1', 0, '4', 0, '2', '2', '2' ],
+  [ '3', 0, '1', '1', 0, '6', 0, '3', '3', '3' ],
+  [ '1', '3', '5', '5', '4', '3', '4', '5', '1', '1' ],
+  [ 1400904000000,
+    1412395200000,
+    1424149200000,
+    1417669200000,
+    1423544400000,
+    1368244800000,
+    1413777600000,
+    1379908800000,
+    1379476800000,
+    1377230400000 ] ]
+let's scrap the page num 21in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1404187200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1407038400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1400817600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1396238400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1417928400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1386392400000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1430193600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1404446400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1423890000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1420606800000
+after adding the result
+
+[ [ '3', '2', '1', '2', '1', '1', '1', '1', '2', '2' ],
+  [ '4', '2', '1', '2', '1', '1', '1', '1', '2', '2' ],
+  [ '1', '5', '2', '1', '2', '1', '2', '4', '1', '5' ],
+  [ 1404187200000,
+    1407038400000,
+    1400817600000,
+    1396238400000,
+    1417928400000,
+    1386392400000,
+    1430193600000,
+    1404446400000,
+    1423890000000,
+    1420606800000 ] ]
+let's scrap the page num 20in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1383886800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1383451200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1383451200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1383364800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1383105600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1382414400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1382155200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1381982400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1381982400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1381896000000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '5', '4', '4', '3', '4', '4', '5', '3', '3', '4' ],
+  [ 1383886800000,
+    1383451200000,
+    1383451200000,
+    1383364800000,
+    1383105600000,
+    1382414400000,
+    1382155200000,
+    1381982400000,
+    1381982400000,
+    1381896000000 ] ]
+let's scrap the page num 21in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 1
+
+
+the date of review is  1371096000000
+IN reveiewScraper.js Helpfulness: 3/3
+Rating: 2
+
+
+the date of review is  1369627200000
+IN reveiewScraper.js Helpfulness: 12/16
+Rating: 1
+
+
+the date of review is  1372910400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1425272400000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1411272000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1424494800000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 2
+
+
+the date of review is  1408939200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1425531600000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1426824000000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 1
+
+
+the date of review is  1418965200000
+after adding the result
+
+[ [ '3', '3', '12', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '3', '3', '16', '2', '2', '2', '2', '2', '2', '2' ],
+  [ '1', '2', '1', '1', '2', '1', '2', '1', '1', '1' ],
+  [ 1371096000000,
+    1369627200000,
+    1372910400000,
+    1425272400000,
+    1411272000000,
+    1424494800000,
+    1408939200000,
+    1425531600000,
+    1426824000000,
+    1418965200000 ] ]
+let's scrap the page num 23in the service office2013with platform idx 0
+
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 4
+
+
+the date of review is  1405396800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1434945600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1388725200000
+IN reveiewScraper.js Helpfulness: 2/2
+Rating: 5
+
+
+the date of review is  1406260800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 3
+
+
+the date of review is  1432008000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1412136000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1407816000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1411099200000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1404360000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1404100800000
+after adding the result
+
+[ [ '1', '1', '1', '2', '1', '3', '1', '1', '1', '1' ],
+  [ '1', '1', '1', '2', '1', '4', '1', '1', '1', '1' ],
+  [ '4', '1', '3', '5', '3', '1', '5', '1', '5', '2' ],
+  [ 1405396800000,
+    1434945600000,
+    1388725200000,
+    1406260800000,
+    1432008000000,
+    1412136000000,
+    1407816000000,
+    1411099200000,
+    1404360000000,
+    1404100800000 ] ]
+let's scrap the page num 21in the service office2013with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1381896000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1381896000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1381809600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1381809600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1381809600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1381636800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1381550400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1381550400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1381464000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1381291200000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ '5', '4', '3', '3', '4', '3', '4', '4', '5', '5' ],
+  [ 1381896000000,
+    1381896000000,
+    1381809600000,
+    1381809600000,
+    1381809600000,
+    1381636800000,
+    1381550400000,
+    1381550400000,
+    1381464000000,
+    1381291200000 ] ]
+let's scrap the page num 22in the service office2013with platform idx 2
+
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1375243200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1407211200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1406001600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1413432000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 2
+
+
+the date of review is  1424667600000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1400731200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1388379600000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1406260800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 3
+
+
+the date of review is  1407902400000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1410062400000
+after adding the result
+
+[ [ '2', 0, 0, 0, 0, '2', 0, '1', 0, 0 ],
+  [ '3', 0, 0, 0, 0, '3', 0, '1', 0, 0 ],
+  [ '1', '5', '4', '3', '2', '1', '4', '1', '3', '5' ],
+  [ 1375243200000,
+    1407211200000,
+    1406001600000,
+    1413432000000,
+    1424667600000,
+    1400731200000,
+    1388379600000,
+    1406260800000,
+    1407902400000,
+    1410062400000 ] ]
+let's scrap the page num 22in the service office365with platform idx 3
+
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1409803200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1435464000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1434945600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1421211600000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1430107200000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1408766400000
+IN reveiewScraper.js Helpfulness: 2/3
+Rating: 1
+
+
+the date of review is  1414296000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 5
+
+
+the date of review is  1419570000000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 5
+
+
+the date of review is  1430452800000
+IN reveiewScraper.js Helpfulness: 0/0
+Rating: 4
+
+
+the date of review is  1412308800000
+after adding the result
+
+[ [ 0, 0, 0, 0, 0, 0, '2', '1', 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, '3', '1', 0, 0 ],
+  [ '5', '5', '5', '5', '5', '4', '1', '5', '5', '4' ],
+  [ 1409803200000,
+    1435464000000,
+    1434945600000,
+    1421211600000,
+    1430107200000,
+    1408766400000,
+    1414296000000,
+    1419570000000,
+    1430452800000,
+    1412308800000 ] ]
+let's scrap the page num 21in the service office365with platform idx 1
+
+IN reveiewScraper.js Helpfulness: 5/7
+Rating: 1
+
+
+the date of review is  1416286800000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1427688000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 2
+
+
+the date of review is  1431230400000
+IN reveiewScraper.js Helpfulness: 5/7
+Rating: 1
+
+
+the date of review is  1409198400000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1390194000000
+IN reveiewScraper.js Helpfulness: 1/1
+Rating: 1
+
+
+the date of review is  1434772800000
+IN reveiewScraper.js Helpfulness: 10/14
+Rating: 2
+
+
+the date of review is  1361250000000
+IN reveiewScraper.js Helpfulness: 5/7
+Rating: 1
+
+
+the date of review is  1420434000000
+IN reveiewScraper.js Helpfulness: 3/4
+Rating: 1
+
+
+the date of review is  1393218000000
+IN reveiewScraper.js Helpfulness: 4/5
+Rating: 1
+
+
+the date of review is  1406260800000
+after adding the result
+
+[ [ '5', '1', '1', '5', '3', '1', '10', '5', '3', '4' ],
+  [ '7', '1', '1', '7', '4', '1', '14', '7', '4', '5' ],
+  [ '1', '1', '2', '1', '1', '1', '2', '1', '1', '1' ],
+  [ 1416286800000,
+    1427688000000,
+    1431230400000,
+    1409198400000,
+    1390194000000,
+    1434772800000,
+    1361250000000,
+    1420434000000,
+    1393218000000,
+    1406260800000 ] ]
+let's scrap the page num 20in the service office365with platform idx 0
+
+there was an error  [ { [Error: getaddrinfo ENOTFOUND code.jquery.com]
+    code: 'ENOTFOUND',
+    errno: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'code.jquery.com' } ]
+[ { [Error: getaddrinfo ENOTFOUND code.jquery.com]
+    code: 'ENOTFOUND',
+    errno: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'code.jquery.com' } ]
