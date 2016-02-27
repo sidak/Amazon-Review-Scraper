@@ -1,4 +1,8 @@
 *~
 
-*.txt
 node_modules/*
+
+extras/*
+
+temp/*
+
