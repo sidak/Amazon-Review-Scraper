@@ -54,7 +54,7 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 
 	console.log("let's scrap the page num "+pageNumber+"in the game " +game+ "with platform idx "+idx+'\n');
 	//console.log(fifaData[game]);
-	scraper.scrape(fifaData[game][idx][KEY_NAME],fifaData[game][idx][KEY_ID], ref , pageNumber, function(err, result){
+	scraper.scrapeWithReviewerRanking(fifaData[game][idx][KEY_NAME],fifaData[game][idx][KEY_ID], ref , pageNumber, function(err, result){
 		if(err){
 			console.log("there was an error ", err);
 			cb(err);
