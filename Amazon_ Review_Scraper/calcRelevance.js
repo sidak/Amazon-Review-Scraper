@@ -1,7 +1,8 @@
 var scraper= require('./reviewScraper');
-var fifaData= require('./Input_files/fifaAmazonData_Feb13');
+var fifaData= require('./Input_files/fifaAmazonDataFormat_Feb2016');
 var fs = require('fs');
 
+var outputFileName = './' + process.argv[2];
 
 var currentDate = Date.parse ("February 13, 2015");
 
@@ -532,7 +533,7 @@ collectGameRatings(function(err, result){
 		// It is important to convert the JSON Object into
 		// string before writing to the file 
 		// otherwise you will have only 'object' written in the output file
-		fs.writeFile('fifaReviewData_calc_time_step_avg_rating_scores2.txt',JSON.stringify(data, null, '\t') , function (err) {
+		fs.writeFile(outputFileName, JSON.stringify(data, null, '\t') , function (err) {
 		  if (err) console.log(err);
 		  else console.log('Written to file');
 		});
