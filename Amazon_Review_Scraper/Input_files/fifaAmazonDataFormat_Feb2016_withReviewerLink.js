@@ -12,7 +12,8 @@ var fifaData=
 						relevanceList:[],
 						pages:74,
 						reviewDatesList:[],
-						reviewerLink:[]
+						reviewerLink:[],
+						reviewerRanking:[]
 
 						
 					},
@@ -26,7 +27,8 @@ var fifaData=
 						relevanceList:[],
 						pages:65,
 						reviewDatesList:[],
-						reviewerLink:[]
+						reviewerLink:[],
+						reviewerRanking:[]
 						
 					},
 					
@@ -39,7 +41,8 @@ var fifaData=
 						relevanceList:[],
 						pages:25,
 						reviewDatesList:[],
-						reviewerLink:[]
+						reviewerLink:[],
+						reviewerRanking:[]
 						
 					},
 					
@@ -52,7 +55,8 @@ var fifaData=
 						relevanceList:[],
 						pages:52,
 						reviewDatesList:[],
-						reviewerLink:[]
+						reviewerLink:[],
+						reviewerRanking:[]
 						
 					},
 				],
@@ -68,7 +72,8 @@ var fifaData=
 							relevanceList:[],
 							pages:62,
 							reviewDatesList:[],
-							reviewerLink:[]
+							reviewerLink:[],
+							reviewerRanking:[]
 						
 						},
 						
@@ -81,7 +86,8 @@ var fifaData=
 							relevanceList:[],
 							pages:78,
 							reviewDatesList:[],
-							reviewerLink:[]
+							reviewerLink:[],
+							reviewerRanking:[]
 						
 						},
 						
@@ -94,7 +100,8 @@ var fifaData=
 							relevanceList:[],
 							pages:30,
 							reviewDatesList:[],
-							reviewerLink:[]
+							reviewerLink:[],
+							reviewerRanking:[]
 						
 							
 						},
@@ -108,7 +115,8 @@ var fifaData=
 							relevanceList:[],
 							pages:50,
 							reviewDatesList:[],
-							reviewerLink:[]
+							reviewerLink:[],
+							reviewerRanking:[]
 						
 						}
 			
