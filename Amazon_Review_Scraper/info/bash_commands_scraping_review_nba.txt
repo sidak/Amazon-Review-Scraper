@@ -1,0 +1,16 @@
+node multiPageReviewScraper.js NBA-2K14-Playstation-3 B00C710AQO 52  >Output\ Files/Review_Scraping_More_Contents/Nba/nba14_ps3_all.txt
+
+node multiPageReviewScraper.js NBA-2K14-PlayStation-4 B00DBRM3G8 59 >Output\ Files/Review_Scraping_More_Contents/Nba/nba14_ps4_all.txt
+
+node multiPageReviewScraper.js NBA-2K14-Xbox-One B00DBRM3EU 30  >Output\ Files/Review_Scraping_More_Contents/Nba/nba14_xbox1_all.txt
+
+node multiPageReviewScraper.js NBA-2K14-Xbox-360 B00C710AZ0 59  >Output\ Files/Review_Scraping_More_Contents/Nba/nba14_xbox360_all.txt
+
+node multiPageReviewScraper.js NBA-2K15-PlayStation-3 B00K1JBMDO 46  >Output\ Files/Review_Scraping_More_Contents/Nba/nba15_ps3_all.txt
+
+node multiPageReviewScraper.js NBA-2K15-PlayStation-4 B00K1JBLO4 87  >Output\ Files/Review_Scraping_More_Contents/Nba/nba15_ps4_all.txt
+
+node multiPageReviewScraper.js NBA-2K15-Xbox-One B00K1JBLNA 44  >Output\ Files/Review_Scraping_More_Contents/Nba/nba15_xbox1_all.txt
+
+node multiPageReviewScraper.js NBA-2K15-Xbox-360 B00K1JBMGQ 59  >Output\ Files/Review_Scraping_More_Contents/Nba/nba15_xbox360_all.txt
+
