@@ -126,7 +126,7 @@ exports.scrapeWithReviewerLink = function(name, id, ref, page, cb) {
 
 
 
-function scrapeRanking(reviewerPageLink, cb){
+exports.scrapeRanking = function(reviewerPageLink, cb){
 	console.log("in scrape ranking");
 	jsdom.env({
 		url:reviewerPageLink,
@@ -137,25 +137,27 @@ function scrapeRanking(reviewerPageLink, cb){
 				console.log(reviewerPageLink);
 				cb(errors);
 			}
-			var $ = window.jQuery;
-			console.log("Yo bitch");
-			console.log(reviewerPageLink);
-			if($("div.bio-expander").length > 0){
-
-				var rankingString = $("div.bio-expander").find("div.a-row.a-spacing-small.a-spacing-top-small").find("div.a-row.a-spacing-small").children("div.a-row").find("span.a-size-base").text();
-				console.log(rankingString);
-				rankingString = rankingString.substring(1);
-			}			
 			else{
-				rankingString="0";
-			}
+				var $ = window.jQuery;
+				console.log("Yo bitch");
+				console.log(reviewerPageLink);
+				if($("div.bio-expander").length > 0){
 
-			console.log(rankingString);
-			
-			var ranking = convertFromCommaNotationToInt(rankingString);
-			console.log(ranking);	
-					
-			cb(null, ranking);
+					var rankingString = $("div.bio-expander").find("div.a-row.a-spacing-small.a-spacing-top-small").find("div.a-row.a-spacing-small").children("div.a-row").find("span.a-size-base").text();
+					console.log(rankingString);
+					rankingString = rankingString.substring(1);
+				}			
+				else{
+					rankingString="0";
+				}
+
+				console.log(rankingString);
+				
+				var ranking = convertFromCommaNotationToInt(rankingString);
+				console.log(ranking);	
+						
+				cb(null, ranking);
+			}
 		}
 
 	});

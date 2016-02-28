@@ -93,23 +93,68 @@ function sortByProperty(prop){
    }
 }
 
+function scrapeSingleReviewerStep(ct, game, idx, cb){
+	var numReviews = fifaData[game][idx][KEY_RlLIST].length;
+	var reviewIdx = numReviews - ct;
+	var reviewerPageLink = fifaData[game][idx][KEY_RlLIST][reviewIdx];
+	scraper.scrapeRanking(reviewerPageLink, function(err, result){
+		if(err){
+			console.log("error in single review scraper step");
+			cb(err);
+		}
+		else{
+			console.log("Link was " + reviewerPageLink + " and ranking scraped is "+ result);
+			fifaData[game][idx][KEY_RRLIST].push(result);
+			cb(null, result);
+		}
+	});
+
+}
+
+
+function scrapeReviewerRankingForPlatform(cb, game, idx){
+	var numReviews = fifaData[game][idx][KEY_RlLIST].length;
+	asyncTraversal(numReviews, game, idx, scrapeSingleReviewerStep, null, function(err, result){
+		if(err!=null){
+			console.log("There was error in scrapeReviewerRankingForPlatform");
+			cb(err);
+		}
+		else{
+			console.log("scrape platform reviewer success");
+			cb(null, fifaData[game][idx][KEY_RRLIST]);
+		}
+	});
+
+}
 //Usage
 
 // Final task 
-function final(cb, game, idx) { 
-	calculateRelevance(game, idx, function(err, result){
-		if(err)cb(err);
-		else if (result!=null){
-			console.log('Done scraping the number of elements you said and also calculated the relevance scores for them ');
-			// write the data to file
-			writeDataForGamePlatform(game, idx, function(err, result){
+function platformFinalStep(cb, game, idx) { 
+	scrapeReviewerRankingForPlatform(game, idx, function(err, result){
+		if(err){
+			console.log("There was an error in scraping reviewerRanking for game " + game+ " and idx " + idx);
+			cb(err);
+		}
+		else{
+			
+			console.log("Suceesfully scraped reviewerRanking for game " + game+ " and idx " + idx);
+			console.log(result);
+			
+			calculateRelevance(game, idx, function(err, result){
 				if(err)cb(err);
-				else if(result!=null){
-					cb(null, result);
+				else if (result!=null){
+					console.log('Done scraping the number of elements you said and also calculated the relevance scores for them ');
+					// write the data to file
+					writeDataForGamePlatform(game, idx, function(err, result){
+						if(err)cb(err);
+						else if(result!=null){
+							cb(null, result);
+						}
+					});
 				}
+				
 			});
 		}
-		
 	});
 	
 }
@@ -117,7 +162,7 @@ function final(cb, game, idx) {
 // Async traversal of given "ct" of pages for "game" 
 // with platform as "idx" and scrape the most helpful reviews
 // on these pages
-function asyncTraversal(ct, game,idx, traversalStep, cb) {
+function asyncTraversal(ct, game,idx, traversalStep, final, cb) {
   if(ct>0) {
     traversalStep( ct, game, idx, function(err, result) {
       if(err)cb(err);
@@ -128,7 +173,11 @@ function asyncTraversal(ct, game,idx, traversalStep, cb) {
 	  }
     });
   } else {
-    return final(cb,game, idx);
+
+    if(final!=null) return final(cb,game, idx);
+    else{
+    	cb(null, null);
+    }
   }
 }
 // Collect ratings for all versions
@@ -167,7 +216,7 @@ function collectPlatformRatings(game, cb){
 			// Collect reviews on only the number of pages for 
 			// given game and platform as idx specified in 
 			// the fifaAmazonData.js file 
-			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep,function(err, result){
+			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep, platformFinalStep, function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
 					cb(null,result);
@@ -185,7 +234,7 @@ function writeDataForGamePlatform(game, idx, cb){
 	var ratings_char;
 	var ratings_int=[];
 	var relevance;
-	var rlinks;
+	var reviewerRanking;
 	var name;
 	var dates;
 	if(game==KEY_FIFA14){
@@ -202,20 +251,20 @@ function writeDataForGamePlatform(game, idx, cb){
 	}
 	relevance= gamePlatform[KEY_ReLIST];
 	
-	rlinks = gamePlatform[KEY_RlLIST];
+	reviewerRanking = gamePlatform[KEY_RRLIST];
 	//check if dates are not strings and rather numbers
 	dates= gamePlatform[KEY_DLIST];
 	// There is actually no need to write the dates in the file 
 	// They are only used for the calculation of relevance
 	
-	var obj = createNewServiceObject(parent, name, ratings_int, relevance, rlinks, dates, children);
+	var obj = createNewServiceObject(parent, name, ratings_int, relevance, reviewerRanking, dates, children);
 	console.log(obj);
 	//data.push(JSON.stringify(obj));
 	data.push(obj);
 	cb(null, 'data obj written to file');
 	
 }
-function createNewServiceObject(parent, name, ratings, relevance, reviewerLink, dates, children){
+function createNewServiceObject(parent, name, ratings, relevance, reviewerRanking, dates, children){
 	var obj = {
 					"name":name,
 					"agg_rating_score":0,
@@ -225,7 +274,7 @@ function createNewServiceObject(parent, name, ratings, relevance, reviewerLink, 
 					"universe_wmean_rating":0,
 					"consumer_ratings":ratings,
 					"consumer_relevance":relevance,
-					"reviewer_link": reviewerLink,
+					"reviewer_ranking": reviewerRanking,
 					"review_dates":dates,
 					"consumer_feedback_count":0,
 					"rating_trust_value":0,
