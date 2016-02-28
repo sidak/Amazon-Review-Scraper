@@ -24,6 +24,8 @@ var KEY_RlLIST="reviewerLink";
 var KEY_GAME_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
 
+var scrapedCount =0;
+
 // Further the naming of some of the variables
 // has to be made independent of the kind of 
 // example we are using - ex: fifa
@@ -125,7 +127,6 @@ function scrapeReviewerRankingForPlatform(game, idx, cb){
 			cb(err);
 		}
 		else{
-			console.log(result);
 			console.log("scrape platform reviewer success");
 			cb(null, fifaData[game][idx][KEY_RRLIST]);
 		}
@@ -190,6 +191,15 @@ function platformFinalStep(cb, game, idx) {
 	});
 	
 }
+//todo
+function platformFinalStep1(cb, game, idx) { 
+	console.log("In plaform final step for game "+ game + " and idx is "+ idx);
+	scrapedCount ++;
+	if(scrapedCount == (NUM_VERSIONS * NUM_PLATFORMS)){
+
+	}	
+	
+}
 
 // Async traversal of given "ct" of pages for "game" 
 // with platform as "idx" and scrape the most helpful reviews
@@ -212,6 +222,7 @@ function asyncTraversal(ct, game,idx, traversalStep, cb) {
   }
 }
 
+// async traversal for scraping reviewer ranking for reviews corresponding to platform
 function asyncTraversal1(ct, game,idx, traversalStep, cb) {
   console.log(" ct is "+ ct);
   if(ct>0) {
@@ -220,7 +231,7 @@ function asyncTraversal1(ct, game,idx, traversalStep, cb) {
       else {
 		  ct--;
 		  console.log(result)
-		  return asyncTraversal(ct, game, idx, traversalStep, cb);
+		  return asyncTraversal1(ct, game, idx, traversalStep, cb);
 	  }
     });
 
@@ -233,6 +244,7 @@ function asyncTraversal1(ct, game,idx, traversalStep, cb) {
 // of the game and for the different platforms it runs on
 function collectGameRatings(cb){
 	// write the metadata in the file
+	scrapedCount = 0;
 	data.push(
 				{ 
 						name:"meta",						
@@ -256,6 +268,68 @@ function collectGameRatings(cb){
 	}
 }
 
+
+function asyncTraversal2(ct, game, traversalStep, cb) {
+  console.log(" ct is "+ ct);
+  if(ct>0) {
+  	var idx = NUM_PLATFORMS - ct ;
+    traversalStep( game, idx, function(err, result) {
+      if(err)cb(err);
+      else {
+		  ct--;
+		  console.log(result)
+		  return asyncTraversal2(ct, game, traversalStep, cb);
+	  }
+    });
+
+  } else {
+  		cb(null, "done in asyncTraversal2 for game "+ game);
+  }
+}
+
+function collectFifaYearRatings(game, cb){
+	asyncTraversal2(NUM_PLATFORMS, game, scrapeReviewerRankingForPlatform, function(err, result){
+		if(err){
+			console.log("error in collecting fifa year ratings for "+ game);
+			cb(err);
+		}
+		else{
+			console.log(result);
+			cb(null, "done collecting fifa year ratings for "+ game);
+		}
+	});
+}
+
+function collectGameRatings1(cb){
+	// write the metadata in the file
+	scrapedCount = 0;
+	data.push(
+				{ 
+						name:"meta",						
+						root:"fifa",
+				}
+			);
+	
+	collectFifaYearRatings(games[KEY_FIFA14], function(err, result){
+		if(err){
+			console.log("error in collecting fifa 14 ratings");
+			cb(err);
+		}
+		else{
+			console.log("done collecting fifa 14 ratings");
+			collectFifaYearRatings(games[KEY_FIFA15], function(err, result){
+				if(err){
+					console.log("error in collecting fifa 15 ratings");
+					cb(err);
+				}
+				else{
+					console.log("done collecting fifa 15 ratings");
+					cb(null, "done with fifa14 and fifa 15");
+				}
+			});
+		}
+	});
+}
 // Collect ratings for the different platforms
 // for the given game
 function collectPlatformRatings(game, cb){
@@ -623,7 +697,7 @@ function calculateRelevance(game, idx,cb){
 // , calculates relevance for each of them and then
 // writes them to a file for use in aggregation
 // of feedback
-collectGameRatings(function(err, result){
+collectGameRatings1(function(err, result){
 	if(err)console.log(err);
 	else if (result!=null){
 		//console.log(result);
