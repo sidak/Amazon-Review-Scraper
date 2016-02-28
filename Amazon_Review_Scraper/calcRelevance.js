@@ -125,6 +125,7 @@ function scrapeReviewerRankingForPlatform(game, idx, cb){
 			cb(err);
 		}
 		else{
+			console.log(result);
 			console.log("scrape platform reviewer success");
 			cb(null, fifaData[game][idx][KEY_RRLIST]);
 		}
@@ -161,7 +162,7 @@ function scrapeReviewerRankingForPlatform1(game, idx, cb){
 // Final task 
 function platformFinalStep(cb, game, idx) { 
 	console.log("In plaform final step for game "+ game + " and idx is "+ idx);
-	scrapeReviewerRankingForPlatform1(game, idx, function(err, result){
+	scrapeReviewerRankingForPlatform(game, idx, function(err, result){
 		if(err){
 			console.log("There was an error in scraping reviewerRanking for game " + game+ " and idx " + idx);
 			cb(err);
