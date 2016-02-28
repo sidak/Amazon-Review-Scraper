@@ -58,7 +58,7 @@ var fifaData=
 						reviewerLink:[],
 						reviewerRanking:[]
 						
-					},
+					}
 				],
 		
 		

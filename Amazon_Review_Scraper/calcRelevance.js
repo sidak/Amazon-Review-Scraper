@@ -119,6 +119,7 @@ function reviewerFinalStep(cb, game, idx){
 }
 
 function scrapeReviewerRankingForPlatform(game, idx, cb){
+	console.log("game is " + game + " and idx is " + idx); 
 	var numReviews = fifaData[game][idx][KEY_RlLIST].length;
 	console.log("NUm of reviews is "+ numReviews);
 	asyncTraversal1(numReviews, game, idx, scrapeSingleReviewerStep, function(err, result){
@@ -299,14 +300,14 @@ function collectFifaYearRatings(game, cb){
 function collectGameReviewerRankings(cb){
 	scrapedCount = 0;
 	
-	collectFifaYearRatings(games[KEY_FIFA14], function(err, result){
+	collectFifaYearRatings(games[0], function(err, result){
 		if(err){
 			console.log("error in collecting fifa 14 ratings");
 			cb(err);
 		}
 		else{
 			console.log("done collecting fifa 14 ratings");
-			collectFifaYearRatings(games[KEY_FIFA15], function(err, result){
+			collectFifaYearRatings(games[1], function(err, result){
 				if(err){
 					console.log("error in collecting fifa 15 ratings");
 					cb(err);
