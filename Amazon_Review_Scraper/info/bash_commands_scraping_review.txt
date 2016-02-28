@@ -1,16 +1,16 @@
-node multiPageReviewScraper.js FIFA-14-Playstation-3 B00CD90R72 73  >Output_Files/Review_Scraping/FifaData/fifa14_ps3_all
+node multiPageReviewScraper.js FIFA-14-Playstation-3 B00CD90R72 74  >Output\ Files/Review_Scraping_More_Contents/fifa14_ps3_all.txt
 
-node multiPageReviewScraper.js FIFA-14-PlayStation-4 B00CXCCI8A 65 >Output_Files/Review_Scraping/FifaData/fifa14_ps4_all
+node multiPageReviewScraper.js FIFA-14-PlayStation-4 B00CXCCI8A 65 >Output\ Files/Review_Scraping_More_Contents/fifa14_ps4_all.txt
 
-node multiPageReviewScraper.js FIFA-14-Xbox-One B00CX7FMDS 25  >Output_Files/Review_Scraping/FifaData/fifa14_xbox1_all
+node multiPageReviewScraper.js FIFA-14-Xbox-One B00CX7FMDS 25  >Output\ Files/Review_Scraping_More_Contents/fifa14_xbox1_all.txt
 
-node multiPageReviewScraper.js FIFA-14-Xbox-360 B00CD90R4K 52  >Output_Files/Review_Scraping/FifaData/fifa14_xbox360_all
+node multiPageReviewScraper.js FIFA-14-Xbox-360 B00CD90R4K 52  >Output\ Files/Review_Scraping_More_Contents/fifa14_xbox360_all.txt
 
-node multiPageReviewScraper.js FIFA-15-PlayStation-3 B00KPY1GX6 61  >Output_Files/Review_Scraping/FifaData/fifa15_ps3_all
+node multiPageReviewScraper.js FIFA-15-PlayStation-3 B00KPY1GX6 62  >Output\ Files/Review_Scraping_More_Contents/fifa15_ps3_all.txt
 
-node multiPageReviewScraper.js FIFA-15-PlayStation-4 B00KPY1GJA 78  >Output_Files/Review_Scraping/FifaData/fifa15_ps4_all
+node multiPageReviewScraper.js FIFA-15-PlayStation-4 B00KPY1GJA 78  >Output\ Files/Review_Scraping_More_Contents/fifa15_ps4_all.txt
 
-node multiPageReviewScraper.js FIFA-15-Xbox-One B00KPY1HP8 30  >Output_Files/Review_Scraping/FifaData/fifa15_xbox1_all
+node multiPageReviewScraper.js FIFA-15-Xbox-One B00KPY1HP8 30  >Output\ Files/Review_Scraping_More_Contents/fifa15_xbox1_all.txt
 
-node multiPageReviewScraper.js FIFA-15-Xbox-360 B00KPY1GFY 50  >Output_Files/Review_Scraping/FifaData/fifa15_xbox360_all
+node multiPageReviewScraper.js FIFA-15-Xbox-360 B00KPY1GFY 50  >Output\ Files/Review_Scraping_More_Contents/fifa15_xbox360_all.txt
 
