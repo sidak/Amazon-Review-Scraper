@@ -22,6 +22,8 @@ var dateStringList = [];
 var totalReviews=0;
 var totalZeroHelpfulReviews=0;
 
+console.log(name);
+
 var scrape = function(page,ref, cb) {
     // The url, scripts, done keywords are optional 
     // but if you use them enclose them in curly braces 
@@ -37,8 +39,12 @@ var scrape = function(page,ref, cb) {
 					//console.log("yhuj");
 					$("div#cm_cr-review_list")
 						.children('div.a-section.review')
-						.each(function() {
+						.each(function(index) {
 							//console.log("fuck");
+
+							var reviewId = (page-1)*10 +(index+1);
+							console.log(reviewId);
+
 							var upvotes =0;
 							var totalVotes=0;
 
@@ -56,7 +62,29 @@ var scrape = function(page,ref, cb) {
 							// remove the decimal place and zero after it	
 							rating = rating.substring(0, rating.length - 2);
 							
-							var reviewDate = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
+							console.log(rating)
+
+							console.log(upvotes);
+							console.log(totalVotes);
+							
+							var reviewerPageLink = "http://www.amazon.com";
+							reviewerPageLink += $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-byline").find("a.a-size-base.a-link-normal.author").attr("href");
+							
+							console.log(reviewerPageLink);
+
+							var reviewDateString = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
+							var reviewDate= Date.parse(reviewDateString);
+							console.log(reviewDate);	
+
+							var verifiedElement = $(this).find("div.a-row.a-spacing-mini.review-data").find("span.a-size-mini.a-color-state.a-text-bold");
+							var isVerified;
+							if(verifiedElement.length>0){
+								isVerified = 1;	
+							}
+							else{
+								isVerified = 0;
+							}
+							console.log(isVerified);
 
 							// store the data for processing of relevance
 							upvotesList.push(upvotes);
@@ -64,7 +92,9 @@ var scrape = function(page,ref, cb) {
 							ratingList.push(rating);
 							dateStringList.push(reviewDate);
 							totalReviews++;
-							console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +"\nDate is " + reviewDate + "\n\n");
+							console.log("\n");
+
+							//console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +"\nDate is " + reviewDate + "\n\n");
 						});
 					window.close();
 					cb(null, "Scraped the page "+page);
