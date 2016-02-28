@@ -1,5 +1,5 @@
 var scraper= require('./reviewScraper');
-var fifaData= require('./Input_files/fifaAmazonDataFormat_Feb2016');
+var fifaData= require('./Input_files/fifaAmazonDataFormat_Feb2016_withRanking');
 var fs = require('fs');
 
 var outputFileName = './' + process.argv[2];
@@ -19,6 +19,7 @@ var KEY_TVLIST="totalVotesList";
 var KEY_RLIST="ratingList";
 var KEY_ReLIST="relevanceList";
 var KEY_DLIST="reviewDatesList";
+var KEY_RRLIST ="reviewerRanking";
 var KEY_GAME_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
 
@@ -45,7 +46,7 @@ var games=["fifa14","fifa15"];
 var data=[];
 
 // Async task for collecting the reviews on a page 
-// numbered as (2-ct)+1 for game and idx as the platform
+// for game and idx as the platform
 
 var collectPageRatingStep= function (ct,game, idx, cb) {
 	var normCt= (fifaData[game][idx][KEY_PAGES]-ct)+1;
@@ -67,7 +68,9 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
 			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
 			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
-			fifaData[game][idx][KEY_DLIST]=fifaData[game][idx][KEY_DLIST].concat(result[3]);
+			fifaData[game][idx][KEY_RRLIST]=fifaData[game][idx][KEY_RRLIST].concat(result[3]);
+			
+			fifaData[game][idx][KEY_DLIST]=fifaData[game][idx][KEY_DLIST].concat(result[4]);
 
 			console.log("after adding the result\n");
 			console.log(fifaData[game][idx]);
