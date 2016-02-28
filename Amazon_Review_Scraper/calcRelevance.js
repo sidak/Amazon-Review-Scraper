@@ -191,14 +191,10 @@ function platformFinalStep(cb, game, idx) {
 	});
 	
 }
-//todo
-function platformFinalStep1(cb, game, idx) { 
-	console.log("In plaform final step for game "+ game + " and idx is "+ idx);
-	scrapedCount ++;
-	if(scrapedCount == (NUM_VERSIONS * NUM_PLATFORMS)){
 
-	}	
-	
+function platformFinalStep1(cb, game, idx) { 
+	console.log("In plaform final step1 for game "+ game + " and idx is "+ idx);
+	cb(null, "done bitch");
 }
 
 // Async traversal of given "ct" of pages for "game" 
@@ -218,7 +214,7 @@ function asyncTraversal(ct, game,idx, traversalStep, cb) {
 
   } else {
 
-    return platformFinalStep(cb, game, idx);
+    return platformFinalStep1(cb, game, idx);
   }
 }
 
@@ -300,15 +296,8 @@ function collectFifaYearRatings(game, cb){
 	});
 }
 
-function collectGameRatings1(cb){
-	// write the metadata in the file
+function collectGameReviewerRankings(cb){
 	scrapedCount = 0;
-	data.push(
-				{ 
-						name:"meta",						
-						root:"fifa",
-				}
-			);
 	
 	collectFifaYearRatings(games[KEY_FIFA14], function(err, result){
 		if(err){
@@ -697,24 +686,31 @@ function calculateRelevance(game, idx,cb){
 // , calculates relevance for each of them and then
 // writes them to a file for use in aggregation
 // of feedback
-collectGameRatings1(function(err, result){
-	if(err)console.log(err);
-	else if (result!=null){
-		//console.log(result);
-		console.log('\n\n');
-		//console.log(fifaData[KEY_FIFA14]);
-		//console.log(fifaData[KEY_FIFA15]);
-		
-		console.log('abt to write');
+collectGameRatings(function(err, result){
+	if(err){
+		console.log(err);
+	}
+	else{
+		collectGameReviewerRankings(function(err, result){
+			if(err)console.log(err);
+			else if (result!=null){
+				//console.log(result);
+				console.log('\n\n');
+				//console.log(fifaData[KEY_FIFA14]);
+				//console.log(fifaData[KEY_FIFA15]);
+				
+				console.log('abt to write');
 
-		data.sort(sortByProperty(KEY_NAME));
-		console.log(data);
-		// It is important to convert the JSON Object into
-		// string before writing to the file 
-		// otherwise you will have only 'object' written in the output file
-		fs.writeFile(outputFileName, JSON.stringify(data, null, '\t') , function (err) {
-		  if (err) console.log(err);
-		  else console.log('Written to file');
+				data.sort(sortByProperty(KEY_NAME));
+				console.log(data);
+				// It is important to convert the JSON Object into
+				// string before writing to the file 
+				// otherwise you will have only 'object' written in the output file
+				fs.writeFile(outputFileName, JSON.stringify(data, null, '\t') , function (err) {
+				  if (err) console.log(err);
+				  else console.log('Written to file');
+				});
+			}
 		});
 	}
-});
+})
