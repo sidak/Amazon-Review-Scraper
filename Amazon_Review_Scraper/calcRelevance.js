@@ -1,5 +1,5 @@
 var scraper= require('./reviewScraper');
-var fifaData= require('./Input_files/fifaAmazonDataFormat_Feb2016_withRanking');
+var fifaData= require('./Input_files/fifaAmazonDataFormat_Feb2016_withReviewerLink');
 var fs = require('fs');
 
 var outputFileName = './' + process.argv[2];
@@ -20,6 +20,7 @@ var KEY_RLIST="ratingList";
 var KEY_ReLIST="relevanceList";
 var KEY_DLIST="reviewDatesList";
 var KEY_RRLIST ="reviewerRanking";
+var KEY_RlLIST="reviewerLink";
 var KEY_GAME_PLATFORM_NAME="name";
 var KEY_PAGES="pages";
 
@@ -55,7 +56,7 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 
 	console.log("let's scrap the page num "+pageNumber+"in the game " +game+ "with platform idx "+idx+'\n');
 	//console.log(fifaData[game]);
-	scraper.scrapeWithReviewerRanking(fifaData[game][idx][KEY_NAME],fifaData[game][idx][KEY_ID], ref , pageNumber, function(err, result){
+	scraper.scrapeWithReviewerLink(fifaData[game][idx][KEY_NAME],fifaData[game][idx][KEY_ID], ref , pageNumber, function(err, result){
 		if(err){
 			console.log("there was an error ", err);
 			cb(err);
@@ -68,7 +69,7 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
 			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
 			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
-			fifaData[game][idx][KEY_RRLIST]=fifaData[game][idx][KEY_RRLIST].concat(result[3]);
+			fifaData[game][idx][KEY_RlLIST]=fifaData[game][idx][KEY_RlLIST].concat(result[3]);
 			
 			fifaData[game][idx][KEY_DLIST]=fifaData[game][idx][KEY_DLIST].concat(result[4]);
 
@@ -184,6 +185,7 @@ function writeDataForGamePlatform(game, idx, cb){
 	var ratings_char;
 	var ratings_int=[];
 	var relevance;
+	var rlinks;
 	var name;
 	var dates;
 	if(game==KEY_FIFA14){
@@ -200,19 +202,20 @@ function writeDataForGamePlatform(game, idx, cb){
 	}
 	relevance= gamePlatform[KEY_ReLIST];
 	
+	rlinks = gamePlatform[KEY_RlLIST];
 	//check if dates are not strings and rather numbers
 	dates= gamePlatform[KEY_DLIST];
 	// There is actually no need to write the dates in the file 
 	// They are only used for the calculation of relevance
 	
-	var obj = createNewServiceObject(parent, name, ratings_int, relevance,dates, children);
+	var obj = createNewServiceObject(parent, name, ratings_int, relevance, rlinks, dates, children);
 	console.log(obj);
 	//data.push(JSON.stringify(obj));
 	data.push(obj);
 	cb(null, 'data obj written to file');
 	
 }
-function createNewServiceObject(parent, name, ratings, relevance,dates, children){
+function createNewServiceObject(parent, name, ratings, relevance, reviewerLink, dates, children){
 	var obj = {
 					"name":name,
 					"agg_rating_score":0,
@@ -222,6 +225,7 @@ function createNewServiceObject(parent, name, ratings, relevance,dates, children
 					"universe_wmean_rating":0,
 					"consumer_ratings":ratings,
 					"consumer_relevance":relevance,
+					"reviewer_link": reviewerLink,
 					"review_dates":dates,
 					"consumer_feedback_count":0,
 					"rating_trust_value":0,
