@@ -97,6 +97,7 @@ function scrapeSingleReviewerStep(ct, game, idx, cb){
 	var numReviews = fifaData[game][idx][KEY_RlLIST].length;
 	var reviewIdx = numReviews - ct;
 	var reviewerPageLink = fifaData[game][idx][KEY_RlLIST][reviewIdx];
+	console.log("Trying to scrape review of index " + reviewIdx + " and at link "+ reviewerPageLink);
 	scraper.scrapeRanking(reviewerPageLink, function(err, result){
 		if(err){
 			console.log("error in single review scraper step");
@@ -111,10 +112,14 @@ function scrapeSingleReviewerStep(ct, game, idx, cb){
 
 }
 
+function reviewerFinalStep(cb, game, idx){
+	cb(null, "done");
+}
 
-function scrapeReviewerRankingForPlatform(cb, game, idx){
+function scrapeReviewerRankingForPlatform(game, idx, cb){
 	var numReviews = fifaData[game][idx][KEY_RlLIST].length;
-	asyncTraversal(numReviews, game, idx, scrapeSingleReviewerStep, null, function(err, result){
+	console.log("NUm of reviews is "+ numReviews);
+	asyncTraversal1(numReviews, game, idx, scrapeSingleReviewerStep, function(err, result){
 		if(err!=null){
 			console.log("There was error in scrapeReviewerRankingForPlatform");
 			cb(err);
@@ -126,11 +131,37 @@ function scrapeReviewerRankingForPlatform(cb, game, idx){
 	});
 
 }
+
+function scrapeReviewerRankingForPlatform1(game, idx, cb){
+	var numReviews = fifaData[game][idx][KEY_RlLIST].length;
+	console.log("NUm of reviews is "+ numReviews);
+	var finished =0;
+	for(var i=0; i<numReviews; i++){
+		var reviewerPageLink = fifaData[game][idx][KEY_RlLIST][i];
+		scraper.scrapeRanking(reviewerPageLink, function(err, result){
+			if(err){
+				console.log("error in single review scraper step");
+				cb(err);
+			}
+			else{
+				console.log("Link was " + reviewerPageLink + " and ranking scraped is "+ result);
+				finished ++;
+				// check the ordering
+				fifaData[game][idx][KEY_RRLIST].push(result);
+				if(finished == numReviews){
+					cb(null, fifaData[game][idx][KEY_RRLIST]);
+				}
+			}
+		});
+	}
+
+}
 //Usage
 
 // Final task 
 function platformFinalStep(cb, game, idx) { 
-	scrapeReviewerRankingForPlatform(game, idx, function(err, result){
+	console.log("In plaform final step for game "+ game + " and idx is "+ idx);
+	scrapeReviewerRankingForPlatform1(game, idx, function(err, result){
 		if(err){
 			console.log("There was an error in scraping reviewerRanking for game " + game+ " and idx " + idx);
 			cb(err);
@@ -162,7 +193,8 @@ function platformFinalStep(cb, game, idx) {
 // Async traversal of given "ct" of pages for "game" 
 // with platform as "idx" and scrape the most helpful reviews
 // on these pages
-function asyncTraversal(ct, game,idx, traversalStep, final, cb) {
+function asyncTraversal(ct, game,idx, traversalStep, cb) {
+  console.log(" ct is "+ ct + " for game "+ game + " and idx is "+ idx);
   if(ct>0) {
     traversalStep( ct, game, idx, function(err, result) {
       if(err)cb(err);
@@ -172,12 +204,28 @@ function asyncTraversal(ct, game,idx, traversalStep, final, cb) {
 		  return asyncTraversal(ct, game, idx, traversalStep, cb);
 	  }
     });
+
   } else {
 
-    if(final!=null) return final(cb,game, idx);
-    else{
-    	cb(null, null);
-    }
+    return platformFinalStep(cb, game, idx);
+  }
+}
+
+function asyncTraversal1(ct, game,idx, traversalStep, cb) {
+  console.log(" ct is "+ ct);
+  if(ct>0) {
+    traversalStep( ct, game, idx, function(err, result) {
+      if(err)cb(err);
+      else {
+		  ct--;
+		  console.log(result)
+		  return asyncTraversal(ct, game, idx, traversalStep, cb);
+	  }
+    });
+
+  } else {
+
+    return reviewerFinalStep(cb, game, idx);
   }
 }
 // Collect ratings for all versions
@@ -216,7 +264,7 @@ function collectPlatformRatings(game, cb){
 			// Collect reviews on only the number of pages for 
 			// given game and platform as idx specified in 
 			// the fifaAmazonData.js file 
-			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep, platformFinalStep, function(err, result){
+			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep, function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
 					cb(null,result);
