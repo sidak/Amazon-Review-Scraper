@@ -1,0 +1,45 @@
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_xbox360_p2.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_xbox360_p2.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_xbox360_p3.txt 100 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_xbox360_p3.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_xbox360_p1.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_xbox360_p1.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_xbox360_p2.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_xbox360_p2.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_xbox360_p3.txt 116 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_xbox360_p3.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps3_p1.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps3_p1.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps3_p2.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps3_p2.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps3_p3.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps3_p3.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps3_p4.txt 132 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps3_p4.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps3_p1.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps3_p1.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps3_p2.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps3_p2.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps3_p3.txt 212 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps3_p3.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps4_p1.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps4_p1.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps4_p2.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps4_p2.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa14_ps4_p3.txt 243 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa14_ps4_p3.txt
+
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps4_p1.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps4_p1.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps4_p2.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps4_p2.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps4_p3.txt 200 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps4_p3.txt
+
+node reviewerRatingScraper.js Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Links/reviewerLinks_fifa15_ps4_p4.txt 176 > Output\ Files/Review_Scraping_More_Contents/Fifa/Reviewer_Ratings/reviewerRating_fifa15_ps4_p4.txt
