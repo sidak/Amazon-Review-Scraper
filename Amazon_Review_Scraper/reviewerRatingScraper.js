@@ -2,8 +2,7 @@
 var jsdom = require('jsdom');
 
 var inpFileName = './' + process.argv[2];
-var outFileName = './' + process.argv[3];
-var numLines = process.argv[4];
+var numLines = process.argv[3];
 var links=[];
 
 function scrapeRanking(reviewerPageLink, cb){
@@ -17,6 +16,7 @@ function scrapeRanking(reviewerPageLink, cb){
 				cb(errors);
 			}
 			else{
+				//console.log("in scrape rnaking");
 				var $ = window.jQuery;
 				if($("div.bio-expander").length > 0){
 
@@ -51,7 +51,7 @@ function convertFromCommaNotationToInt(str){
 function scrapeSingleReviewerStep(ct, cb){
 	var reviewIdx = numLines - ct;
 	var reviewerPageLink = links[reviewIdx];
-
+	//console.log("in scrape ranking step with " + reviewerPageLink);
 	if(reviewerPageLink == "http://www.amazon.comundefined"){
 		cb(null, "-1");
 	}
@@ -95,8 +95,12 @@ var lineReader = require('readline').createInterface({
 });
 
 var ct = 0;
+
 lineReader.on('line', function (line) {
+	
 	ct++;
+	//console.log(ct);
+	//console.log(line);
 	links.push(line);
 	if(ct == numLines){
 		syncTraversal(numLines, scrapeSingleReviewerStep, function(err, result){
