@@ -100,17 +100,25 @@ function scrapeSingleReviewerStep(ct, game, idx, cb){
 	var reviewIdx = numReviews - ct;
 	var reviewerPageLink = fifaData[game][idx][KEY_RlLIST][reviewIdx];
 	console.log("Trying to scrape review of index " + reviewIdx + " and at link "+ reviewerPageLink);
-	scraper.scrapeRanking(reviewerPageLink, function(err, result){
-		if(err){
-			console.log("error in single review scraper step");
-			cb(err);
-		}
-		else{
-			console.log("Link was " + reviewerPageLink + " and ranking scraped is "+ result);
-			fifaData[game][idx][KEY_RRLIST].push(result);
-			cb(null, result);
-		}
-	});
+
+	if(reviewerPageLink == "http://www.amazon.comundefined"){
+		console.log("Link was " + reviewerPageLink + " and ranking scraped is "+ 0);
+		fifaData[game][idx][KEY_RRLIST].push(0);
+		cb(null, result);
+	}
+	else{
+		scraper.scrapeRanking(reviewerPageLink, function(err, result){
+			if(err){
+				console.log("error in single review scraper step");
+				cb(err);
+			}
+			else{
+				console.log("Link was " + reviewerPageLink + " and ranking scraped is "+ result);
+				fifaData[game][idx][KEY_RRLIST].push(result);
+				cb(null, result);
+			}
+		});
+	}
 
 }
 
