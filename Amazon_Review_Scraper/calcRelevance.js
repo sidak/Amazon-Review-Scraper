@@ -1,6 +1,7 @@
 var scraper= require('./reviewScraper');
 var fifaData= require('./Input_files/fifaAmazonDataFormat_Feb2016_withReviewerLink');
 var fs = require('fs');
+require('ofe').call();
 
 var outputFileName = './' + process.argv[2];
 
