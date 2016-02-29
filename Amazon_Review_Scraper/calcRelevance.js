@@ -4,7 +4,7 @@ var fs = require('fs');
 
 var outputFileName = './' + process.argv[2];
 
-var currentDate = Date.parse ("February 13, 2015");
+var currentDate = Date.parse ("February 29, 2015");
 
 // The value of the below constants is specific to the Fifa example
 var refBase= "cm_cr_pr_btm_link_";
@@ -68,15 +68,15 @@ var collectPageRatingStep= function (ct,game, idx, cb) {
 			//console.log(fifaData[game][idx]);
 			
 			//Concatenate the initial votes list with the one scraped now
-			fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
-			fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
-			fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
+			//fifaData[game][idx][KEY_UVLIST]=fifaData[game][idx][KEY_UVLIST].concat(result[0]);
+			//fifaData[game][idx][KEY_TVLIST]=fifaData[game][idx][KEY_TVLIST].concat(result[1]);
+			//fifaData[game][idx][KEY_RLIST]=fifaData[game][idx][KEY_RLIST].concat(result[2]);
 			fifaData[game][idx][KEY_RlLIST]=fifaData[game][idx][KEY_RlLIST].concat(result[3]);
 			
 			fifaData[game][idx][KEY_DLIST]=fifaData[game][idx][KEY_DLIST].concat(result[4]);
 
 			console.log("after adding the result\n");
-			console.log(fifaData[game][idx]);
+			//console.log(fifaData[game][idx]);
 			//console.log('Now going to my cb \n\n');
 			cb(null,  result);
 		}
@@ -198,7 +198,8 @@ function platformFinalStep1(cb, game, idx) {
 	cb(null, "done bitch");
 }
 
-// Async traversal of given "ct" of pages for "game" 
+// IT IS SYNCHRONOUSLY OR SERIALLY DOING IT!
+// sync traversal of given "ct" of pages for "game" 
 // with platform as "idx" and scrape the most helpful reviews
 // on these pages
 function asyncTraversal(ct, game,idx, traversalStep, cb) {
@@ -339,6 +340,8 @@ function collectPlatformRatings(game, cb){
 	}
 }
 function writeDataForGamePlatform(game, idx, cb){
+	// uncomment lines for relevance and dates
+
 	var gamePlatform= fifaData[game][idx];
 	console.log("In writing data for game platform");
 	console.log(gamePlatform);
@@ -346,10 +349,10 @@ function writeDataForGamePlatform(game, idx, cb){
 	var children=[];
 	var ratings_char;
 	var ratings_int=[];
-	var relevance;
+	var relevance=[];
 	var reviewerRanking;
 	var name;
-	var dates;
+	var dates=[];
 	if(game==KEY_FIFA14){
 		parent=KEY_FIFA14;
 	}
@@ -362,11 +365,11 @@ function writeDataForGamePlatform(game, idx, cb){
 	for(var i=0; i<ratings_char.length; i++){
 		ratings_int.push(ratings_char[i]-'0');
 	}
-	relevance= gamePlatform[KEY_ReLIST];
+	//relevance= gamePlatform[KEY_ReLIST];
 	
 	reviewerRanking = gamePlatform[KEY_RRLIST];
 	//check if dates are not strings and rather numbers
-	dates= gamePlatform[KEY_DLIST];
+	//dates= gamePlatform[KEY_DLIST];
 	// There is actually no need to write the dates in the file 
 	// They are only used for the calculation of relevance
 	
