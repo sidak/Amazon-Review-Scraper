@@ -1,6 +1,6 @@
 //cm_cr_pr_btm_link_i
 //i
-var fifaData=
+var nbaData=
 		{
 		nfl14:[
 					{
