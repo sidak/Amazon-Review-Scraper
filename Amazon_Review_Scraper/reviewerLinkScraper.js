@@ -42,56 +42,14 @@ var scrape = function(page,ref, cb) {
 						.each(function(index) {
 							//console.log("fuck");
 
-							var reviewId = (page-1)*10 +(index+1);
-							//console.log(reviewId);
-
-							var upvotes =0;
-							var totalVotes=0;
-
-							var helpfulness = $(this).find("div.a-row.a-spacing-top-small.review-comments").find("span.a-size-small.a-color-secondary.review-votes").text();
-							if(helpfulness==""){
-								helpfulness=0;
-								totalZeroHelpfulReviews++;
-							}
-							else{
-								upvotes=helpfulness.split(" ")[0];
-								totalVotes= helpfulness.split(" ")[2];
-								
-							}
-							var rating = $(this).find("div.a-row").eq(0).find("a.a-link-normal").find("i").find("span.a-icon-alt").text().split(" ")[0];
-							// remove the decimal place and zero after it	
-							rating = rating.substring(0, rating.length - 2);
-							
-							//console.log(rating)
-
-							//console.log(upvotes);
-							//console.log(totalVotes);
 							
 							var reviewerPageLink = "http://www.amazon.com";
 							reviewerPageLink += $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-byline").find("a.a-size-base.a-link-normal.author").attr("href");
 							
 							console.log(reviewerPageLink);
 
-							var reviewDateString = $(this).find("div.a-row").eq(1).find("span.a-size-base.a-color-secondary.review-date").text();
-							var reviewDate= Date.parse(reviewDateString);
 							//console.log(reviewDate);	
 
-							var verifiedElement = $(this).find("div.a-row.a-spacing-mini.review-data").find("span.a-size-mini.a-color-state.a-text-bold");
-							var isVerified;
-							if(verifiedElement.length>0){
-								isVerified = 1;	
-							}
-							else{
-								isVerified = 0;
-							}
-							//console.log(isVerified);
-
-							// store the data for processing of relevance
-							upvotesList.push(upvotes);
-							totalVotesList.push(totalVotes);
-							ratingList.push(rating);
-							dateStringList.push(reviewDate);
-							totalReviews++;
 							//console.log("\n");
 
 							//console.log("Helpfulness: " + upvotes+"out of "+totalVotes  +"\nRating: " + rating +"\nDate is " + reviewDate + "\n\n");
