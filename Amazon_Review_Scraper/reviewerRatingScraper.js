@@ -91,7 +91,7 @@ function syncTraversal(ct, traversalStep, cb) {
 
 
 var lineReader = require('readline').createInterface({
-  input: require('fs').createReadStream(inpFileName);
+  terminal:false , input: require('fs').createReadStream(inpFileName)
 });
 
 var ct = 0;
