@@ -105,7 +105,7 @@ function scrapeSingleReviewerStep(ct, game, idx, cb){
 	if(reviewerPageLink == "http://www.amazon.comundefined"){
 		console.log("Link was " + reviewerPageLink + " and ranking scraped is "+ 0);
 		fifaData[game][idx][KEY_RRLIST].push(0);
-		cb(null, result);
+		cb(null, "0");
 	}
 	else{
 		scraper.scrapeRanking(reviewerPageLink, function(err, result){
