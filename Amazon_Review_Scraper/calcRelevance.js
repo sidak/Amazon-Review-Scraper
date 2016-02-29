@@ -243,6 +243,7 @@ function asyncTraversal1(ct, game,idx, traversalStep, cb) {
 function collectGameRatings(cb){
 	// write the metadata in the file
 	scrapedCount = 0;
+	var gameScraped = 0;
 	data.push(
 				{ 
 						name:"meta",						
@@ -258,7 +259,10 @@ function collectGameRatings(cb){
 			collectPlatformRatings (game, function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
-					cb(null, result);
+					gameScraped ++;
+					if(gameScraped == NUM_VERSIONS){
+						cb(null, result);	
+ 					}
 				}
 			});
 						
@@ -324,6 +328,7 @@ function collectGameReviewerRankings(cb){
 // Collect ratings for the different platforms
 // for the given game
 function collectPlatformRatings(game, cb){
+	var platformScraped = 0;
 	for(var j=0; j<NUM_PLATFORMS; j++){
 		(function(){
 			var idx=j;
@@ -333,7 +338,10 @@ function collectPlatformRatings(game, cb){
 			asyncTraversal(fifaData[game][idx][KEY_PAGES],game, idx, collectPageRatingStep, function(err, result){
 				if(err)cb(err);
 				else if (result!=null){
-					cb(null,result);
+					platformScraped ++;
+ 					if(platformScraped == NUM_PLATFORMS){ 
+ 						cb(null,result);
+ 					}
 				}
 			});
 		})();
@@ -695,6 +703,7 @@ collectGameRatings(function(err, result){
 		console.log(err);
 	}
 	else{
+		console.log(result);
 		collectGameReviewerRankings(function(err, result){
 			if(err)console.log(err);
 			else if (result!=null){
