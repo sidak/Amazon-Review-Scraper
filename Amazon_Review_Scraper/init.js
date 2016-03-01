@@ -433,7 +433,15 @@ function readDataExceptReviewerRanking(version, platform, cb){
 	lineReader.on('close', function(){
 		console.log("for game " + version + " and platform  "+ platform + "the rest data is ");
 		//console.log(data[version][platformIdx][propertyNames[4]]);
-		cb(null, "done readDataExceptReviewerRanking");
+		console.log("done readDataExceptReviewerRanking");
+		readReviewerRanking(version, platform, function(err, result){
+			if(err) console.log(err);
+			else{
+				console.log(result);
+				cb(null, "done bitch readDataFromFiles " + version + " " + platform);
+			}
+		});
+		
 	});
 
 }
@@ -470,7 +478,7 @@ function readReviewerRanking(version, platform, cb){
 
 	lineReader.on('close', function(){
 		console.log("for game " + version + " and platform  "+ platform + "the reviewerRanking is ");
-		console.log(data[version][platformIdx][propertyNames[5]]);
+		//console.log(data[version][platformIdx][propertyNames[5]]);
 		cb(null, "done readReviewerRanking");
 	});
 
@@ -481,6 +489,7 @@ function readReviewerRanking(version, platform, cb){
 
 
 function readDataFromFiles(cb){
+	var scraped = 0;
 	for(var i=0; i<NUM_VERSIONS; i++){
 		(function(idx_i){
 			
@@ -494,14 +503,10 @@ function readDataFromFiles(cb){
 						}
 						else{
 							console.log(result);
-
-							readReviewerRanking(version, platform, function(err, result){
-								if(err) console.log(err);
-								else{
-									console.log(result);
-									cb(null, "done bitch readDataFromFiles");
-								}
-							});
+							scraped ++;
+							if(scraped == NUM_PLATFORMS*NUM_VERSIONS){
+								cb(null, "done readDataFromFiles all");
+							}
 						}
 					});
 				}(j));
