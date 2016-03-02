@@ -556,11 +556,11 @@ function filterFinalStep(game, idx, isVerified, cb){
 	newObj[KEY_UPVOTES_LIST]=[];
 	newObj[KEY_TOTAL_VOTES_LIST]=[];
 	newObj[KEY_REVIEWER_RANKING_LIST]=[];
-	newObj[KEY_RELEVANCE_LIST]=[];
 	
-	
-	for(var i=0; i<obj[KEY_VERIFIED_LIST].length; i++){
-		if(isVerified){
+	var ct =0;
+	var len = obj[KEY_VERIFIED_LIST].length;
+	for(var i=0; i<len; i++){
+		if(isVerified == ONLY_VERIFIED){
 			if(obj[KEY_VERIFIED_LIST][i]==1){
 
 				newObj[KEY_VERIFIED_LIST].push(obj[KEY_VERIFIED_LIST][i]);
@@ -569,11 +569,10 @@ function filterFinalStep(game, idx, isVerified, cb){
 				newObj[KEY_UPVOTES_LIST].push(obj[KEY_UPVOTES_LIST][i]);
 				newObj[KEY_TOTAL_VOTES_LIST].push(obj[KEY_TOTAL_VOTES_LIST][i]);
 				newObj[KEY_REVIEWER_RANKING_LIST].push(obj[KEY_REVIEWER_RANKING_LIST][i]);
-				newObj[KEY_RELEVANCE_LIST].push(obj[KEY_RELEVANCE_LIST][i]);
-
+				ct++;
 			}
 		}
-		else{
+		else if (isVerified == ONLY_NONVERIFIED){
 			if(obj[KEY_VERIFIED_LIST][i]==0){
 
 				newObj[KEY_VERIFIED_LIST].push(obj[KEY_VERIFIED_LIST][i]);
@@ -582,21 +581,22 @@ function filterFinalStep(game, idx, isVerified, cb){
 				newObj[KEY_UPVOTES_LIST].push(obj[KEY_UPVOTES_LIST][i]);
 				newObj[KEY_TOTAL_VOTES_LIST].push(obj[KEY_TOTAL_VOTES_LIST][i]);
 				newObj[KEY_REVIEWER_RANKING_LIST].push(obj[KEY_REVIEWER_RANKING_LIST][i]);
-				newObj[KEY_RELEVANCE_LIST].push(obj[KEY_RELEVANCE_LIST][i]);
-
+				ct++;
 			}
 		}
 
 		if(i==(obj[KEY_VERIFIED_LIST].length-1)){
-			
+			console.log("game is "+ game + " and platform idx is " + idx);
 			obj[KEY_VERIFIED_LIST] = newObj[KEY_VERIFIED_LIST];
 			obj[KEY_UPVOTES_LIST]= newObj[KEY_UPVOTES_LIST];
 			obj[KEY_TOTAL_VOTES_LIST] = newObj[KEY_TOTAL_VOTES_LIST];
 			obj[KEY_RATING_LIST] = newObj[KEY_RATING_LIST];
 			obj[KEY_REVIEWER_RANKING_LIST] = newObj[KEY_REVIEWER_RANKING_LIST];
 			obj[KEY_REVIEW_DATES_LIST] = newObj[KEY_REVIEW_DATES_LIST];
-			obj[KEY_RELEVANCE_LIST] = newObj[KEY_RELEVANCE_LIST];
 
+			console.log("isVerified " + isVerified);
+			console.log("ct of require is " + ct);
+			console.log("num of reviews is "+ len);
 			cb(null, newObj);
 		}
 	}
@@ -847,7 +847,7 @@ function calcRelevanceForAll(isReviewerRating, filterVerified, cb){
 	else{
 		console.log("in calc relevance");
 
-		if(isVerified){
+		if(filterVerified==  ONLY_VERIFIED || filterVerified== ONLY_NONVERIFIED){
 
 			filterReviews(filterVerified, function(err, result){
 				if(err) cb(err);
