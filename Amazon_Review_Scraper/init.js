@@ -37,6 +37,9 @@ var KEY_GAME_PLATFORM_NAME="name";
 
 var outputData =[];
 
+var MEAN_UNIVERSAL_REVIEWER_RANK = 13493337.5494;
+var MEAN_FIFA_REVIEWER_RANK = 14594956.832;
+var MEAN_NBA_REVIEWER_RANK = 12405643.7581;
 
 	
 var versions = [KEY_FIFA14, KEY_FIFA15];
@@ -397,6 +400,8 @@ function calculateRelevance(game, idx,cb){
 	cb(null, platform[KEY_RELEVANCE_LIST]);
 }
 
+//var sumRep=0;
+//var numRep =0;
 
 function readDataExceptReviewerRanking(version, platform, cb){
 
@@ -471,7 +476,7 @@ function readReviewerRanking(version, platform, cb){
 			var dig = line[k]-'0';
 			num = num*10 + dig;
 		}
-
+		
 		data[version][platformIdx][propertyNames[5]].push(num);
 
 	});
@@ -479,6 +484,7 @@ function readReviewerRanking(version, platform, cb){
 	lineReader.on('close', function(){
 		console.log("for game " + version + " and platform  "+ platform + "the reviewerRanking is ");
 		//console.log(data[version][platformIdx][propertyNames[5]]);
+		
 		cb(null, "done readReviewerRanking");
 	});
 
@@ -522,18 +528,350 @@ function removeElement(arrayName, arrayElement){
     } 
 }
 
+function asyncTraversal1(ct, game,idx, traversalStep, cb) {
+  console.log(" ct is "+ ct);
+  if(ct>0) {
+    traversalStep( ct, game, idx, function(err, result) {
+      if(err)cb(err);
+      else {
+		  ct--;
+		  console.log(result)
+		  return asyncTraversal1(ct, game, idx, traversalStep, cb);
+	  }
+    });
+
+  } else {
+
+    return filterFinalStep(cb, game, idx);
+  }
+}
+
+function filterFinalStep(game, idx, isVerified, cb){
+	var obj = data[game][idx];
+	var newObj ={};
+
+	newObj[KEY_VERIFIED_LIST]=[];
+	newObj[KEY_RATING_LIST]=[];
+	newObj[KEY_REVIEW_DATES_LIST]=[];
+	newObj[KEY_UPVOTES_LIST]=[];
+	newObj[KEY_TOTAL_VOTES_LIST]=[];
+	newObj[KEY_REVIEWER_RANKING_LIST]=[];
+	newObj[KEY_RELEVANCE_LIST]=[];
+	
+	
+	for(var i=0; i<obj[KEY_VERIFIED_LIST].length; i++){
+		if(isVerified){
+			if(obj[KEY_VERIFIED_LIST][i]==1){
+
+				newObj[KEY_VERIFIED_LIST].push(obj[KEY_VERIFIED_LIST][i]);
+				newObj[KEY_RATING_LIST].push(obj[KEY_RATING_LIST][i]);
+				newObj[KEY_REVIEW_DATES_LIST].push(obj[KEY_REVIEW_DATES_LIST][i]);
+				newObj[KEY_UPVOTES_LIST].push(obj[KEY_UPVOTES_LIST][i]);
+				newObj[KEY_TOTAL_VOTES_LIST].push(obj[KEY_TOTAL_VOTES_LIST][i]);
+				newObj[KEY_REVIEWER_RANKING_LIST].push(obj[KEY_REVIEWER_RANKING_LIST][i]);
+				newObj[KEY_RELEVANCE_LIST].push(obj[KEY_RELEVANCE_LIST][i]);
+
+			}
+		}
+		else{
+			if(obj[KEY_VERIFIED_LIST][i]==0){
+
+				newObj[KEY_VERIFIED_LIST].push(obj[KEY_VERIFIED_LIST][i]);
+				newObj[KEY_RATING_LIST].push(obj[KEY_RATING_LIST][i]);
+				newObj[KEY_REVIEW_DATES_LIST].push(obj[KEY_REVIEW_DATES_LIST][i]);
+				newObj[KEY_UPVOTES_LIST].push(obj[KEY_UPVOTES_LIST][i]);
+				newObj[KEY_TOTAL_VOTES_LIST].push(obj[KEY_TOTAL_VOTES_LIST][i]);
+				newObj[KEY_REVIEWER_RANKING_LIST].push(obj[KEY_REVIEWER_RANKING_LIST][i]);
+				newObj[KEY_RELEVANCE_LIST].push(obj[KEY_RELEVANCE_LIST][i]);
+
+			}
+		}
+
+		if(i==(obj[KEY_VERIFIED_LIST].length-1)){
+			
+			obj[KEY_VERIFIED_LIST] = newObj[KEY_VERIFIED_LIST];
+			obj[KEY_UPVOTES_LIST]= newObj[KEY_UPVOTES_LIST];
+			obj[KEY_TOTAL_VOTES_LIST] = newObj[KEY_TOTAL_VOTES_LIST];
+			obj[KEY_RATING_LIST] = newObj[KEY_RATING_LIST];
+			obj[KEY_REVIEWER_RANKING_LIST] = newObj[KEY_REVIEWER_RANKING_LIST];
+			obj[KEY_REVIEW_DATES_LIST] = newObj[KEY_REVIEW_DATES_LIST];
+			obj[KEY_RELEVANCE_LIST] = newObj[KEY_RELEVANCE_LIST];
+
+			cb(null, newObj);
+		}
+	}
+	// reassign
+	// cb at last idx
+}
+function filterPlatformReviews(idx_i, isVerified, cb){
+	var ct = 0;
+	for(var j=0; j<NUM_PLATFORMS; j++){
+		(function(){
+			var idx=j;
+			filterFinalStep(versions[idx_i], idx, isVerified, function(err, result){
+				if(err)cb(err);
+				else{
+					ct ++;
+					console.log(result);
+ 					if(ct == NUM_PLATFORMS){ 
+ 						cb(null, "yo done filtering platform Reviews");
+ 					}
+				}
+			});
+		})();
+	}
+}
+function filterReviews(isVerified,  cb){
+	var ct =0; 
+	for(var i=0; i<NUM_VERSIONS; i++){
+		(function(idx_i){
+			filterPlatformReviews(idx_i, isVerified, function(err, result){
+				if(err) cb (err);
+				else{
+					ct++;
+					console.log(result);
+					if(ct==NUM_VERSIONS){
+						cb(null, "done filtering all reviews");
+					}
+				}
+			});
+		}(i));
+	}
+}
+
+function sumPlatform ( arr, cb){
+	var res = {};
+	console.log("In sumPlatform");
+	var sum =0;
+	var num =0;
+	var added = 0;
+	for(var i=0; i<arr.length; i++){
+		
+		if(arr[i]!=0){
+			console.log("sum is " + sum);
+			console.log("arr ele is "+ arr[i]);
+			sum+=arr[i];
+			added++;
+			num++;
+		}
+		if(added==(arr.length)){
+			res.sum = sum;
+			res.num = num;
+			console.log("the sum platform obj");
+			console.log(res);
+			cb(null, res);
+		}
+	}
+}
+function calcMean(cb){
+
+	var res ={};
+	var sumRep=0;
+	var numRep =0;
+
+	for(var i=0; i<NUM_VERSIONS; i++){
+		(function(idx_i){
+			for(var j=0; j<NUM_PLATFORMS; j++){
+				(function(idx_j){
+					
+					var arr = data[versions[idx_i]][idx_j][KEY_REVIEWER_RANKING_LIST];
+					sumPlatform(arr, function(err, result){
+						sumRep += result.sum;
+						numRep += result.num;
+						console.log("sm is " + sumRep);
+						console.log("nm is " + numRep);
+
+						if(idx_i==(NUM_VERSIONS-1) && idx_j == (NUM_PLATFORMS-1)){
+							res.sum = sumRep;
+							res.num = numRep;
+							console.log(res);
+							cb(null, res);
+						}
+					});
+
+				}(j));
+			}
+		}(i));
+	}
+	
+}
+
+// the one that we are using now
+function calcMean1(cb){
+	var sumRep=0;
+	var numRep =0;
+	var lenRep =0;
+	var rep=[];
+	for(var i=0; i<NUM_VERSIONS; i++){
+		
+		for(var j=0; j<NUM_PLATFORMS; j++){
+			
+			var arr = data[versions[i]][j][KEY_REVIEWER_RANKING_LIST];
+			var s =0;
+			var n =0;
+			//console.log(arr[0] + arr[1]);
+			console.log(typeof data[versions[i]][j][KEY_REVIEWER_RANKING_LIST][0]);
+			for(var k=0; k<data[versions[i]][j][KEY_REVIEWER_RANKING_LIST].length; k++){
+				if(arr[k]!=0){
+					s = s + data[versions[i]][j][KEY_REVIEWER_RANKING_LIST][k];
+					n ++;
+				}
+			}
+			sumRep +=s;
+			numRep +=n;
+			lenRep += arr.length;
+			console.log("version is " + i + " platform is " + j);
+
+			console.log("s is " + s);
+			console.log("n is " + n);
+			console.log("sum is "+ sumRep);
+			console.log("num is "+ numRep);
+			console.log("len is "+ lenRep);						
+
+				
+			
+		}
+	
+	}
+	
+	// have an input variable that chooses between these methods
+	var meanRep = sumRep/numRep;
+	console.log(meanRep);
+
+	var mean_len = sumRep/lenRep;
+	console.log(mean_len);
+
+	calcDeviation(cb);
+
+}
+
+function calcDeviation(cb){
+	
+	var sumSquare = 0;
+	var minRank = 999999999999999, maxRank = -1;
+	var num = 0;
+
+	for(var i=0; i<NUM_VERSIONS; i++){
+	
+		for(var j=0; j<NUM_PLATFORMS; j++){
+			
+			var arr = data[versions[i]][j][KEY_REVIEWER_RANKING_LIST];
+			
+			for(var k=0; k<arr.length; k++){
+				if(arr[k]!=0){
+					sumSquare += ((arr[k] - MEAN_UNIVERSAL_REVIEWER_RANK)*(arr[k] - MEAN_UNIVERSAL_REVIEWER_RANK));
+						
+					num ++;
+				
+					if( arr[k]> maxRank){
+						maxRank = arr[k];
+					}
+					if(arr[k]<minRank){
+						minRank = arr[k];
+					}	
+				}
+			}
+
+			console.log("version is " + i + " platform is " + j);
+
+			console.log("sumSquare is " + sumSquare);
+			console.log("num is " + num);
+			
+		}
+		
+	}
+
+	console.log("sumSquare is " + sumSquare);
+	console.log("num is " + num);
+			
+	var deviation = Math.sqrt(sumSquare/num);
+	console.log("deviation is ");
+	console.log(deviation);
+
+	console.log("Min rank is " + minRank);
+	console.log("Max rank is " + maxRank);
+	
+	cb(null, "yow");
+
+}
+
+
+function concatAll(cb){
+	var rep =[];
+	for(var i=0; i<NUM_VERSIONS; i++){
+		
+			for(var j=0; j<NUM_PLATFORMS; j++){
+				
+					rep= rep.concat(data[versions[i]][j][KEY_REVIEWER_RANKING_LIST]);
+					if(i==(NUM_VERSIONS-1) && j == (NUM_PLATFORMS-1)){
+						cb(null, rep );
+					}
+			}
+
+		
+	}
+}
+function calcMean2(cb){
+	//var sumRep=0;
+	//var numRep =0;
+	var rep=[];
+	concatAll(function(err, result){
+		if(err)cb(err);
+		else{
+			rep = result;
+			var sum =0, n=0;
+			for(var i=0; i<rep; i++){
+				if(rep[i]!=0){
+					sum+= rep[i];
+					n++;
+				}
+			}
+			console.log(sum);
+			console.log(n);
+			console.log(sum/n);
+			console.log(rep);
+		}
+	});
+	
+	
+
+}
 function calcRelevanceForAll(isReviewerRating, filterVerified, cb){
 	if(isReviewerRating){
-		//calcRepStats();
+		calcMean1(function(err, result){
+			if(err)console.log(err);
+			else cb(null, result);
+		});
+
 	}
 	else{
 		console.log("in calc relevance");
-		calcGameRelevance(function(err, result){
-			if(err)cb(err);
-			else{
-				cb(null, "done calcRelevanceForAll");
-			}
-		});
+
+		if(isVerified){
+
+			filterReviews(filterVerified, function(err, result){
+				if(err) cb(err);
+				else{
+					console.log(result);
+					calcGameRelevance(function(err, result){
+						if(err)cb(err);
+						else{
+							cb(null, "done calcRelevanceForAll");
+						}
+					});
+				}
+			});
+		}
+		else{
+			console.log("in calc relevance");
+			calcGameRelevance(function(err, result){
+				if(err)cb(err);
+				else{
+					cb(null, "done calcRelevanceForAll");
+				}
+			});
+		}
+
 	}
 }
 
@@ -567,7 +905,8 @@ readDataFromFiles(function(err, result){
 	}
 	else{
 		outputData=[];
-		calcRelevanceForAll(false, BOTH_VERIFIED_NONVERIFIED, function(err, result){
+		
+		calcRelevanceForAll(false, ONLY_VERIFIED, function(err, result){
 			if(err){
 				console.log(err);
 			}
