@@ -41,9 +41,14 @@ var MEAN_UNIVERSAL_REVIEWER_RANK = 13493337.5494;
 var MEAN_FIFA_REVIEWER_RANK = 14594956.832;
 var MEAN_NBA_REVIEWER_RANK = 12405643.7581;
 
+var INT_MEAN_UNIVERSAL_REVIEWER_RANK = 13493338;
 	
 var versions = [KEY_FIFA14, KEY_FIFA15];
 var platforms= [KEY_PS3, KEY_PS4, KEY_XBOX1, KEY_XBOX360];
+
+var IS_SCALING = true;
+var IS_ZHR_TIME_ADJUSTMENT = true;
+var FILTER_ZHR = false;
 
 var propertyNames = [KEY_RATING_LIST, KEY_UPVOTES_LIST, KEY_TOTAL_VOTES_LIST, KEY_REVIEW_DATES_LIST, KEY_VERIFIED_LIST, KEY_REVIEWER_RANKING_LIST, KEY_RELEVANCE_LIST];
 
@@ -113,7 +118,18 @@ function calcPlatformRelevance(game, cb){
 		})();
 	}
 }
+function updateZeroReviewerRankings(game, idx, cb){
+	var gamePlatform= data[game][idx];
+	for(var i=0; i<gamePlatform[KEY_REVIEWER_RANKING_LIST].length; i++){
+		if(gamePlatform[KEY_REVIEWER_RANKING_LIST][i] == 0){
+			gamePlatform[KEY_REVIEWER_RANKING_LIST][i] = INT_MEAN_UNIVERSAL_REVIEWER_RANK;
+		}
 
+		if(i== (gamePlatform[KEY_REVIEWER_RANKING_LIST].length-1)){
+			cb(null, gamePlatform[KEY_REVIEWER_RANKING_LIST]);
+		}
+	}
+}
 function writeDataForGamePlatform(game, idx, cb){
 	// uncomment lines for relevance and dates
 
@@ -143,15 +159,22 @@ function writeDataForGamePlatform(game, idx, cb){
 	
 	dates= gamePlatform[KEY_REVIEW_DATES_LIST];
 	
-	var obj = createNewServiceObject(parent, name, ratings_int, relevance, dates, children);
-	console.log(obj);
-	//data.push(JSON.stringify(obj));
-	outputData.push(obj);
-	cb(null, 'data obj written to file');
+	updateZeroReviewerRankings(game, idx, function(err, result){
+		if(err)cb(err);
+		else{
+			console.log(result);
+			reviewerRanking = result;
+			var obj = createNewServiceObject(parent, name, ratings_int, relevance, reviewerRanking, dates, children);
+			console.log(obj);
+			outputData.push(obj);
+			cb(null, 'data obj written to file');
+		}
+	});
+	
 	
 }
 
-function createNewServiceObject(parent, name, ratings, relevance, dates, children){
+function createNewServiceObject(parent, name, ratings, relevance, reviewerRanking, dates, children){
 	var obj = {
 					"name":name,
 					"agg_rating_score":0,
@@ -161,6 +184,7 @@ function createNewServiceObject(parent, name, ratings, relevance, dates, childre
 					"universe_wmean_rating":0,
 					"consumer_ratings":ratings,
 					"consumer_relevance":relevance,
+					"reviewer_ranking": reviewerRanking,
 					"review_dates":dates,
 					"consumer_feedback_count":0,
 					"rating_trust_value":0,
@@ -324,6 +348,37 @@ function calculateRelevance(game, idx,cb){
 	// Calculate sum of upvotes, downvotes, totalvotes
 	// , num of ZHR and also calculate the maxvotes
 	
+	if(FILTER_ZHR){
+		var filteredRatingList = [];
+		var filteredUpvotesList = [];
+		var filteredTotalVotesList = [];
+		var filteredReviewDatesList = [];
+		var filteredReviewerRankingList = [];
+		var filteredVerifiedList=[];
+		var filteredNumReviews = 0;
+
+		for(var i=0; i<numReviews; i++){
+			if(!(platform[KEY_UPVOTES_LIST][i]==0 && platform[KEY_TOTAL_VOTES_LIST][i]==0)){
+				filteredNumReviews ++;
+				filteredRatingList.push(platform[KEY_RATING_LIST][i]);
+				filteredUpvotesList.push(platform[KEY_UPVOTES_LIST][i]);
+				filteredTotalVotesList.push(platform[KEY_TOTAL_VOTES_LIST][i]);
+				filteredReviewDatesList.push(platform[KEY_REVIEW_DATES_LIST][i]);
+				filteredReviewerRankingList.push(platform[KEY_REVIEWER_RANKING_LIST][i]);
+				filteredVerifiedList.push(platform[KEY_VERIFIED_LIST][i]);
+			}
+		}
+
+		numReviews = filteredNumReviews;
+		platform[KEY_RATING_LIST] = filteredRatingList;
+		platform[KEY_UPVOTES_LIST] = filteredUpvotesList;
+		platform[KEY_TOTAL_VOTES_LIST] = filteredTotalVotesList;
+		platform[KEY_REVIEW_DATES_LIST] = filteredReviewDatesList;
+		platform[KEY_REVIEWER_RANKING_LIST] = filteredReviewerRankingList;
+		platform[KEY_VERIFIED_LIST] = filteredVerifiedList;
+			
+	}
+	
 	for(var i=0; i<numReviews; i++){
 		if(platform[KEY_UPVOTES_LIST][i]==0 && platform[KEY_TOTAL_VOTES_LIST][i]==0)zeroHelpfulReviews++;
 		sumUpvotes+= platform[KEY_UPVOTES_LIST][i];
@@ -377,14 +432,13 @@ function calculateRelevance(game, idx,cb){
 	
 	console.log("before scaling");
 	console.log(platform[KEY_RELEVANCE_LIST][0],platform[KEY_RELEVANCE_LIST][1]);
-	performScaling(platform[KEY_RELEVANCE_LIST]);
+	if(IS_SCALING) performScaling(platform[KEY_RELEVANCE_LIST]);
 	console.log("atfer scaling");
 	console.log(platform[KEY_RELEVANCE_LIST][0],platform[KEY_RELEVANCE_LIST][1]);
 	
 	console.log("In calc relevance, logging dates");
 	console.log(platform[KEY_REVIEW_DATES_LIST]);
-	doTimeAdjustment(platform[KEY_RELEVANCE_LIST], platform[KEY_UPVOTES_LIST],
-					platform[KEY_TOTAL_VOTES_LIST], platform[KEY_REVIEW_DATES_LIST] ,-1);
+	if(IS_ZHR_TIME_ADJUSTMENT) doTimeAdjustment(platform[KEY_RELEVANCE_LIST], platform[KEY_UPVOTES_LIST], platform[KEY_TOTAL_VOTES_LIST], platform[KEY_REVIEW_DATES_LIST] ,-1);
 	
 	var sumRelevance=0;
 	var sumRating=0;
@@ -905,8 +959,8 @@ readDataFromFiles(function(err, result){
 	}
 	else{
 		outputData=[];
-		
-		calcRelevanceForAll(false, ONLY_VERIFIED, function(err, result){
+		// update rr when 0
+		calcRelevanceForAll(false, BOTH_VERIFIED_NONVERIFIED, function(err, result){
 			if(err){
 				console.log(err);
 			}
